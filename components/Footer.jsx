@@ -53,48 +53,59 @@ export default function Footer() {
             />
           </div>
         </div>
+
         <div>
           <h4 className="text-xl font-semibold mb-4 relative inline-block">
-            Office Address
-            <span className="block w-12 h-[3px] bg-primary mt-1"></span>
-          </h4>
-
-          <ul className="space-y-2 text-sm mb-6">
-            <li>Printers Building</li>
-            <li>11–14th Floor, 5 Rajuk Avenue</li>
-            <li>Motijheel, Dhaka-1000</li>
-            <li>Bangladesh</li>
-          </ul>
-
-          <h4 className="text-xl font-semibold mb-4 relative inline-block">
-            Project Address
-            <span className="block w-12 h-[3px] bg-primary mt-1"></span>
-          </h4>
-
-          <ul className="space-y-2 text-sm">
-            <li>Anondo Housing Society</li>
-            <li>Purbachal New Town</li>
-            <li>Rupganj, Narayanganj</li>
-            <li>Bangladesh</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="text-xl font-semibold mb-4 relative inline-block">
-            Quick-link
+            Quick Links
             <span className="block w-12 h-[3px] bg-primary mt-1"></span>
           </h4>
 
           <ul className="space-y-2 text-sm">
             {[
-              "Home",
-              "About",
-              "Contact",
-              "Project",
-              "Terms and Conditions",
+              { name: "Home", href: "/" },
+              { name: "About", href: "/about" },
+              { name: "Contact", href: "/contact" },
+              { name: "Project", href: "/project" },
+              { name: "Terms and Conditions", href: "/terms-and-conditions" },
             ].map((item, i) => (
-              <li key={i} className="relative group cursor-pointer w-fit">
-                <span className="transition-colors duration-300">{item}</span>
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-500 group-hover:w-full"></span>
+              <li key={i} className="relative group w-fit">
+                <Link href={item.href}>
+                  <span className="cursor-pointer transition-colors duration-300 group-hover:text-primary">
+                    {item.name}
+                  </span>
+
+                  {/* Underline Animation */}
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-500 group-hover:w-full"></span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-xl font-semibold mb-4 relative inline-block">
+            Projects
+            <span className="block w-12 h-[3px] bg-primary mt-1"></span>
+          </h4>
+
+          <ul className="space-y-3 text-sm">
+            {[
+              { name: "Anondo Bhubon", link: "/anondo-bhubon" },
+              { name: "Anondo Parkcity", link: "/anondo-parkcity" },
+              {
+                name: "Anondo Rosemont Estate",
+                link: "/anondo-rosemont-estate",
+              },
+            ].map((item, i) => (
+              <li key={i} className="relative group w-fit">
+                <Link href={item.link}>
+                  <span className="transition-colors duration-300 group-hover:text-primary">
+                    {item.name}
+                  </span>
+
+                  {/* Underline Animation */}
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-500 group-hover:w-full"></span>
+                </Link>
               </li>
             ))}
           </ul>
@@ -105,11 +116,10 @@ export default function Footer() {
             Get in Touch
             <span className="block w-12 h-[3px] bg-primary mt-1"></span>
           </h4>
-
           <div className="space-y-4 text-sm">
             <p className="flex items-start gap-3">
               <PiMapPinBold size={30} className="text-primary" />
-              Printers Building, 11–14th Floor, 5 Rajuk Avenue, Motijheel, 1000
+              Printers Building, 11–12th Floor, 5 Rajuk Avenue, Motijheel, 1000
               Dhaka
             </p>
 
@@ -120,14 +130,12 @@ export default function Footer() {
 
             <p className="flex items-center gap-3">
               <HiOutlineMail size={20} className="text-primary" />
-              anondohousings@gmail.com
+              info@anondocityscapers.com
             </p>
           </div>
-
           <p className="text-sm leading-relaxed my-4">
             Enter your email and receive the latest news from us.
           </p>
-
           {/* Email Input */}
           <div className="flex items-center border border-white/40 rounded-md overflow-hidden mb-6">
             <input
@@ -146,7 +154,7 @@ export default function Footer() {
       <div className="border-t border-white/20 mt-10 pt-4 text-center text-sm">
         Copyright © {new Date().getFullYear()}{" "}
         <span className="font-semibold text-primary">
-          Anondo Housing Society
+          Anondo Cityscapers Ltd.
         </span>
         . All rights reserved.
       </div>
