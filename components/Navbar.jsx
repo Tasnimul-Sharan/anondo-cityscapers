@@ -3,7 +3,13 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
-import { FiClock, FiPhoneCall, FiMail, FiArrowRight, FiChevronRight } from "react-icons/fi";
+import {
+  FiClock,
+  FiPhoneCall,
+  FiMail,
+  FiArrowRight,
+  FiChevronRight,
+} from "react-icons/fi";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import {
   FaFacebookF,
@@ -126,7 +132,7 @@ export default function Navbar() {
 
             <div className="flex items-center gap-2 hover:text-primary transition">
               <FiMail />
-              <span className="tracking-wide">anondohousings@gmail.com</span>
+              <span className="tracking-wide">info@anondocityscapers.com</span>
             </div>
 
             <span className="h-4 w-px bg-white/30" />

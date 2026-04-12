@@ -154,7 +154,7 @@ export default function Footer() {
       <div className="border-t border-white/20 mt-10 pt-4 text-center text-sm">
         Copyright © {new Date().getFullYear()}{" "}
         <span className="font-semibold text-primary">
-          Anondo Cityscapers Ltd.
+          Anondo Cityscapers Ltd
         </span>
         . All rights reserved.
       </div>
