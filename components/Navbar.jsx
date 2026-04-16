@@ -33,6 +33,7 @@ const menuItems = [
   },
 
   { name: "Notice", path: "/notice" },
+  { name: "NRB", path: "/nrb" },
   {
     name: "Corporate",
     path: "#",
