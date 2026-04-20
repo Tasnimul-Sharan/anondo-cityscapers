@@ -5,120 +5,135 @@ import {
   FaLandmark,
   FaExchangeAlt,
   FaFileContract,
+  FaGlobe,
+  FaMoneyCheckAlt,
+  FaShieldAlt,
 } from "react-icons/fa";
 
 export default function TermsAndConditions() {
   return (
-    <section className="bg-orange-50 py-16">
-      <div className="max-w-6xl mx-auto px-6 md:px-0 text-gray-800 leading-8">
+    <section className="bg-gradient-to-b from-orange-50 to-white py-20">
+      <div className="max-w-6xl mx-auto px-6 text-gray-800 leading-7">
         {/* Header */}
-        <div className="text-center mb-14">
-          <h1 className="text-4xl font-extrabold mb-3">শর্তসমূহ</h1>
-          <p className="text-sm text-gray-600">
-            আনন্দ হাউজিং সোসাইটির সকল সদস্যদের জন্য বাধ্যতামূলক নীতিমালা
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">
+            Terms & Conditions
+          </h1>
+          <p className="text-gray-500 max-w-2xl mx-auto">
+            Welcome to Anondo City Scapers. These Terms and Conditions outline
+            the rules and regulations for using our website and services.
           </p>
+          <div className="w-24 h-[3px] bg-primary mx-auto mt-5 rounded-full" />
         </div>
 
-        {/* ================= Section 1 ================= */}
-        <Card icon={<FaExclamationTriangle />} title="অবশ্য পালনীয় শর্তসমূহ">
-          <p className="mb-4 font-medium">
-            হাউজিং সোসাইটির সকল সদস্যকে নিম্নলিখিত নিয়মাবলী অবশ্যই মেনে চলতে
-            হবে :
-          </p>
-
-          <Paragraph text="০১. হাউজিং সোসাইটিতে প্লট বা জমির মালিকানা ক্রয়কৃত জমির পরিমানের উপর নির্ভর করবে; বিনিয়োগকৃত অর্থের উপর নয়। প্লট বিভাজনকালে ক্রয়কৃত জমির আনুপাতিক হারে বন্টন করা হবে। কোন ক্রমেই কতমূল্যে জমি ক্রয় করা হইয়াছে তা বিবেচ্য হবে না।" />
-
-          <Paragraph text="০২. হাউজিং সোসাইটির ভূমি উন্নয়নের সময় একই সময়ে সকল সদস্যকে তা করতে হবে। সকল সদস্যকে জমির মালিকানা অনুসারে আনুপাতিক হারে ব্যয় বহন করতে হবে।" />
-
-          <Paragraph text="০৩. ভূমি উন্নয়নের পর সীমানা প্রাচীর, রাস্তা ও অন্যান্য প্রয়োজনীয় অবকাঠামো নির্মাণ ব্যয় আনুপাতিক হারে বহন করতে হবে।" />
-
-          <Paragraph text="০৪. হাউজিং সোসাইটির জন্য রাস্তা, ড্রেন, ও অন্যান্য প্রয়োজনীয় অবকাঠামো তৈরীর জন্য আনুপাতিক হারে জমি ছাড়তে হবে। যে কোন ৬ কাঠার প্লটের সামনের রাস্তা কমপক্ষে ২৫ ফুট চওড়া রাখা হবে। ৩ কাঠার প্লটের সামনের রাস্তা কমপক্ষে ২০ ফুট চওড়া রাখা হবে।" />
-
-          <Paragraph text="০৫. রাস্ত-ঘাট অবকাঠামো ইত্যাদি এর জন্য আনুমানিক ৪০% হারে জমি ছাড়তে হবে। সুতরাং ভূমি উন্নয়ন এবং রাস্তা, ড্রেনের ব্যবস্থা ইত্যাদি অবকাঠামো নির্মাণের পর প্রত্যেকে তার ক্রয়কৃত জমির ৬০% প্লট আকারে পাবেন।" />
-
-          <Paragraph text="০৬. সমস্ত অবকাঠামো নির্মাণ শেষে প্রতি অর্ধবিঘা জমির জন্য আনুমানিক ৬ কাঠা আয়তনের একটি প্লট পাবেন। (উল্লেখ্য যে প্রকল্প একলাকায় ১বিঘা জমি = ৩০ শতাংশ) প্রতি ১/৪ বিঘা জমির জন্য আনুমানিক ৩ কাঠা আয়তনের একটি প্লট পাবেন।" />
-
-          <Paragraph text="০৭. হাউজিং সোসাইটির প্রতিটি প্লট আনুমানিক ভাবে ৬ কাঠা বা ৪ কাঠা বা ৩ কাঠা আয়তনের হবে । যিনি ১ বিঘা জমি ক্রয় করবেন তিনি ২টি ৬ কাঠার বা ২ বিঘা জমি ক্রয় করলে ৪টি ৬ কাঠার প্লট পাবেন।" />
-
-          <Paragraph text="০৮. প্লটের অবস্থান লটারীর মাধ্যমে ঠিক করা হবে। সংখ্যাগরিষ্ঠ সদস্যের উপস্থিতিতে উন্মুক্ত পদ্ধতিতে লটারী অনুষ্ঠিত হবে।" />
-
-          <div className="mt-6 bg-orange-100 border border-orange-200 rounded-xl p-5">
-            <p className="font-semibold mb-2">
-              ০৯. যিনি একাধিক প্লটের মালিক তিনি তার প্লট নির্ধারনের জন্য
-              নিম্নোক্ত পদ্ধতিতে একাধিক প্লট নিতে পারবেন :-
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-sm">
-              <li>ক. প্রতিটি প্লটের জন্য পৃথক পৃথক লটারী।</li>
-              <li>
-                খ. প্রতি দুইটি প্লটের জন্য একবার করে লটারী। এক্ষেত্রে তিনি
-                লটারীর পূর্বে লিখিতভাবে জানাবেন প্রথমবার যে প্লট তার নামে উঠবে,
-                সেই প্লটের কোন পার্শ্বে (ডানে, বামে, পিছনে) তিনি তাঁর অপর প্লটটি
-                নিবেন। যদি তাঁর লিখিত পছন্দ মোতাবেক প্লট বিতরন সম্ভব না হয় তবে
-                তিনি পর পর আরো দুইবার লটারীর ড্র এর সুযোগ পাবেন। এতেও সম্ভব না
-                হলে তাঁকে প্রতিটি প্লটের জন্য পৃথক পৃথক ভাবে লটারী ড্র করতে হবে।
-              </li>
-              <li>
-                গ. যারা চারটি বা ছয়টি প্লটের মালিক তারা যে কোন একটি ব্লকের জন্য
-                লটারী করতে পারবেন।
-              </li>
-              <li>
-                ঘ. প্লট বরাদ্দের জন্য লটারী বাধ্যতামূলক এবং লটারীর পূর্বে পদ্ধতি
-                লিখিতভাবে জানাতে হবে।
-              </li>
-              <li>ঙ. লটারীর ফলাফল সদস্যদের জন্য মেনে চলা বাধ্যতামূলক।</li>
-            </ul>
-          </div>
+        {/* Section 1 */}
+        <Card icon={<FaGlobe />} title="1. Use of Website">
+          <List
+            items={[
+              "You agree to provide accurate and up-to-date information when contacting us or making a purchase.",
+              "You must use this website only for lawful purposes.",
+              "You must not engage in any activity that is harmful, illegal, or disrupts the website.",
+            ]}
+          />
         </Card>
 
         <Spacer />
 
-        {/* ================= Section 2 ================= */}
-        <Card icon={<FaLandmark />} title="সমিতি কর্তৃক প্লট হস্তান্তর পদ্ধতি">
-          <Paragraph text="০১. আনন্দ হাউজিং সোসাইটির সকল জমি সাধারন ভাবে আনন্দ পুলিশ পরিবার কল্যাণ সমিতির নামে ক্রয় করা হয়। অর্থাৎ বর্তমান বিক্রেতার নিকট থেকে সমিতির নামে রেজিষ্ট্রি করা হয়।" />
-
-          <Paragraph text="০২. সমিতির পক্ষ থেকে জমির মালিকদের বরাবরে একটি করে মালিকানা সম্পর্কিত প্রত্যয়ন পত্র প্রদান করা হবে। উল্লেখিত জমিতে গ্রহিতা সদস্যের ক্রয়কৃত জমির পরিমাণ উল্লেখ থাকবে। উক্ত প্রত্যয়ন পত্র মূলে তিনি হাউজিং সোসাইটিতে উল্লেখিত জমির মালিক/স্বত্ত্ববান হবেন।" />
-
-          <Paragraph text="০৩. মাটি ভরাট, রাস্তা নির্মান ও অবকাঠামো উন্নয়নের পর প্লট বিভাজন করা হবে। প্লট সমূহের মালিকানা লটারীতে নির্ধারিত হওয়ার পর প্রতিটি প্লটের জমির তফসিল ও পরিমাণ উল্লেখপূর্বক চুড়ান্ত সাফকবলা দলিল সম্পাদন করা হবে।" />
+        {/* Section 2 */}
+        <Card icon={<FaLandmark />} title="2. Products & Services">
+          <List
+            items={[
+              "We strive to provide accurate descriptions, but we do not guarantee that all information is completely error-free.",
+              "We reserve the right to modify or discontinue services at any time without prior notice.",
+            ]}
+          />
         </Card>
 
         <Spacer />
 
-        {/* ================= Section 3 ================= */}
+        {/* Section 3 */}
+        <Card icon={<FaMoneyCheckAlt />} title="3. Payments & Billing">
+          <List
+            items={[
+              "All payments must be made in Bangladeshi Taka (BDT) unless otherwise stated.",
+              "We accept common payment methods such as bKash, Nagad, bank transfer, and cards.",
+              "If a payment fails, we reserve the right to cancel or suspend the order.",
+            ]}
+          />
+        </Card>
+
+        <Spacer />
+
+        {/* Section 4 */}
+        <Card icon={<FaShieldAlt />} title="4. Intellectual Property">
+          <Paragraph text="All content on this website including logos, text, images, and design belongs to Anondo City Scapers. You may not copy, reproduce, or use any content without written permission." />
+        </Card>
+
+        <Spacer />
+
+        {/* Section 5 */}
         <Card
-          icon={<FaExchangeAlt />}
-          title="বাস্তবায়ন সমাপ্ত হওয়ার পূর্বে অন্য কারো নিকট জমি/প্লট ক্রয়–বিক্রয়"
+          icon={<FaExclamationTriangle />}
+          title="5. Limitation of Liability"
         >
-          <Paragraph text="০১. হাউজিং প্রকল্প বাস্তবায়নের পূর্বে কোন সদস্য তথা জমির মালিক তাঁহার মালিকানাধীন সম্পূর্ন জমি বা অংশ বিশেষ বিক্রয় করিতে চাহিলে তিনি সমিতিকে তাহা সভাপতি বরাবরে লিখিতভাবে জানাবেন। সমিতি উক্ত জমি বাজার মূল্যে ক্রয় করিলে, সদস্য তাহা সমিতির নিকট বিক্রয় করিতে বাধ্য থাকবেন। সমিতি তাহা ক্রয় করিতে লিখিতভাবে অপারগতা প্রকাশ করলে তিনি সম্ভাব্য ক্রেতার জীবন বৃত্তান্ত সমিতির নিকট প্রেরণ করবেন। সমিতি কর্তৃক অনাপত্তি জ্ঞাপনের পর সম্ভাব্য ক্রেতা আনন্দ হাউজিং সোসাইটির একজন সদস্য হইবেন এবং সকল নিয়ম মানতে বাধ্য থাকবেন।" />
-
-          <Paragraph text="০২. হাউজিং সোসাইটি প্রকল্প বাস্তবায়নের পর কোন প্লটের মালিক তাঁর প্লট বিক্রয় করতে চাইলে সমিতির সদস্যগণ ক্রয়ের জন্য অগ্রাধিকার পাবেন। সদস্য না পেলে নিয়ম মানার শর্তে অন্য ক্রেতার নিকট বিক্রয় করা যাবে।" />
+          <Paragraph text="We strive to provide high-quality service, but we are not liable for any direct or indirect damages resulting from the use of our website or services." />
         </Card>
 
-        <div className="mt-12 flex items-center gap-3 bg-orange-100 border border-orange-200 rounded-xl p-5 text-base">
-          <FaFileContract className="text-xl text-primary" />
-          উপরোক্ত সকল শর্তাবলী আনন্দ হাউজিং সোসাইটির সকল সদস্যের জন্য
-          বাধ্যতামূলক।
+        <Spacer />
+
+        {/* Section 6 */}
+        <Card icon={<FaExchangeAlt />} title="6. Governing Law">
+          <Paragraph text="These Terms are governed by the laws of Bangladesh. Any disputes will be handled in the courts of Dhaka, Bangladesh." />
+        </Card>
+
+        <Spacer />
+
+        {/* Section 7 */}
+        <Card icon={<FaFileContract />} title="7. Changes to Terms">
+          <Paragraph text="We may update these Terms and Conditions at any time. Continued use of the website means you accept the updated terms." />
+        </Card>
+
+        {/* Footer Notice */}
+        <div className="mt-16 bg-orange-100 border border-orange-200 rounded-2xl p-6 flex items-center gap-3 shadow-sm">
+          <FaFileContract className="text-primary text-xl" />
+          <p className="font-medium">
+            These Terms & Conditions are binding for all users of Anondo City
+            Scapers.
+          </p>
         </div>
       </div>
     </section>
   );
 }
 
+/* Components */
+
 function Card({ icon, title, children }) {
   return (
-    <div className="bg-white rounded-3xl border border-orange-200 p-8">
-      <div className="flex items-center gap-3 mb-6">
-        <div className="w-11 h-11 flex items-center justify-center rounded-xl bg-orange-50 text-primary text-xl">
+    <div className="bg-white rounded-3xl border border-orange-100 p-8 shadow-sm hover:shadow-xl transition duration-300">
+      <div className="flex items-center gap-4 mb-6">
+        <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-orange-50 text-primary text-xl">
           {icon}
         </div>
-        <h2 className="text-2xl font-bold">{title}</h2>
+        <h2 className="text-xl md:text-2xl font-bold text-gray-900">{title}</h2>
       </div>
-      <div className="space-y-4">{children}</div>
+      <div className="space-y-3">{children}</div>
     </div>
   );
 }
 
 function Paragraph({ text }) {
-  return <p className="text-base leading-relaxed">{text}</p>;
+  return <p className="text-gray-600 leading-relaxed">{text}</p>;
+}
+
+function List({ items }) {
+  return (
+    <ul className="list-disc pl-5 space-y-2 text-gray-600">
+      {items.map((item, i) => (
+        <li key={i}>{item}</li>
+      ))}
+    </ul>
+  );
 }
 
 function Spacer() {

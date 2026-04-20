@@ -3,6 +3,11 @@ import HeroSection from "@/components/HeroSection";
 import TeamSection from "@/components/TeamSection";
 import Head from "next/head";
 import FAQ from "@/components/FAQ";
+import StatsSection from "@/components/StatsSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import HowToBecomeOwner from "@/components/HowToBecomeOwner";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import FAQSection from "@/components/FAQSection";
 export default function AboutPage() {
   const meta = {
     title:
@@ -14,62 +19,6 @@ export default function AboutPage() {
     author: "Anondo Housing Society",
     url: "https://anondohousing.com/about",
     image: "https://anondohousing.com/about/about-og.jpg",
-  };
-
-  const faqData = {
-    title: "Frequently Asked Questions",
-    faqs: [
-      {
-        question: "What is Anondo Housing Society?",
-        answer:
-          "Anondo Housing Society (AUSL) is a multidisciplinary service provider in Bangladesh. We specialize in safety & security, engineering & real estate, and logistics & business support solutions. Our mission is to ensure safety, efficiency, and sustainable growth for individuals, businesses, and communities.",
-      },
-      {
-        question: "Where is Anondo Housing Society located?",
-        answer:
-          "Our Head Office is at Printers Building, 12–14th Floor, 5 Rajuk Avenue, Motijheel, Dhaka–1000, Bangladesh. We operate nationwide, serving residential, commercial, and industrial clients with 24/7 support and rapid response services.",
-      },
-      {
-        question: "What is the vision of AUSL?",
-        answer:
-          "Our vision is to become the most trusted security and service provider in South Asia by delivering innovative, reliable, and people-focused solutions.",
-      },
-      {
-        question: "What is the mission of AUSL?",
-        answer:
-          "Our mission is to ensure safety, efficiency, and peace of mind through professionalism, modern technology, and uncompromising integrity.",
-      },
-      {
-        question: "What types of services do you provide?",
-        answer:
-          "AUSL offers a wide range of services, including security guards, armed guards, caretakers, supervisors, peons, drivers, courier & cargo services, ERP & digital solutions, CCTV installation, event management, office management, digital marketing, and media & advertising services.",
-      },
-      {
-        question: "How many security professionals are employed by AUSL?",
-        answer:
-          "We have more than 2,000 trained security professionals deployed across Bangladesh, supported by supervisors, caretakers, drivers, and specialized operational teams.",
-      },
-      {
-        question: "How is safety and quality ensured?",
-        answer:
-          "All AUSL personnel undergo rigorous training in crisis response, fire safety, first aid, customer service, and advanced security protocols. We also operate a Central Command & Monitoring Center with 24/7 oversight and dedicated rapid response teams to ensure uncompromising service quality.",
-      },
-      {
-        question: "Do you provide customized solutions?",
-        answer:
-          "Yes. AUSL delivers tailored security and support solutions for corporate offices, industrial sites, residential complexes, events, and high-risk facilities — ensuring each client receives the right protection and services for their needs.",
-      },
-      {
-        question: "What technology-enabled services do you offer?",
-        answer:
-          "Our technology-driven services include CCTV surveillance, biometric access control, remote monitoring, ERP solutions, e-commerce platforms, and integrated alarm systems designed for businesses and individuals.",
-      },
-      {
-        question: "How can I contact Anondo Housing Society?",
-        answer:
-          "📍 Head Office: Printers Building, 12–14th Floor, 5 Rajuk Avenue, Motijheel, Dhaka–1000, Bangladesh.\n📞 Phone: +880 1313-775333\n📧 Email: contact@anondouniversalserviceslimited.com\n🌐 Website: https://anondouniversalserviceslimited.com/",
-      },
-    ],
   };
 
   return (
@@ -97,8 +46,12 @@ export default function AboutPage() {
         }}
       />
       <AboutUsSection />
+      <StatsSection />
+      <ProjectsSection />
+      <HowToBecomeOwner />
+      <WhyChooseUs />
       {/* <TeamSection /> */}
-      {/* <FAQ faqData={faqData} /> */}
+      <FAQSection />
     </div>
   );
 }

@@ -82,6 +82,29 @@ import { FiPhoneCall } from "react-icons/fi";
 import { FaClipboardList, FaUserCheck, FaMoneyCheckAlt } from "react-icons/fa";
 
 export default function HowToBecomeOwner() {
+  // const steps = [
+  //   {
+  //     icon: <FiPhoneCall />,
+  //     title: "Contact Us",
+  //     desc: "Get in touch with our marketing representative or visit our office directly.",
+  //   },
+  //   {
+  //     icon: <FaClipboardList />,
+  //     title: "Fill Out the Form",
+  //     desc: "Complete the required documents and wait for verification.",
+  //   },
+  //   {
+  //     icon: <FaUserCheck />,
+  //     title: "Membership",
+  //     desc: "After verification, you will be registered and receive project details.",
+  //   },
+  //   {
+  //     icon: <FaMoneyCheckAlt />,
+  //     title: "Complete Payment",
+  //     desc: "Finalize payment and become a proud plot owner.",
+  //   },
+  // ];
+
   const steps = [
     {
       icon: <FiPhoneCall />,
@@ -103,6 +126,11 @@ export default function HowToBecomeOwner() {
       title: "Complete Payment",
       desc: "Finalize payment and become a proud plot owner.",
     },
+    {
+      icon: <FaUserCheck />,
+      title: "Registration",
+      desc: "Submit your documents and complete the official registration process.",
+    },
   ];
 
   return (
@@ -119,7 +147,7 @@ export default function HowToBecomeOwner() {
       </div>
 
       {/* Timeline */}
-      <div className="max-w-5xl mx-auto px-4 relative">
+      <div className="max-w-5xl mx-auto px-6 relative">
         {/* Vertical line */}
         <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-[2px] h-full bg-gradient-to-b from-primary/20 via-primary to-primary/20"></div>
 

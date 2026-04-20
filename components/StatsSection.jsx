@@ -69,22 +69,22 @@ export default function StatsSection() {
   const stats = [
     {
       icon: <FaRegListAlt size={28} />,
-      value: "2024",
-      label: "Year Established",
+      value: "2006",
+      label: "Journey Started",
     },
     {
       icon: <FaUserFriends size={28} />,
-      value: "1300+",
+      value: "1400+",
       label: "Active Members",
     },
     {
       icon: <FaHardHat size={28} />,
-      value: "200+",
+      value: "362+",
       label: "Plots Delivered",
     },
     {
       icon: <FaChartLine size={28} />,
-      value: "150+",
+      value: "200+",
       label: "Team Members",
     },
   ];
