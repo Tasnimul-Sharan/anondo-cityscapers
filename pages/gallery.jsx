@@ -4,14 +4,14 @@ import GalleryPageSection from "@/components/GalleryPageSection";
 export default function GalleryPage() {
   const meta = {
     title:
-      "Gallery | Anondo Housing Society – Residential Projects in Bangladesh",
+      "Gallery | Anondo Cityscapers – Showcasing Residential Housing Projects and Land Development in Bangladesh",
     description:
-      "Explore the gallery of Anondo Housing Society showcasing our residential housing projects, land development sites, modern infrastructure, green spaces, construction progress, and community facilities across Bangladesh.",
+      "Explore the gallery of Anondo Cityscapers showcasing our residential housing projects, land development sites, modern infrastructure, green spaces, construction progress, and community facilities across Bangladesh.",
     keywords:
-      "Anondo Housing Society gallery, housing project gallery Bangladesh, residential project photos, real estate development gallery, apartment project images Bangladesh, land development photos, housing construction progress",
-    author: "Anondo Housing Society",
-    url: "https://anondohousing.com/gallery",
-    image: "https://anondohousing.com/gallery/gallery-og.jpg",
+      "Anondo Cityscapers gallery, housing project gallery Bangladesh, residential project photos, real estate development gallery, apartment project images Bangladesh, land development photos, housing construction progress",
+    author: "Anondo Cityscapers",
+    url: "https://anondocityscapers.com/gallery",
+    image: "https://anondocityscapers.com/gallery/gallery-og.jpg",
   };
 
   return (

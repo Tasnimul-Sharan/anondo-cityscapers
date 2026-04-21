@@ -1,17 +1,17 @@
+"use client";
 import HeroSection from "@/components/HeroSection";
 import Head from "next/head";
-import NoticePageSection from "@/components/NoticePageSection";
-export default function NoticePage() {
+import PrivacyPolicyPageSection from "@/components/PrivacyPolicyPageSection";
+export default function ProjectLotteryPolicy() {
   const meta = {
-    title:
-      "Notice & Updates | Anondo Housing Society – Housing Project Announcements",
+    title: "Privacy Policy | Anondo Cityscapers – Your Trusted Housing Project in Bangladesh",
     description:
-      "Stay updated with the latest notices, announcements, project updates, and important information from Anondo Housing Society. Get news about housing projects, plot and apartment ownership, booking updates, and official circulars.",
+      "Learn about the privacy policy of Anondo Cityscapers. Understand how we collect, use, and protect your personal information.",
     keywords:
-      "Anondo Housing Society notice, housing project notices Bangladesh, real estate updates Bangladesh, apartment booking notice, plot ownership updates, housing society announcements, Anondo Housing news",
-    author: "Anondo Housing Society",
-    url: "https://anondohousing.com/notice",
-    image: "https://anondohousing.com/notice/notice-og.jpg",
+      "Anondo Cityscapers privacy policy, housing project privacy Bangladesh, personal data protection, residential project policy, housing society data handling",
+    author: "Anondo Cityscapers",
+    url: "https://anondocityscapers.com/privacy-policy",
+    image: "https://anondocityscapers.com/privacy/privacy-og.jpg",
   };
 
   return (
@@ -37,11 +37,11 @@ export default function NoticePage() {
 
       <HeroSection
         hero={{
-          title: "Notice",
-          backgroundImage: "/blogs/blog-bg.jpeg",
+          title: "Privacy Policy",
+          backgroundImage: "/contact-bg.jpeg",
         }}
       />
-      <NoticePageSection />
+      <PrivacyPolicyPageSection />
     </div>
   );
 }

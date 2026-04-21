@@ -6,14 +6,14 @@ import PaymentInfo from "@/components/PaymentInfo";
 export default function PaymentProceduresPage() {
   const meta = {
     title:
-      "Payment Procedures | Anondo Housing Society – Plot & Apartment Payment Guide",
+      "Payment Procedures | Anondo Cityscapers – Guide to Plot and Apartment Payments in Bangladesh",
     description:
-      "Learn about the payment procedures for plots and apartments at Anondo Housing Society. Find detailed guidance on booking payments, installment plans, bank transfers, and secure payment methods for residential ownership in Bangladesh.",
+      "Learn about the payment procedures for plots and apartments at Anondo Cityscapers. Find detailed guidance on booking payments, installment plans, bank transfers, and secure payment methods for residential ownership in Bangladesh.",
     keywords:
-      "Anondo Housing Society payment procedures, housing payment guide Bangladesh, apartment payment steps, plot payment process, installment plans housing Bangladesh, secure payment housing project",
-    author: "Anondo Housing Society",
-    url: "https://anondohousing.com/payment-procedures",
-    image: "https://anondohousing.com/payment/payment-og.jpg",
+      "Anondo Cityscapers payment procedures, housing payment guide Bangladesh, apartment payment steps, plot payment process, installment plans housing Bangladesh, secure payment housing project",
+    author: "Anondo Cityscapers",
+    url: "https://anondocityscapers.com/payment-procedures",
+    image: "https://anondocityscapers.com/payment/payment-og.jpg",
   };
 
   return (

@@ -11,8 +11,8 @@ export default function TermsAndConditionPage() {
     keywords:
       "Anondo Housing Society terms and conditions, housing project rules, apartment booking policies, plot ownership terms, residential project guidelines, housing society regulations Bangladesh",
     author: "Anondo Housing Society",
-    url: "https://anondohousing.com/terms-and-conditions",
-    image: "https://anondohousing.com/terms/terms-og.jpg",
+    url: "https://anondocityscapers.com/terms-and-conditions",
+    image: "https://anondocityscapers.com/terms/terms-og.jpg",
   };
 
   return (

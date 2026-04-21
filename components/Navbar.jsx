@@ -32,7 +32,7 @@ const menuItems = [
     ],
   },
 
-  { name: "Notice", path: "/notice" },
+  { name: "Blogs", path: "/blogs" },
   { name: "NRB", path: "/nrb" },
   {
     name: "Corporate",

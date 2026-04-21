@@ -2,8 +2,8 @@
 import Link from "next/link";
 import { FaRegFilePdf } from "react-icons/fa";
 
-export default function NoticeSection() {
-  const noticeData = [
+export default function BlogsSection() {
+  const blogsData = [
     {
       id: 1,
       title: "শুভেচ্ছা বাণী",
@@ -123,8 +123,8 @@ export default function NoticeSection() {
     },
   ];
 
-  const sortedNoticeData = [...noticeData].sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
+  const sortedblogsData = [...blogsData].sort(
+    (a, b) => new Date(b.date) - new Date(a.date),
   );
 
   return (
@@ -150,7 +150,7 @@ export default function NoticeSection() {
             </thead>
 
             <tbody>
-              {sortedNoticeData.map((item, index) => (
+              {sortedblogsData.map((item, index) => (
                 <tr
                   key={item.slug}
                   className="hover:bg-gray-50 transition border-b"

@@ -8,17 +8,18 @@ import ProjectsSection from "@/components/ProjectsSection";
 import HowToBecomeOwner from "@/components/HowToBecomeOwner";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import FAQSection from "@/components/FAQSection";
+import CoreValuesSection from "@/components/CoreValuesSection";
 export default function AboutPage() {
   const meta = {
     title:
-      "About Us | Anondo Housing Society – Trusted Residential & Community Development in Bangladesh",
+      "About Us | Anondo Cityscapers – Trusted Residential Housing and Community Development in Bangladesh",
     description:
-      "Learn about Anondo Housing Society, a trusted residential housing and community development organization in Bangladesh. Discover our vision, mission, values, leadership, and commitment to secure, modern, and well-planned living environments.",
+      "Learn about Anondo Cityscapers, a trusted residential housing and community development organization in Bangladesh. Discover our vision, mission, values, leadership, and commitment to secure, modern, and well-planned living environments.",
     keywords:
-      "About Anondo Housing Society, housing society Bangladesh, residential community Bangladesh, real estate development Bangladesh, housing project company Bangladesh, trusted housing developer, gated community Bangladesh, modern housing society",
-    author: "Anondo Housing Society",
-    url: "https://anondohousing.com/about",
-    image: "https://anondohousing.com/about/about-og.jpg",
+      "About Anondo Cityscapers, housing society Bangladesh, residential community Bangladesh, real estate development Bangladesh, housing project company Bangladesh, trusted housing developer, gated community Bangladesh, modern housing society",
+    author: "Anondo Cityscapers",
+    url: "https://anondocityscapers.com/about",
+    image: "https://anondocityscapers.com/about/about-og.jpg",
   };
 
   return (
@@ -46,6 +47,7 @@ export default function AboutPage() {
         }}
       />
       <AboutUsSection />
+      <CoreValuesSection />
       <StatsSection />
       <ProjectsSection />
       <HowToBecomeOwner />

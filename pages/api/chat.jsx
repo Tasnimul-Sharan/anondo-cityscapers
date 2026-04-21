@@ -90,7 +90,7 @@ Motto: “Discipline and preparation today ensure security and trust tomorrow.�
 🏫 Training Academy: Anondo Housing Society, Purbachal New Town, Dhaka  
 📞 Phone: +880 1313775333, +880 1313775334
 📧 Email: contact@anondouniversalserviceslimited.com
-🌐 https://anondohousing.com/
+🌐 https://anondocityscapers.com/
 
 If you don’t find the answer in the above content, reply:  
 "Sorry, I don’t have information on this topic."
@@ -111,7 +111,7 @@ If you don’t find the answer in the above content, reply:
             { role: "user", content: message },
           ],
         }),
-      }
+      },
     );
 
     const data = await response.json();

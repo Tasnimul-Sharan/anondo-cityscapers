@@ -8,13 +8,13 @@ const projects = [
     img: "/slider/slider1.jpg",
     title: "Anondo Rosemont Estate",
     desc: "A premium 807-bigha duplex villa township redefining structured luxury living in Bangladesh.",
-    slug: "rosemont-estate",
+    slug: "anondo-rosemont-estate",
   },
   {
     img: "/slider/slider2.jpg",
     title: "Anondo Park City",
     desc: "Smart and sustainable gated community in Purbachal with modern amenities and eco-friendly design.",
-    slug: "park-city",
+    slug: "anondo-parkcity",
   },
   {
     img: "/slider/slider3.jpg",

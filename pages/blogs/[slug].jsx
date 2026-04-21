@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { RiLoader2Fill } from "react-icons/ri";
 import HeroSection from "@/components/HeroSection";
-import { NoticeDetailsData } from "@/data/NoticeDetailsData";
-import NoticeDetails from "@/components/BlogDetails";
+import { blogDetailsData } from "@/data/blogsDetailsData";
+import BlogDetails from "@/components/BlogDetails";
 
 export default function NewsDetailsDataPage() {
   const router = useRouter();
@@ -19,7 +19,7 @@ export default function NewsDetailsDataPage() {
     );
   }
 
-  const { blogDetails } = NoticeDetailsData;
+  const { blogDetails } = blogDetailsData;
 
   const blog = blogDetails.find((item) => item.slug === slug);
 
@@ -34,24 +34,23 @@ export default function NewsDetailsDataPage() {
   }
 
   const meta = {
-    title: `${blog.blogPost.title} | Anondo Housing Society`,
+    title: `${blog.blogPost.title} | Anondo Cityscapers – Latest Announcements and Project Updates in Bangladesh`,
     description:
       blog.blogPost.description ||
-      `Official notice and updates from Anondo Housing Society. Stay informed about community news, housing announcements, events, and important decisions.`,
+      `Official notice and updates from Anondo Cityscapers. Stay informed about community news, housing announcements, events, and important decisions.`,
     keywords: [
-      "Anondo Housing Society",
-      "Anondo Housing notice",
-      "housing society Bangladesh",
+      "Anondo Cityscapers",
+      "Anondo Cityscapers notice",
       "residential community update",
       "senior living Bangladesh",
       "housing announcement",
       ...blog.blogPost.postTags,
     ].join(", "),
-    author: blog.blogPost.author || "Anondo Housing Society",
-    url: `https://anondohousing.com/notice/${slug}`,
+    author: blog.blogPost.author || "Anondo Cityscapers",
+    url: `https://anondocityscapers.com/notice/${slug}`,
     image:
       blog.blogPost.image ||
-      "https://anondohousing.com/assets/og/anondo-housing-notice.jpg",
+      "https://anondocityscapers.com/assets/og/notice-og.jpg",
   };
 
   return (
@@ -78,7 +77,7 @@ export default function NewsDetailsDataPage() {
           backgroundImage: "/blogs/blog-bg.jpeg",
         }}
       />
-      <NoticeDetails blogsData={blog} />
+      <BlogDetails blogsData={blog} />
     </div>
   );
 }

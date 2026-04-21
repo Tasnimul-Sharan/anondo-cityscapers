@@ -1,22 +1,18 @@
-"use client";
-import ContactSection from "@/components/ContactSection";
 import HeroSection from "@/components/HeroSection";
 import Head from "next/head";
-import EventMap from "@/components/EventMap";
-import Navbar from "@/components/Navbar";
-import CareerPageSection from "@/components/CareerPageSection";
-import LotteryPage from "@/components/LotteryPageSection";
-export default function ProjectLotteryPolicy() {
+import NoticePageSection from "@/components/BlogsPageSection";
+import BlogsPageSection from "@/components/BlogsPageSection";
+export default function NoticePage() {
   const meta = {
     title:
-      "Project Lottery Policy | Anondo Housing Society – Housing Project Guidelines",
+      "Blogs & Updates | Anondo Cityscapers – Latest Announcements and Project Updates in Bangladesh",
     description:
-      "Learn about the project lottery policy of Anondo Housing Society. Understand the rules, eligibility criteria, selection process, and official guidelines for plot and apartment allocation in our residential projects across Bangladesh.",
+      "Stay updated with the latest blogs, announcements, project updates, and important information from Anondo Cityscapers. Get news about housing projects, plot and apartment ownership, booking updates, and official circulars.",
     keywords:
-      "Anondo Housing Society lottery policy, housing project lottery Bangladesh, apartment allocation guidelines, plot allocation rules, residential project policy, housing society selection process Bangladesh",
-    author: "Anondo Housing Society",
-    url: "https://anondohousing.com/project-lottery-policy",
-    image: "https://anondohousing.com/lottery/lottery-og.jpg",
+      "Anondo Cityscapers blog, housing project blogs Bangladesh, real estate updates Bangladesh, apartment booking blog, plot ownership blogs, housing society announcements, Anondo Cityscapers news",
+    author: "Anondo Cityscapers",
+    url: "https://anondocityscapers.com/blogs",
+    image: "https://anondocityscapers.com/blogs/blogs-og.jpg",
   };
 
   return (
@@ -42,11 +38,11 @@ export default function ProjectLotteryPolicy() {
 
       <HeroSection
         hero={{
-          title: "Project Lottery Policy",
-          backgroundImage: "/contact-bg.jpeg",
+          title: "Blogs & Updates",
+          backgroundImage: "/blogs/blog-bg.jpeg",
         }}
       />
-      <LotteryPage />
+      <BlogsPageSection />
     </div>
   );
 }

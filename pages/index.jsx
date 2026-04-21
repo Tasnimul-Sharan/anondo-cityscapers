@@ -9,20 +9,20 @@ import PresidentSection from "@/components/PresidentSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import StatsSection from "@/components/StatsSection";
 import homepageData from "@/data/homepageData";
-import NoticeSection from "@/components/NoticeSection";
+import NoticeSection from "@/components/BlogsSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   const meta = {
     title:
-      "Home | Anondo Housing Society - Modern & Secure Residential Community in Bangladesh",
+      "Home | Anondo Cityscapers - Modern & Secure Residential Community in Bangladesh",
     description:
-      "Anondo Housing Society offers a modern, secure, and well-planned residential community in Bangladesh with quality housing, reliable utilities, green spaces, and a peaceful living environment for families and investors.",
+      "Anondo Cityscapers offers a modern, secure, and well-planned residential community in Bangladesh with quality housing, reliable utilities, green spaces, and a peaceful living environment for families and investors.",
     keywords:
-      "Anondo Housing Society, housing society Bangladesh, residential housing project Bangladesh, modern housing society, secure residential area, apartment housing Bangladesh, land development project Bangladesh, gated community Bangladesh, real estate Bangladesh, housing project Dhaka",
-    author: "Anondo Housing Society",
-    url: "https://anondohousing.com",
-    image: "https://anondohousing.com/og/home-og.jpg",
+      "Anondo Cityscapers, housing society Bangladesh, residential housing project Bangladesh, modern housing society, secure residential area, apartment housing Bangladesh, land development project Bangladesh, gated community Bangladesh, real estate Bangladesh, housing project Dhaka",
+    author: "Anondo Cityscapers",
+    url: "https://anondocityscapers.com",
+    image: "https://anondocityscapers.com/og/home-og.jpg",
   };
 
   return (

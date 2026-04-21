@@ -7,14 +7,14 @@ import ContactPageSection from "@/components/ContactPageSection";
 export default function ContactPage() {
   const meta = {
     title:
-      "Contact Us | Anondo Housing Society – Residential Housing in Bangladesh",
+      "Contact Us | Anondo Cityscapers – Inquiries for Residential Housing Projects in Bangladesh",
     description:
-      "Contact Anondo Housing Society for inquiries about residential housing projects, plot or apartment ownership, booking details, site visits, and general information. We are here to help you find secure and modern living solutions in Bangladesh.",
+      "Contact Anondo Cityscapers for inquiries about residential housing projects, plot or apartment ownership, booking details, site visits, and general information. We are here to help you find secure and modern living solutions in Bangladesh.",
     keywords:
-      "Contact Anondo Housing Society, housing contact Bangladesh, real estate contact Bangladesh, apartment booking contact, plot purchase inquiry, housing project contact, residential housing Bangladesh",
-    author: "Anondo Housing Society",
-    url: "https://anondohousing.com/contact",
-    image: "https://anondohousing.com/contact/contact-og.jpg",
+      "Contact Anondo Cityscapers, housing contact Bangladesh, real estate contact Bangladesh, apartment booking contact, plot purchase inquiry, housing project contact, residential housing Bangladesh",
+    author: "Anondo Cityscapers",
+    url: "https://anondocityscapers.com/contact",
+    image: "https://anondocityscapers.com/contact/contact-og.jpg",
   };
 
   return (
