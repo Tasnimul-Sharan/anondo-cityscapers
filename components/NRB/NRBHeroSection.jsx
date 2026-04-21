@@ -2,13 +2,13 @@ export default function NRBHeroSection() {
   return (
     <section className="relative w-full py-24 bg-gradient-to-br from-gray-900 to-black text-white text-center">
       <div className="max-w-4xl mx-auto px-4">
-        <p className="uppercase tracking-widest text-sm text-green-400">
+        <p className="uppercase tracking-widest text-sm text-white/70">
           NRB Exclusive Investment Opportunity
         </p>
 
         <h1 className="text-4xl md:text-5xl font-bold mt-4 leading-tight">
           Own Land in Bangladesh <br />
-          <span className="text-green-400">
+          <span className="text-primary">
             With Instant Legal Registration
           </span>
         </h1>
@@ -19,7 +19,7 @@ export default function NRBHeroSection() {
         </p>
 
         <div className="mt-8 flex justify-center gap-4">
-          <a className="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-xl font-semibold">
+          <a className="bg-primary hover:bg-primary/80 px-6 py-3 rounded-xl font-semibold">
             Book Site Visit
           </a>
 

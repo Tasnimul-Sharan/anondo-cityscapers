@@ -5,12 +5,12 @@ import TermsAndConditions from "@/components/TermsAndConditions";
 export default function TermsAndConditionPage() {
   const meta = {
     title:
-      "Terms & Conditions | Anondo Housing Society – Residential Project Policies",
+      "Terms & Conditions | Anondo Cityscapers – Plot and Apartment Ownership Rules in Bangladesh",
     description:
-      "Read the terms and conditions of Anondo Housing Society regarding plot and apartment ownership, booking rules, payment policies, and usage guidelines. Ensure a clear understanding of your rights and responsibilities within our residential projects in Bangladesh.",
+      "Read the terms and conditions of Anondo Cityscapers regarding plot and apartment ownership, booking rules, payment policies, and usage guidelines. Ensure a clear understanding of your rights and responsibilities within our residential projects in Bangladesh.",
     keywords:
-      "Anondo Housing Society terms and conditions, housing project rules, apartment booking policies, plot ownership terms, residential project guidelines, housing society regulations Bangladesh",
-    author: "Anondo Housing Society",
+      "Anondo Cityscapers terms and conditions, housing project rules, apartment booking policies, plot ownership terms, residential project guidelines, housing society regulations Bangladesh",
+    author: "Anondo Cityscapers",
     url: "https://anondocityscapers.com/terms-and-conditions",
     image: "https://anondocityscapers.com/terms/terms-og.jpg",
   };
@@ -24,7 +24,7 @@ export default function TermsAndConditionPage() {
         <meta name="author" content={meta.author} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href={meta.url} />
-        <meta property="og:site_name" content="Anondo Housing Society" />
+        <meta property="og:site_name" content="Anondo Cityscapers" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={meta.url} />
         <meta property="og:title" content={meta.title} />

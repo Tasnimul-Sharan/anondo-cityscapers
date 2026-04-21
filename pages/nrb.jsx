@@ -1,6 +1,11 @@
 "use client";
+import HeroSection from "@/components/HeroSection";
+import BuyingProcessSection from "@/components/NRB/BuyingProcessSection";
+import DocumentsSection from "@/components/NRB/DocumentsSection";
+import FAQSection from "@/components/NRB/FAQSection";
 import LeadCaptureCard from "@/components/NRB/LeadCaptureCard";
 import NRBHeroSection from "@/components/NRB/NRBHeroSection";
+import NRBSupportSection from "@/components/NRB/NRBSupportSection";
 import NRBTrustSection from "@/components/NRB/NRBTrustSection";
 import StickyCTA from "@/components/NRB/StickyCTA";
 import VideoSection from "@/components/NRB/VideoSection";
@@ -15,7 +20,7 @@ export default function NRBPage() {
     keywords:
       "Anondo Cityscapers, housing society Bangladesh, residential housing project Bangladesh, modern housing society, secure residential area, apartment housing Bangladesh, land development project Bangladesh, gated community Bangladesh, real estate Bangladesh, housing project Dhaka",
     author: "Anondo Cityscapers",
-    url: "https://anondocityscapers.com",
+    url: "https://anondocityscapers.com/nrb",
     image: "https://anondocityscapers.com/og/home-og.jpg",
   };
 
@@ -29,6 +34,7 @@ export default function NRBPage() {
         <meta name="author" content={meta.author} />
         <link rel="canonical" href={meta.url} />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Anondo Cityscapers" />
         <meta property="og:url" content={meta.url} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
@@ -39,11 +45,26 @@ export default function NRBPage() {
         <meta property="twitter:description" content={meta.description} />
         <meta property="twitter:image" content={meta.image} />
       </Head>
-      <NRBHeroSection />
+      {/* <NRBHeroSection />
       <NRBTrustSection />
       <VideoSection />
-      <LeadCaptureCard />
+      <LeadCaptureCard /> */}
       {/* <StickyCTA /> */}
+      <HeroSection
+        hero={{
+          title: "NRB - Non-Resident Bangladeshi",
+          backgroundImage: "/about-bg.jpeg",
+        }}
+      />
+      <NRBHeroSection />
+      <NRBTrustSection />
+      <BuyingProcessSection />
+      <DocumentsSection />
+      <VideoSection />
+      <NRBSupportSection />
+      <FAQSection />
+      <LeadCaptureCard />
+      <StickyCTA />
     </div>
   );
 }

@@ -32,13 +32,13 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-5xl font-bold mb-4">Why Choose Us</h2>
-        <div className="w-20 h-[3px] bg-primary mx-auto mb-6"></div>
 
-        <p className="text-gray-600 max-w-2xl mx-auto mb-16">
+        <p className="text-gray-600 max-w-2xl mx-auto mb-12">
           We deliver more than just land — we create sustainable, future-ready
           communities built on trust and excellence.
         </p>
 
+        <div className="w-20 h-[3px] bg-primary mx-auto mb-6"></div>
         {/* Grid */}
         <div className="grid md:grid-cols-4 gap-8">
           {features.map((item, index) => (

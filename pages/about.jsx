@@ -31,6 +31,7 @@ export default function AboutPage() {
         <meta name="author" content={meta.author} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content={meta.title} />
+        <meta property="og:site_name" content="Anondo Cityscapers" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={meta.url} />

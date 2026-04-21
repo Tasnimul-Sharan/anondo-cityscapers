@@ -25,7 +25,7 @@ export default function PaymentProceduresPage() {
         <meta name="author" content={meta.author} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href={meta.url} />
-        <meta property="og:site_name" content="Anondo Housing Society" />
+        <meta property="og:site_name" content="Anondo Cityscapers" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={meta.url} />
         <meta property="og:title" content={meta.title} />

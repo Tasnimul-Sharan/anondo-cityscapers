@@ -3,7 +3,6 @@ import { useLenis } from "../Hooks/useLenis";
 import Layout from "@/components/Layout";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
-import EventPopup from "@/components/EventPopup";
 function MyApp({ Component, pageProps }) {
   useLenis();
   return (

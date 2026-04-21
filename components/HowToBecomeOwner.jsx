@@ -82,29 +82,6 @@ import { FiPhoneCall } from "react-icons/fi";
 import { FaClipboardList, FaUserCheck, FaMoneyCheckAlt } from "react-icons/fa";
 
 export default function HowToBecomeOwner() {
-  // const steps = [
-  //   {
-  //     icon: <FiPhoneCall />,
-  //     title: "Contact Us",
-  //     desc: "Get in touch with our marketing representative or visit our office directly.",
-  //   },
-  //   {
-  //     icon: <FaClipboardList />,
-  //     title: "Fill Out the Form",
-  //     desc: "Complete the required documents and wait for verification.",
-  //   },
-  //   {
-  //     icon: <FaUserCheck />,
-  //     title: "Membership",
-  //     desc: "After verification, you will be registered and receive project details.",
-  //   },
-  //   {
-  //     icon: <FaMoneyCheckAlt />,
-  //     title: "Complete Payment",
-  //     desc: "Finalize payment and become a proud plot owner.",
-  //   },
-  // ];
-
   const steps = [
     {
       icon: <FiPhoneCall />,

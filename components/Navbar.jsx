@@ -41,7 +41,7 @@ const menuItems = [
       { name: "Career Opportunities", path: "/career-opportunities" },
       { name: "Payment Procedures", path: "/payment-procedures" },
       { name: "Terms And Condition", path: "/terms-and-conditions" },
-      { name: "Project Lottery Policy", path: "/project-lottery-policy" },
+      { name: "Privacy Policy", path: "/privacy-policy" },
     ],
   },
   // { name: "Form", path: "/form" },

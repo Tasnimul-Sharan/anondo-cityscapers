@@ -34,6 +34,7 @@ export default function Home() {
         <meta name="keywords" content={meta.keywords} />
         <meta name="author" content={meta.author} />
         <link rel="canonical" href={meta.url} />
+        <meta property="og:site_name" content="Anondo Cityscapers" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={meta.url} />
         <meta property="og:title" content={meta.title} />
