@@ -116,10 +116,10 @@ const LandingPage = () => {
               variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
             >
               <motion.p
-                className="uppercase tracking-[0.3em] text-sm font-medium text-primary relative inline-flex items-center gap-3 border border-primary rounded-full px-4 py-1 backdrop-blur"
+                className="uppercase tracking-[0.3em] text-sm font-medium text-white relative inline-flex items-center gap-3 border border-white rounded-full px-4 py-1 backdrop-blur"
                 variants={textVariants}
               >
-                <FaHome className="text-primary text-sm" />
+                <FaHome className="text-white text-sm" />
                 {slide.subtitle}
               </motion.p>
 

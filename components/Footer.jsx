@@ -23,11 +23,10 @@ export default function Footer() {
             alt="Logo"
             width={200}
             height={180}
-            className="mb-6"
+            className="mb-4"
           />
-          <p className="text-sm leading-relaxed mb-6">
-            Anondo Housing Society is a project of Anondo Family Welfare
-            Multipurpose Co-operative Society, located in Purbachal new town.
+          <p className="text-base leading-relaxed mb-6">
+            Luxury living redefined.{" "}
           </p>
           {/* Social Icons */}
           <div className="flex items-center gap-4">
@@ -150,7 +149,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* COPYRIGHT */}
       <div className="border-t border-white/20 mt-10 pt-4 text-center text-sm">
         Copyright © {new Date().getFullYear()}{" "}
         <span className="font-semibold text-primary">
@@ -162,7 +160,6 @@ export default function Footer() {
   );
 }
 
-/* Small Reusable Icon Component */
 function SocialIcon({ icon, href }) {
   return (
     <Link

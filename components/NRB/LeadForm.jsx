@@ -1,3 +1,5 @@
+//
+
 "use client";
 
 import { useState } from "react";
@@ -17,6 +19,9 @@ export default function LeadForm() {
     try {
       await fetch("/api/lead", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(formData),
       });
 
@@ -31,26 +36,37 @@ export default function LeadForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <input
-        name="name"
-        placeholder="Your Name"
-        required
-        className="w-full border p-3 rounded-lg"
-      />
+      {/* Name */}
+      <div>
+        <label className="text-sm font-medium text-gray-700">Full Name</label>
+        <input
+          name="name"
+          placeholder="Enter your full name"
+          required
+          className="w-full mt-1 border border-gray-300 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/40"
+        />
+      </div>
 
-      <input
-        name="phone"
-        placeholder="Phone Number"
-        required
-        className="w-full border p-3 rounded-lg"
-      />
+      {/* Phone */}
+      <div>
+        <label className="text-sm font-medium text-gray-700">
+          Phone Number
+        </label>
+        <input
+          name="phone"
+          placeholder="e.g. +880..."
+          required
+          className="w-full mt-1 border border-gray-300 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/40"
+        />
+      </div>
 
+      {/* Submit */}
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-green-500 text-white py-3 rounded-lg"
+        className="w-full bg-primary text-white py-3 rounded-xl font-semibold hover:opacity-90 transition"
       >
-        {loading ? "Submitting..." : "Book Now"}
+        {loading ? "Submitting..." : "Book Site Visit"}
       </button>
     </form>
   );

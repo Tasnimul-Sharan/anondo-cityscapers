@@ -45,11 +45,6 @@ export default function NRBPage() {
         <meta property="twitter:description" content={meta.description} />
         <meta property="twitter:image" content={meta.image} />
       </Head>
-      {/* <NRBHeroSection />
-      <NRBTrustSection />
-      <VideoSection />
-      <LeadCaptureCard /> */}
-      {/* <StickyCTA /> */}
       <HeroSection
         hero={{
           title: "NRB - Non-Resident Bangladeshi",

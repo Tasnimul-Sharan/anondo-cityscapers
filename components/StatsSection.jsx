@@ -99,7 +99,7 @@ export default function StatsSection() {
               className="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300"
             >
               {/* Icon */}
-              <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-primary to-amber-500 text-white flex items-center justify-center">
+              <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-primary text-white flex items-center justify-center">
                 {item.icon}
               </div>
 
