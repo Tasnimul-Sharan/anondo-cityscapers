@@ -49,7 +49,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-16 bg-gradient-to-b from-white to-gray-50">
       {/* Heading */}
       <div className="text-center mb-16 px-4">
         <h2 className="text-4xl font-bold text-gray-900">

@@ -304,10 +304,10 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-start">
         {/* LEFT SIDE - CONTACT CARD */}
-        <div className="bg-gray-50 p-8 rounded-2xl shadow-md border">
+        <div className="bg-primary/5 p-8 rounded-2xl shadow-sm border">
           <h2 className="text-3xl font-bold text-gray-800">Get in Touch</h2>
           <p className="text-gray-500 mt-2">
             Contact us for buying, selling or renting properties.
@@ -315,35 +315,39 @@ export default function ContactSection() {
 
           <div className="mt-8 space-y-6">
             {/* LOCATION */}
-            <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition">
-              <div className="bg-orange-100 p-3 rounded-full">
-                <FaMapMarkerAlt className="text-orange-500" />
+            <div className="flex items-center gap-4 p-4 bg-white rounded-xl border border-primary/20 hover:shadow-md transition">
+              <div className="bg-primary/10 p-3 rounded-full">
+                <FaMapMarkerAlt className="text-primary" />
               </div>
               <div>
                 <p className="text-sm text-gray-400">Location</p>
-                <p className="text-gray-700 font-medium">Dhaka, Bangladesh</p>
+                <p className="text-gray-700 font-medium">
+                  Printers Building, 12-13th Floor, 5 Rajuk Avenue, Motijheel,
+                  1000 Dhaka, Bangladesh
+                </p>
               </div>
             </div>
 
             {/* PHONE */}
-            <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition">
-              <div className="bg-orange-100 p-3 rounded-full">
-                <FaPhoneAlt className="text-orange-500" />
+            <div className="flex items-center gap-4 p-4 bg-white rounded-xl border border-primary/20 hover:shadow-md transition">
+              <div className="bg-primary/10  p-3 rounded-full">
+                <FaPhoneAlt className="text-primary" />
               </div>
               <div>
                 <p className="text-sm text-gray-400">Phone</p>
-                <p className="text-gray-700 font-medium">+880 1234-567890</p>
+                <p className="text-gray-700 font-medium">+880 1331-115500</p>
               </div>
             </div>
-
             {/* EMAIL */}
-            <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition">
-              <div className="bg-orange-100 p-3 rounded-full">
-                <FaEnvelope className="text-orange-500" />
+            <div className="flex items-center gap-4 p-4 bg-white rounded-xl border border-primary/20 hover:shadow-md transition">
+              <div className="bg-primary/10 p-3 rounded-full">
+                <FaEnvelope className="text-primary" />
               </div>
               <div>
                 <p className="text-sm text-gray-400">Email</p>
-                <p className="text-gray-700 font-medium">info@realestate.com</p>
+                <p className="text-gray-700 font-medium">
+                  info@anondocityscapers.com
+                </p>
               </div>
             </div>
           </div>
@@ -352,7 +356,7 @@ export default function ContactSection() {
         {/* RIGHT SIDE - FORM */}
         <form
           onSubmit={onSubmit}
-          className="bg-white p-8 rounded-2xl shadow-lg border space-y-5"
+          className="bg-white p-8 rounded-2xl shadow-sm border space-y-5"
         >
           <h3 className="text-2xl font-semibold text-gray-800">
             Request a Property
@@ -362,7 +366,7 @@ export default function ContactSection() {
             type="text"
             name="name"
             placeholder="Full Name *"
-            className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-orange-400 outline-none"
+            className="w-full p-3 border rounded-lg outline-none"
             required
           />
 
@@ -370,7 +374,7 @@ export default function ContactSection() {
             type="tel"
             name="phone"
             placeholder="Phone Number *"
-            className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-orange-400 outline-none"
+            className="w-full p-3 border rounded-lg outline-none"
             required
           />
 
@@ -378,12 +382,12 @@ export default function ContactSection() {
             type="email"
             name="email"
             placeholder="Email Address"
-            className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-orange-400 outline-none"
+            className="w-full p-3 border rounded-lg outline-none"
           />
 
           {/* PROPERTY TYPE */}
           <div className="flex items-center border rounded-lg px-3">
-            <FaHome className="text-orange-500" />
+            <FaHome className="text-primary" />
             <select
               name="property_type"
               className="w-full p-3 focus:outline-none"
@@ -399,7 +403,7 @@ export default function ContactSection() {
 
           {/* BUDGET */}
           <div className="flex items-center border rounded-lg px-3">
-            <FaDollarSign className="text-orange-500" />
+            <FaDollarSign className="text-primary" />
             <select name="budget" className="w-full p-3 focus:outline-none">
               <option value="">Budget Range</option>
               <option>Below 50 Lakh</option>
@@ -412,12 +416,12 @@ export default function ContactSection() {
           <textarea
             name="message"
             placeholder="Additional Details..."
-            className="w-full p-3 h-28 border rounded-lg focus:ring-2 focus:ring-orange-400 outline-none resize-none"
+            className="w-full p-3 h-28 border rounded-lg outline-none"
           />
 
           <button
             type="submit"
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-semibold transition"
+            className="w-full bg-primary hover:bg-primary/80 text-white py-3 rounded-lg font-semibold transition"
           >
             Submit Request
           </button>

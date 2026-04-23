@@ -213,15 +213,16 @@ export default function ChatBot() {
         }
         @keyframes ripple {
           0% {
-            box-shadow: 0 0 0 0 rgba(249, 155, 36, 0.6);
+            box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); /* green */
           }
           70% {
-            box-shadow: 0 0 0 25px rgba(249, 155, 36, 0);
+            box-shadow: 0 0 0 25px rgba(34, 197, 94, 0); /* fade */
           }
           100% {
-            box-shadow: 0 0 0 0 rgba(249, 155, 36, 0);
+            box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
           }
         }
+
         .animate-ripple {
           animation: ripple 2s infinite ease-out;
         }

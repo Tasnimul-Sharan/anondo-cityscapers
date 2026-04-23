@@ -162,7 +162,7 @@ const LandingPage = () => {
 
 const PrevArrow = ({ onClick }) => (
   <div
-    className="absolute z-20 top-1/2 left-6 -translate-y-1/2 border-2 border-primary hover:bg-primary text-white p-4 rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-all transform duration-1000"
+    className="absolute z-20 top-1/2 left-6 -translate-y-1/2 border-2 bg-primary border-primary hover:bg-secondary hover:border-transparent text-white p-4 rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-all transform duration-1000"
     onClick={onClick}
   >
     <FaArrowLeft />
@@ -171,7 +171,7 @@ const PrevArrow = ({ onClick }) => (
 
 const NextArrow = ({ onClick }) => (
   <div
-    className="absolute z-20 top-1/2 right-6 -translate-y-1/2 border-2 border-primary hover:bg-primary text-white p-4 rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-all transform duration-1000"
+    className="absolute z-20 top-1/2 right-6 -translate-y-1/2 border-2 bg-primary border-primary hover:bg-secondary hover:border-transparent text-white p-4 rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-all transform duration-1000"
     onClick={onClick}
   >
     <FaArrowRight />
