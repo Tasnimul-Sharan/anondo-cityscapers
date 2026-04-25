@@ -1,167 +1,169 @@
-"use client";
+// "use client";
 
-import { motion } from "framer-motion";
+import MasterplanHighlight from "@/components/AnondoRosemont/MasterplanHighlight";
 
-const Section = ({ title, subtitle, children }) => (
-  <section className="py-24 px-6 md:px-16 max-w-7xl mx-auto">
-    <div className="mb-10">
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900">{title}</h2>
-      {subtitle && <p className="text-gray-500 mt-3 text-lg">{subtitle}</p>}
-    </div>
-    <div className="text-gray-600 text-lg leading-relaxed space-y-4">
-      {children}
-    </div>
-  </section>
-);
+// import { motion } from "framer-motion";
 
-export default function RosemontEstate() {
-  return (
-    <div className="bg-white text-gray-900">
-      {/* HERO */}
-      <section className="h-screen bg-[url('https://images.unsplash.com/photo-1505691938895-1758d7feb511')] bg-cover bg-center relative">
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
-          <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 tracking-wide">
-            ANONDO ROSEMONT ESTATE
-          </h1>
-          <p className="text-2xl text-gray-200 mb-2">
-            Where Elegance Becomes Heritage
-          </p>
-          <p className="italic text-gray-300 mb-8">
-            Elegantia in Aeternum – Elegance Forever
-          </p>
-          <div className="flex gap-4 flex-wrap justify-center">
-            <button className="px-8 py-3 bg-white text-black rounded-full font-semibold">
-              Explore Estate
-            </button>
-            <button className="px-8 py-3 border border-white text-white rounded-full">
-              Master Plan
-            </button>
-          </div>
-        </div>
-      </section>
+// const Section = ({ title, subtitle, children }) => (
+//   <section className="py-24 px-6 md:px-16 max-w-7xl mx-auto">
+//     <div className="mb-10">
+//       <h2 className="text-4xl md:text-5xl font-bold text-gray-900">{title}</h2>
+//       {subtitle && <p className="text-gray-500 mt-3 text-lg">{subtitle}</p>}
+//     </div>
+//     <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+//       {children}
+//     </div>
+//   </section>
+// );
 
-      {/* INTRO */}
-      <Section title="A Timeless Estate" subtitle="European Inspired Living">
-        <p>
-          Anondo Rosemont Estate is a premium European-inspired duplex villa
-          community located in Ulukhola near Purbachal New Town. Spread across
-          807 bigha, it blends architecture, landscape, and lifestyle into a
-          legacy-driven residential environment.
-        </p>
-      </Section>
+// export default function RosemontEstate() {
+//   return (
+//     <div className="bg-white text-gray-900">
+//       {/* HERO */}
+//       <section className="h-screen bg-[url('https://images.unsplash.com/photo-1505691938895-1758d7feb511')] bg-cover bg-center relative">
+//         <div className="absolute inset-0 bg-black/60" />
+//         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+//           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 tracking-wide">
+//             ANONDO ROSEMONT ESTATE
+//           </h1>
+//           <p className="text-2xl text-gray-200 mb-2">
+//             Where Elegance Becomes Heritage
+//           </p>
+//           <p className="italic text-gray-300 mb-8">
+//             Elegantia in Aeternum – Elegance Forever
+//           </p>
+//           <div className="flex gap-4 flex-wrap justify-center">
+//             <button className="px-8 py-3 bg-white text-black rounded-full font-semibold">
+//               Explore Estate
+//             </button>
+//             <button className="px-8 py-3 border border-white text-white rounded-full">
+//               Master Plan
+//             </button>
+//           </div>
+//         </div>
+//       </section>
 
-      {/* HIGHLIGHTS */}
-      <section className="bg-gray-50">
-        <Section title="Key Highlights">
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              "807 Bigha Estate",
-              "Duplex Villas",
-              "12 Bigha Park",
-              "12 Bigha Lake",
-              "Sports Complex",
-              "Community Farming",
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                whileHover={{ y: -8 }}
-                className="p-6 bg-white rounded-2xl shadow"
-              >
-                <h3 className="text-xl font-semibold">{item}</h3>
-              </motion.div>
-            ))}
-          </div>
-        </Section>
-      </section>
+//       {/* INTRO */}
+//       <Section title="A Timeless Estate" subtitle="European Inspired Living">
+//         <p>
+//           Anondo Rosemont Estate is a premium European-inspired duplex villa
+//           community located in Ulukhola near Purbachal New Town. Spread across
+//           807 bigha, it blends architecture, landscape, and lifestyle into a
+//           legacy-driven residential environment.
+//         </p>
+//       </Section>
 
-      {/* VILLAS */}
-      <Section title="Elegant Duplex Villas">
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            { name: "5 Katha Villas", size: "2750 sq ft" },
-            { name: "10 Katha Villas", size: "4500 sq ft" },
-            { name: "20 Katha Estates", size: "7200 sq ft" },
-          ].map((villa, i) => (
-            <motion.div
-              key={i}
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-gray-50 rounded-2xl shadow-lg"
-            >
-              <h3 className="text-2xl font-semibold mb-2">{villa.name}</h3>
-              <p>{villa.size}</p>
-            </motion.div>
-          ))}
-        </div>
-      </Section>
+//       {/* HIGHLIGHTS */}
+//       <section className="bg-gray-50">
+//         <Section title="Key Highlights">
+//           <div className="grid md:grid-cols-3 gap-8">
+//             {[
+//               "807 Bigha Estate",
+//               "Duplex Villas",
+//               "12 Bigha Park",
+//               "12 Bigha Lake",
+//               "Sports Complex",
+//               "Community Farming",
+//             ].map((item, i) => (
+//               <motion.div
+//                 key={i}
+//                 whileHover={{ y: -8 }}
+//                 className="p-6 bg-white rounded-2xl shadow"
+//               >
+//                 <h3 className="text-xl font-semibold">{item}</h3>
+//               </motion.div>
+//             ))}
+//           </div>
+//         </Section>
+//       </section>
 
-      {/* MASTER PLAN */}
-      <section className="bg-gray-50">
-        <Section title="Master Plan">
-          <ul className="list-disc pl-6 space-y-2">
-            <li>807 Bigha Development</li>
-            <li>60 ft Grand Avenue</li>
-            <li>900+ Residential Plots</li>
-            <li>Elevated Land Design</li>
-          </ul>
-        </Section>
-      </section>
+//       {/* VILLAS */}
+//       <Section title="Elegant Duplex Villas">
+//         <div className="grid md:grid-cols-3 gap-8">
+//           {[
+//             { name: "5 Katha Villas", size: "2750 sq ft" },
+//             { name: "10 Katha Villas", size: "4500 sq ft" },
+//             { name: "20 Katha Estates", size: "7200 sq ft" },
+//           ].map((villa, i) => (
+//             <motion.div
+//               key={i}
+//               whileHover={{ scale: 1.03 }}
+//               className="p-6 bg-gray-50 rounded-2xl shadow-lg"
+//             >
+//               <h3 className="text-2xl font-semibold mb-2">{villa.name}</h3>
+//               <p>{villa.size}</p>
+//             </motion.div>
+//           ))}
+//         </div>
+//       </Section>
 
-      {/* LIFESTYLE */}
-      <Section title="Lifestyle & Amenities">
-        <ul className="list-disc pl-6 space-y-2">
-          <li>Grand Sports Complex</li>
-          <li>12 Bigha Central Park</li>
-          <li>Scenic Estate Lake</li>
-          <li>Luxury Clubhouse</li>
-        </ul>
-      </Section>
+//       {/* MASTER PLAN */}
+//       <section className="bg-gray-50">
+//         <Section title="Master Plan">
+//           <ul className="list-disc pl-6 space-y-2">
+//             <li>807 Bigha Development</li>
+//             <li>60 ft Grand Avenue</li>
+//             <li>900+ Residential Plots</li>
+//             <li>Elevated Land Design</li>
+//           </ul>
+//         </Section>
+//       </section>
 
-      {/* COMMUNITY */}
-      <section className="bg-gray-50">
-        <Section title="Community Living">
-          <ul className="list-disc pl-6 space-y-2">
-            <li>School & College</li>
-            <li>Healthcare Facilities</li>
-            <li>Retail & Commercial Zones</li>
-            <li>Religious Centers</li>
-          </ul>
-        </Section>
-      </section>
+//       {/* LIFESTYLE */}
+//       <Section title="Lifestyle & Amenities">
+//         <ul className="list-disc pl-6 space-y-2">
+//           <li>Grand Sports Complex</li>
+//           <li>12 Bigha Central Park</li>
+//           <li>Scenic Estate Lake</li>
+//           <li>Luxury Clubhouse</li>
+//         </ul>
+//       </Section>
 
-      {/* LOCATION */}
-      <Section title="Strategic Location">
-        <p>
-          Located in Ulukhola near Purbachal New Town, offering connectivity,
-          serenity, and long-term value.
-        </p>
-      </Section>
+//       {/* COMMUNITY */}
+//       <section className="bg-gray-50">
+//         <Section title="Community Living">
+//           <ul className="list-disc pl-6 space-y-2">
+//             <li>School & College</li>
+//             <li>Healthcare Facilities</li>
+//             <li>Retail & Commercial Zones</li>
+//             <li>Religious Centers</li>
+//           </ul>
+//         </Section>
+//       </section>
 
-      {/* INVESTMENT */}
-      <section className="bg-gray-50">
-        <Section title="Investment Opportunity">
-          <p>
-            A secure and future-ready investment with high appreciation
-            potential, ideal for NRBs and long-term investors.
-          </p>
-        </Section>
-      </section>
+//       {/* LOCATION */}
+//       <Section title="Strategic Location">
+//         <p>
+//           Located in Ulukhola near Purbachal New Town, offering connectivity,
+//           serenity, and long-term value.
+//         </p>
+//       </Section>
 
-      {/* CTA */}
-      <section className="py-20 bg-black text-white text-center">
-        <h2 className="text-4xl font-bold mb-4">Begin Your Legacy Today</h2>
-        <button className="bg-white text-black px-8 py-3 rounded-full font-semibold">
-          Book a Visit
-        </button>
-      </section>
+//       {/* INVESTMENT */}
+//       <section className="bg-gray-50">
+//         <Section title="Investment Opportunity">
+//           <p>
+//             A secure and future-ready investment with high appreciation
+//             potential, ideal for NRBs and long-term investors.
+//           </p>
+//         </Section>
+//       </section>
 
-      {/* FOOTER */}
-      <footer className="py-10 text-center text-gray-500">
-        Anondo Rosemont Estate — Where Elegance Becomes Heritage
-      </footer>
-    </div>
-  );
-}
+//       {/* CTA */}
+//       <section className="py-20 bg-black text-white text-center">
+//         <h2 className="text-4xl font-bold mb-4">Begin Your Legacy Today</h2>
+//         <button className="bg-white text-black px-8 py-3 rounded-full font-semibold">
+//           Book a Visit
+//         </button>
+//       </section>
+
+//       {/* FOOTER */}
+//       <footer className="py-10 text-center text-gray-500">
+//         Anondo Rosemont Estate — Where Elegance Becomes Heritage
+//       </footer>
+//     </div>
+//   );
+// }
 
 // "use client";
 
@@ -341,3 +343,24 @@ export default function RosemontEstate() {
 //     </div>
 //   );
 // }
+
+// import Hero from "@/components/rosemont/Hero";
+// import Intro from "@/components/rosemont/Intro";
+// import Highlights from "@/components/rosemont/Highlights";
+// import Villas from "@/components/rosemont/Villas";
+// import Sustainability from "@/components/rosemont/Sustainability";
+// import CTA from "@/components/rosemont/CTA";
+
+export default function RosemontEstate() {
+  return (
+    <div className="bg-white text-gray-900">
+      <MasterplanHighlight />
+      {/* <Hero />
+      <Intro />
+      <Highlights />
+      <Villas />
+      <Sustainability />
+      <CTA /> */}
+    </div>
+  );
+}

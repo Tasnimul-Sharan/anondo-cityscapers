@@ -58,8 +58,6 @@ export default function AboutUsSection() {
             test of time.
           </p>
         </div>
-
-          {/* Vision Mission Process Cards */}
        
         </div>
     </section>
