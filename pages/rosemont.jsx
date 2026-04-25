@@ -1,5 +1,6 @@
 // "use client";
 
+import HeroLuxury from "@/components/AnondoRosemont/HeroLuxury";
 import MasterplanHighlight from "@/components/AnondoRosemont/MasterplanHighlight";
 
 // import { motion } from "framer-motion";
@@ -354,6 +355,7 @@ import MasterplanHighlight from "@/components/AnondoRosemont/MasterplanHighlight
 export default function RosemontEstate() {
   return (
     <div className="bg-white text-gray-900">
+      <HeroLuxury />
       <MasterplanHighlight />
       {/* <Hero />
       <Intro />
