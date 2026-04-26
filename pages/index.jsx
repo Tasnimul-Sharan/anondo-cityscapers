@@ -5,10 +5,8 @@ import ContactSection from "@/components/ContactSection";
 import FAQSection from "@/components/FAQSection";
 import HowToBecomeOwner from "@/components/HowToBecomeOwner";
 import LandingPage from "@/components/LandingPage";
-import PresidentSection from "@/components/PresidentSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import StatsSection from "@/components/StatsSection";
-import homepageData from "@/data/homepageData";
 import NoticeSection from "@/components/BlogsSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 
