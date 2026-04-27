@@ -180,33 +180,33 @@ export const communityFacilities = [
   },
 ];
 
-export const locationAdvantages = [
-  "Strategic location in Ulukhola near Purbachal New Town",
-  "Close proximity to the Purbachal development corridor",
-  "Natural river environment along the Turag River",
-  "Peaceful residential atmosphere with urban accessibility",
-  "Near major infrastructure development projects",
-  "One block uniquely positioned on a river island",
-  "Adjacent to Anondo Baari Senior Citizens Wellness Center",
-];
+// export const locationAdvantages = [
+//   "Strategic location in Ulukhola near Purbachal New Town",
+//   "Close proximity to the Purbachal development corridor",
+//   "Natural river environment along the Turag River",
+//   "Peaceful residential atmosphere with urban accessibility",
+//   "Near major infrastructure development projects",
+//   "One block uniquely positioned on a river island",
+//   "Adjacent to Anondo Baari Senior Citizens Wellness Center",
+// ];
 
-export const investmentBenefits = [
-  "Land ownership combined with developer-built villa construction",
-  "Large-scale master planning over 807 bigha",
-  "Low-density villa community design",
-  "Comprehensive lifestyle and community facilities",
-  "Secure gated environment with CCTV surveillance",
-  "Strong appreciation potential near the Purbachal growth corridor",
-  "A ready-built, low-complexity property option for NRB investors",
-];
+// export const investmentBenefits = [
+//   "Land ownership combined with developer-built villa construction",
+//   "Large-scale master planning over 807 bigha",
+//   "Low-density villa community design",
+//   "Comprehensive lifestyle and community facilities",
+//   "Secure gated environment with CCTV surveillance",
+//   "Strong appreciation potential near the Purbachal growth corridor",
+//   "A ready-built, low-complexity property option for NRB investors",
+// ];
 
-export const developerHighlights = [
-  "Visionary developer focused on sustainable community creation",
-  "Structured land development and residential planning experience",
-  "Community-centered development philosophy",
-  "Adjacent Anondo Baari Senior Citizens Wellness Center",
-  "Long-term commitment to infrastructure, quality, and livability",
-];
+// export const developerHighlights = [
+//   "Visionary developer focused on sustainable community creation",
+//   "Structured land development and residential planning experience",
+//   "Community-centered development philosophy",
+//   "Adjacent Anondo Baari Senior Citizens Wellness Center",
+//   "Long-term commitment to infrastructure, quality, and livability",
+// ];
 
 export const galleryItems = [
   { title: "Master Plan", image: estateImage },
@@ -255,7 +255,7 @@ export const storySections = [
       "Located in the tranquil surroundings of Ulukhola near Purbachal, Rosemont Estate blends natural beauty with structured planning through wide avenues, lakefront landscapes, sports facilities, community farming spaces, and elegant duplex homes.",
       "Under the guiding principle Elegantia in Aeternum - Elegance Forever, this estate is dedicated to families who believe that a home is not merely a structure but a foundation of heritage.",
     ],
-    signature: "Gazi Md. Mozammel Hoque, Chairman, Anondo Real Estate Group",
+    signature: "Gazi Md. Mozammel Hoque, Chairman, Anondo Rosemont Estate",
   },
   {
     title: "Founder's Vision",
@@ -386,7 +386,7 @@ export const storySections = [
   {
     title: "Developer Credibility",
     paragraphs: [
-      "Anondo Rosemont Estate is developed under the banner of Anondo Real Estate Group, an organization with a strong vision for community-oriented development.",
+      "Anondo Rosemont Estate is developed under the banner of Anondo Rosemont Estate, an organization with a strong vision for community-oriented development.",
       "The nearby Anondo Baari Senior Citizens Wellness Center reflects the group's broader philosophy of building communities rather than simply selling properties.",
     ],
   },

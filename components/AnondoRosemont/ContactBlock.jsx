@@ -12,12 +12,12 @@ export function ContactBlock() {
               Become Part of Rosemont
             </h2>
             <p className="mt-6 leading-8 text-white/72">
-              Contact Anondo Real Estate Group for plot availability, villa
+              Contact Anondo Rosemont Estate for plot availability, villa
               specifications, booking procedures, brochure requests, and site
               visit scheduling.
             </p>
             <p className="mt-6 leading-8 text-white/72">
-              Office Address: Anondo Real Estate Group
+              Office Address: Anondo Rosemont Estate
               <br />
               Phone: +880 0000 000000
               <br />
