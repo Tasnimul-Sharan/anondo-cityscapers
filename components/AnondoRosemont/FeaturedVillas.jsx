@@ -6,7 +6,7 @@ const villas = [
   {
     name: "The Classic",
     size: "5 Katha Duplex",
-    image: "/10 katha villa/MAHI Final.jpeg",
+    image: "/5 katha villa/5-katha.jpg",
     specs: [
       "Total: 2,750 sft",
       "Ground: 1,350 sft",
@@ -19,7 +19,7 @@ const villas = [
   {
     name: "The Premium",
     size: "10 Katha Duplex",
-    image: "/10 katha villa/MAHI Final.jpeg",
+    image: "/10 katha villa/10-katha.jpg",
     specs: [
       "Total: 4,500 sft",
       "40 ft avenue frontage",
@@ -31,7 +31,7 @@ const villas = [
   {
     name: "The Estate",
     size: "20 Katha Villa",
-    image: "/10 katha villa/MAHI Final.jpeg",
+    image: "/20 katha villa/20-katha.jpg",
     specs: [
       "Total: 7,200 sft",
       "Triplex option available",
@@ -97,7 +97,7 @@ export default function FeaturedVillas() {
                     {villa.name}
                   </h3>
 
-                  <p className="mt-1 text-lg font-medium text-white/86">
+                  <p className="mt-1 text-lg font-medium text-white/70">
                     {villa.size}
                   </p>
                 </div>

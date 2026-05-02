@@ -392,7 +392,7 @@ export function MainMasterPlanSection() {
               <span className="h-px w-10 bg-current" />
               Main Master Plan
             </p>
-            <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-5xl">
+            <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#3e0607] md:text-5xl">
               807 Bigha Planned Estate with Roads, Villas, Nature, and Community
               Scale
             </h2>
@@ -575,8 +575,8 @@ export function MainMasterPlanSection() {
         </div>
 
         <div className="mt-12 grid overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-2xl shadow-[#4a0a0a]/10 lg:grid-cols-[0.76fr_1.24fr]">
-          <div className="bg-[#4a0a0a] p-7 text-white md:p-10 lg:p-12">
-            <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-white/55">
+          <div className="bg-[#5a0c0c] p-7 text-white md:p-10 lg:p-12">
+            <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-white/60">
               Architectural Harmony Guidelines
             </p>
             <h3 className="mt-5 text-3xl font-semibold leading-tight md:text-5xl">

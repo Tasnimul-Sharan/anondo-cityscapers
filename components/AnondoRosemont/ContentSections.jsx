@@ -1,52 +1,3 @@
-// import { storySections } from "@/data/rosemontSite";
-
-// export function ContentSections( ) {
-//   return (
-//     <div className="grid gap-7">
-//       {storySections.map((section) => (
-//         <section
-//           key={section.title}
-//           className="group border border-[#4a0a0a]/15 bg-white/75 p-7 shadow-xl shadow-[#4a0a0a]/10 md:p-10 lg:p-12"
-//         >
-//           <span className="mb-8 block h-px w-20 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 group-hover:scale-x-100" />
-
-//           <h2 className="text-2xl font-semibold leading-tight text-[#4a0a0a] md:text-4xl">
-//             {section.title}
-//           </h2>
-
-//           <div className="mt-6 grid gap-4">
-//             {section.paragraphs.map((paragraph) => (
-//               <p key={paragraph} className="text-base leading-8 text-[#6b5d57]">
-//                 {paragraph}
-//               </p>
-//             ))}
-//           </div>
-
-//           {section.bullets && (
-//             <ul className="mt-6 grid gap-3">
-//               {section.bullets.map((bullet) => (
-//                 <li
-//                   key={bullet}
-//                   className="flex gap-3 leading-8 text-[#6b5d57]"
-//                 >
-//                   <span className="mt-[13px] h-1.5 w-1.5 shrink-0 bg-[#4a0a0a]" />
-//                   <span>{bullet}</span>
-//                 </li>
-//               ))}
-//             </ul>
-//           )}
-
-//           {section.signature && (
-//             <p className="mt-6 font-extrabold text-[#4a0a0a]">
-//               {section.signature}
-//             </p>
-//           )}
-//         </section>
-//       ))}
-//     </div>
-//   );
-// }
-
 import Image from "next/image";
 import { storySections } from "@/data/rosemontSite";
 
@@ -110,7 +61,7 @@ export function ContentSections({
       <div className="relative border-b border-[#4a0a0a]/15 py-16 md:py-24 lg:py-32">
         <div className="absolute right-0 top-0 hidden h-full w-[30%] bg-[#4a0a0a] lg:block" />
 
-        <div className="relative z-10 mx-auto max-w-[1200px] px-5">
+        <div className="relative z-10 mx-auto max-w-[1400px] px-5">
           <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
             <div>
               <p className="mb-5 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.26em] text-[#4a0a0a]">
@@ -166,7 +117,7 @@ export function ContentSections({
 
       {intro && identity && (
         <div className="py-16 md:py-24">
-          <div className="mx-auto grid max-w-[1200px] gap-7 px-5 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="mx-auto grid max-w-[1400px] gap-7 px-5 lg:grid-cols-[1.05fr_0.95fr]">
             {[intro, identity].map((section, index) => (
               <article
                 key={section.title}

@@ -15,13 +15,13 @@ const lifestyleHighlights = [
 export default function LifestyleExperience() {
   return (
     <section className="relative overflow-hidden bg-[#f8f3ec] text-[#241818]">
-      <div className="absolute inset-y-0 left-0 hidden w-[34%] bg-[#4a0a0a] lg:block" />
+      <div className="absolute inset-y-0 left-0 hidden w-[34%] bg-[#5a0c0c] lg:block" />
 
       <div className="custom-container relative z-10 mx-auto py-16 md:py-24 lg:py-32">
         <div className="grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
-          <div className="relative min-h-[560px] overflow-hidden border border-white/15 bg-[#4a0a0a] shadow-2xl shadow-black/25">
+          <div className="relative min-h-[560px] overflow-hidden border border-white/15 bg-[#5a0c0c] shadow-2xl shadow-black/25">
             <Image
-              src="/10 katha villa/MAHI Final.jpeg"
+              src="/other/lifestyle-experience.png"
               alt="Anondo Rosemont Estate lifestyle"
               fill
               sizes="(max-width: 1024px) 100vw, 46vw"
