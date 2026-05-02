@@ -26,13 +26,13 @@ export default function ResidentialComponentsPage() {
   return (
     <section className="bg-[#f8f3ec] py-16 text-[#241818] md:py-24 lg:py-32">
       <div className="mx-auto max-w-[1400px] px-5">
-        <div className="mb-12 grid gap-8 border-b border-[#380a0a]/15 pb-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+        <div className="mb-12 grid gap-8 border-b border-[#4a0a0a]/15 pb-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
-            <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]">
+            <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]">
               <span className="h-px w-10 bg-current" />
               Residential Components
             </p>
-            <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#380a0a] md:text-5xl">
+            <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-5xl">
               Complete Villa Residences with Estate-Level Detail
             </h2>
           </div>
@@ -48,16 +48,16 @@ export default function ResidentialComponentsPage() {
           {residentialComponents.map((item, index) => (
             <article
               key={item.title}
-              className={`group border border-[#380a0a]/15 p-7 shadow-xl shadow-[#380a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#380a0a]/18 ${
+              className={`group border border-[#4a0a0a]/15 p-7 shadow-xl shadow-[#4a0a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#4a0a0a]/18 ${
                 index === 0
-                  ? "bg-[#380a0a] text-white lg:col-span-2"
+                  ? "bg-[#4a0a0a] text-white lg:col-span-2"
                   : "bg-white/80 text-[#241818]"
               }`}
             >
               <div className="mb-8 flex items-center justify-between gap-6">
                 <p
                   className={`text-xs font-extrabold uppercase tracking-[0.22em] ${
-                    index === 0 ? "text-white/55" : "text-[#380a0a]/55"
+                    index === 0 ? "text-white/55" : "text-[#4a0a0a]/55"
                   }`}
                 >
                   {item.eyebrow}
@@ -67,7 +67,7 @@ export default function ResidentialComponentsPage() {
 
               <h3
                 className={`text-2xl font-semibold leading-tight md:text-3xl ${
-                  index === 0 ? "text-white" : "text-[#380a0a]"
+                  index === 0 ? "text-white" : "text-[#4a0a0a]"
                 }`}
               >
                 {item.title}
@@ -91,7 +91,7 @@ export default function ResidentialComponentsPage() {
                   >
                     <span
                       className={`mt-[10px] h-1.5 w-1.5 shrink-0 ${
-                        index === 0 ? "bg-white" : "bg-[#380a0a]"
+                        index === 0 ? "bg-white" : "bg-[#4a0a0a]"
                       }`}
                     />
                     <span>{point}</span>

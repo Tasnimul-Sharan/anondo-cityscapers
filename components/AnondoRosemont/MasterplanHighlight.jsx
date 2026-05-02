@@ -135,7 +135,7 @@ const stats = [
 
 export default function MasterplanHighlight() {
   return (
-    <section className="relative w-full overflow-hidden bg-[#380a0a]">
+    <section className="relative w-full overflow-hidden bg-[#4a0a0a]">
       <div className="absolute inset-0">
         <Image
           src="/10 katha villa/MAHI Final.jpeg"
@@ -145,22 +145,22 @@ export default function MasterplanHighlight() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-[#380a0a]/50" />
+        <div className="absolute inset-0 bg-[#4a0a0a]/50" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(56,10,10,0.78)_0%,rgba(56,10,10,0.52)_42%,rgba(56,10,10,0.18)_100%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#380a0a] to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#4a0a0a] to-transparent" />
       </div>
 
       <div className="relative z-10 custom-container mx-auto py-16 md:py-24 lg:py-32">
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
           <div className="relative overflow-hidden border border-white/15 bg-[#f8f3ec]/95 p-7 shadow-2xl shadow-black/30 backdrop-blur-sm sm:p-10 md:p-14">
-            <div className="absolute right-0 top-0 h-28 w-28 border-b border-l border-[#380a0a]/25" />
+            <div className="absolute right-0 top-0 h-28 w-28 border-b border-l border-[#4a0a0a]/25" />
 
-            <p className="mb-4 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-[#380a0a]">
-              <span className="h-px w-10 bg-[#380a0a]" />
+            <p className="mb-4 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-[#4a0a0a]">
+              <span className="h-px w-10 bg-[#4a0a0a]" />
               Build Your Dream
             </p>
 
-            <h2 className="mb-6 max-w-xl text-3xl font-bold leading-tight text-[#380a0a] md:text-5xl">
+            <h2 className="mb-6 max-w-xl text-3xl font-bold leading-tight text-[#4a0a0a] md:text-5xl">
               A Landmark Villa Township in the Making
             </h2>
 
@@ -183,13 +183,13 @@ export default function MasterplanHighlight() {
               planning and uncompromised standards.
             </p>
 
-            <button className="group inline-flex items-center gap-3 bg-[#380a0a] px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:bg-white hover:text-[#380a0a]">
+            <button className="group inline-flex items-center gap-3 bg-[#4a0a0a] px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:bg-white hover:text-[#4a0a0a]">
               Explore The Masterplan
-              <span className="h-px w-12 origin-left scale-x-[0.35] bg-white transition-[transform,background-color] duration-700 ease-out group-hover:scale-x-100 group-hover:bg-[#380a0a]" />
+              <span className="h-px w-12 origin-left scale-x-[0.35] bg-white transition-[transform,background-color] duration-700 ease-out group-hover:scale-x-100 group-hover:bg-[#4a0a0a]" />
             </button>
           </div>
 
-          <div className="grid overflow-hidden border border-white/15 bg-[#380a0a]/45 backdrop-blur-md sm:grid-cols-2">
+          <div className="grid overflow-hidden border border-white/15 bg-[#4a0a0a]/45 backdrop-blur-md sm:grid-cols-2">
             {stats.map((item) => (
               <div
                 key={item.label}

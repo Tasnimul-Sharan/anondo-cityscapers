@@ -45,25 +45,25 @@ const villas = [
 export default function FeaturedVillas() {
   return (
     <section className="relative overflow-hidden bg-[#f8f3ec] py-16 text-[#241818] md:py-24 lg:py-32">
-      <div className="absolute inset-x-0 top-0 h-px bg-[#380a0a]/20" />
-      <div className="absolute right-0 top-0 hidden h-full w-[28%] bg-[#380a0a] lg:block" />
+      <div className="absolute inset-x-0 top-0 h-px bg-[#4a0a0a]/20" />
+      <div className="absolute right-0 top-0 hidden h-full w-[28%] bg-[#4a0a0a] lg:block" />
 
       <div className="custom-container relative z-10 mx-auto">
         <div className="mb-10 flex flex-col gap-6 md:mb-14 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="mb-4 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-[#380a0a]">
-              <span className="h-px w-10 bg-[#380a0a]" />
+            <p className="mb-4 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-[#4a0a0a]">
+              <span className="h-px w-10 bg-[#4a0a0a]" />
               Featured Villas
             </p>
 
-            <h2 className="max-w-2xl text-3xl font-semibold leading-tight text-[#380a0a] md:text-5xl">
+            <h2 className="max-w-2xl text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-5xl">
               Three Distinct Villa Experiences
             </h2>
           </div>
 
-          <button className="group inline-flex w-fit items-center gap-4 border border-[#380a0a]/20 bg-white/60 px-6 py-4 text-sm font-bold uppercase tracking-[0.14em] text-[#380a0a] shadow-sm transition duration-300 hover:bg-[#380a0a] hover:text-white">
+          <button className="group inline-flex w-fit items-center gap-4 border border-[#4a0a0a]/20 bg-white/60 px-6 py-4 text-sm font-bold uppercase tracking-[0.14em] text-[#4a0a0a] shadow-sm transition duration-300 hover:bg-[#4a0a0a] hover:text-white">
             View All
-            <span className="h-px w-10 origin-left scale-x-[0.35] bg-[#380a0a] transition-[transform,background-color] duration-700 ease-out group-hover:scale-x-100 group-hover:bg-white" />
+            <span className="h-px w-10 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-[transform,background-color] duration-700 ease-out group-hover:scale-x-100 group-hover:bg-white" />
           </button>
         </div>
 
@@ -71,9 +71,9 @@ export default function FeaturedVillas() {
           {villas.map((villa, index) => (
             <article
               key={villa.name}
-              className="group overflow-hidden border border-[#380a0a]/15 bg-white shadow-xl shadow-[#380a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#380a0a]/18"
+              className="group overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-xl shadow-[#4a0a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#4a0a0a]/18"
             >
-              <div className="relative h-[310px] overflow-hidden bg-[#380a0a]">
+              <div className="relative h-[310px] overflow-hidden bg-[#4a0a0a]">
                 <Image
                   src={villa.image}
                   alt={`${villa.name} ${villa.size}`}
@@ -104,7 +104,7 @@ export default function FeaturedVillas() {
               </div>
 
               <div className="p-6 md:p-7">
-                <div className="mb-6 h-px w-20 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
+                <div className="mb-6 h-px w-20 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
 
                 <ul className="space-y-3">
                   {villa.specs.map((spec) => (
@@ -112,15 +112,15 @@ export default function FeaturedVillas() {
                       key={spec}
                       className="flex gap-3 text-sm leading-6 text-[#5f4f4a] md:text-base"
                     >
-                      <span className="mt-[9px] h-1.5 w-1.5 shrink-0 bg-[#380a0a]" />
+                      <span className="mt-[9px] h-1.5 w-1.5 shrink-0 bg-[#4a0a0a]" />
                       <span>{spec}</span>
                     </li>
                   ))}
                 </ul>
 
-                <button className="mt-8 inline-flex items-center gap-4 text-sm font-bold uppercase tracking-[0.14em] text-[#380a0a]">
+                <button className="mt-8 inline-flex items-center gap-4 text-sm font-bold uppercase tracking-[0.14em] text-[#4a0a0a]">
                   Explore Villa
-                  <span className="h-px w-10 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
+                  <span className="h-px w-10 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
                 </button>
               </div>
             </article>
@@ -150,7 +150,7 @@ export default function FeaturedVillas() {
 
 //           <Link
 //             href="/villas-residences"
-//             className="group inline-flex w-fit items-center gap-4 border border-[#380a0a]/20 bg-white/70 px-7 py-4 text-sm font-extrabold uppercase tracking-[0.14em] text-[#380a0a] hover:bg-[#380a0a] hover:text-white"
+//             className="group inline-flex w-fit items-center gap-4 border border-[#4a0a0a]/20 bg-white/70 px-7 py-4 text-sm font-extrabold uppercase tracking-[0.14em] text-[#4a0a0a] hover:bg-[#4a0a0a] hover:text-white"
 //           >
 //             View All
 //             <span className="h-px w-12 origin-left scale-x-[0.35] bg-current transition-transform duration-700 group-hover:scale-x-100" />
@@ -161,9 +161,9 @@ export default function FeaturedVillas() {
 //           {villas.map((villa, index) => (
 //             <article
 //               key={villa.name}
-//               className="group overflow-hidden border border-[#380a0a]/15 bg-white shadow-xl shadow-[#380a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl"
+//               className="group overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-xl shadow-[#4a0a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl"
 //             >
-//               <div className="relative h-[310px] overflow-hidden bg-[#380a0a]">
+//               <div className="relative h-[310px] overflow-hidden bg-[#4a0a0a]">
 //                 <Image
 //                   src={villa.image}
 //                   alt={`${villa.name} ${villa.category}`}
@@ -189,7 +189,7 @@ export default function FeaturedVillas() {
 //               </div>
 
 //               <div className="p-7">
-//                 <span className="mb-7 block h-px w-20 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 group-hover:scale-x-100" />
+//                 <span className="mb-7 block h-px w-20 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 group-hover:scale-x-100" />
 //                 <p className="leading-8 text-[#6b5d57]">{villa.intro}</p>
 
 //                 <ul className="mt-6 grid gap-3">
@@ -198,7 +198,7 @@ export default function FeaturedVillas() {
 //                       key={spec}
 //                       className="flex gap-3 leading-7 text-[#6b5d57]"
 //                     >
-//                       <span className="mt-[10px] h-1.5 w-1.5 shrink-0 bg-[#380a0a]" />
+//                       <span className="mt-[10px] h-1.5 w-1.5 shrink-0 bg-[#4a0a0a]" />
 //                       <span>{spec}</span>
 //                     </li>
 //                   ))}
@@ -206,7 +206,7 @@ export default function FeaturedVillas() {
 
 //                 <Link
 //                   href="/villas-residences"
-//                   className="group/link mt-8 inline-flex items-center gap-4 text-sm font-extrabold uppercase tracking-[0.14em] text-[#380a0a]"
+//                   className="group/link mt-8 inline-flex items-center gap-4 text-sm font-extrabold uppercase tracking-[0.14em] text-[#4a0a0a]"
 //                 >
 //                   Explore Villa
 //                   <span className="h-px w-12 origin-left scale-x-[0.35] bg-current transition-transform duration-700 group-hover/link:scale-x-100" />

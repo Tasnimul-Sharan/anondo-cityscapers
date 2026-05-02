@@ -34,9 +34,9 @@
 //       {lifestyleAmenities.map((item, index) => (
 //         <article
 //           key={`${item.title}-${index}`}
-//           className="group overflow-hidden border border-[#380a0a]/15 bg-white shadow-xl shadow-[#380a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#380a0a]/20"
+//           className="group overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-xl shadow-[#4a0a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#4a0a0a]/20"
 //         >
-//           <div className="relative h-[280px] overflow-hidden bg-[#380a0a]">
+//           <div className="relative h-[280px] overflow-hidden bg-[#4a0a0a]">
 //             <Image
 //               src={item.image}
 //               alt={item.title}
@@ -63,7 +63,7 @@
 //           <div className="p-7">
 //             <p className="leading-8 text-[#6b5d57]">{item.text}</p>
 
-//             <button className="group/btn mt-7 inline-flex items-center gap-4 text-sm font-bold uppercase tracking-[0.14em] text-[#380a0a]">
+//             <button className="group/btn mt-7 inline-flex items-center gap-4 text-sm font-bold uppercase tracking-[0.14em] text-[#4a0a0a]">
 //               Explore
 //               <span className="h-px w-10 origin-left scale-x-[0.35] bg-current transition-transform duration-700 ease-out group-hover/btn:scale-x-100" />
 //             </button>
@@ -109,12 +109,12 @@
 //     <section className="bg-[#f8f3ec] py-16 md:py-24 lg:py-32">
 //       <div className="mx-auto max-w-[1180px] px-5">
 //         <div className="mb-12 max-w-3xl">
-//           <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]">
-//             <span className="h-px w-10 bg-[#380a0a]" />
+//           <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]">
+//             <span className="h-px w-10 bg-[#4a0a0a]" />
 //             Lifestyle Amenities
 //           </p>
 
-//           <h2 className="text-3xl font-semibold leading-tight text-[#380a0a] md:text-5xl">
+//           <h2 className="text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-5xl">
 //             A Lifestyle Beyond Ordinary
 //           </h2>
 
@@ -128,14 +128,14 @@
 //           {lifestyleAmenities.map((item, index) => (
 //             <article
 //               key={`${item.title}-${index}`}
-//               className="group relative overflow-hidden border border-[#380a0a]/12 bg-white shadow-xl shadow-[#380a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#380a0a]/20"
+//               className="group relative overflow-hidden border border-[#4a0a0a]/12 bg-white shadow-xl shadow-[#4a0a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#4a0a0a]/20"
 //             >
-//               <span className="absolute left-0 top-0 z-20 h-px w-full origin-left scale-x-[0.18] bg-[#380a0a] transition-transform duration-1000 ease-out group-hover:scale-x-100" />
-//               <span className="absolute right-0 top-0 z-20 h-full w-px origin-top scale-y-[0.18] bg-[#380a0a] transition-transform delay-100 duration-1000 ease-out group-hover:scale-y-100" />
-//               <span className="absolute bottom-0 right-0 z-20 h-px w-full origin-right scale-x-[0.18] bg-[#380a0a] transition-transform delay-200 duration-1000 ease-out group-hover:scale-x-100" />
-//               <span className="absolute bottom-0 left-0 z-20 h-full w-px origin-bottom scale-y-[0.18] bg-[#380a0a] transition-transform delay-300 duration-1000 ease-out group-hover:scale-y-100" />
+//               <span className="absolute left-0 top-0 z-20 h-px w-full origin-left scale-x-[0.18] bg-[#4a0a0a] transition-transform duration-1000 ease-out group-hover:scale-x-100" />
+//               <span className="absolute right-0 top-0 z-20 h-full w-px origin-top scale-y-[0.18] bg-[#4a0a0a] transition-transform delay-100 duration-1000 ease-out group-hover:scale-y-100" />
+//               <span className="absolute bottom-0 right-0 z-20 h-px w-full origin-right scale-x-[0.18] bg-[#4a0a0a] transition-transform delay-200 duration-1000 ease-out group-hover:scale-x-100" />
+//               <span className="absolute bottom-0 left-0 z-20 h-full w-px origin-bottom scale-y-[0.18] bg-[#4a0a0a] transition-transform delay-300 duration-1000 ease-out group-hover:scale-y-100" />
 
-//               <div className="relative h-[300px] overflow-hidden bg-[#380a0a]">
+//               <div className="relative h-[300px] overflow-hidden bg-[#4a0a0a]">
 //                 <Image
 //                   src={item.image}
 //                   alt={item.title}
@@ -162,7 +162,7 @@
 //               <div className="relative p-7">
 //                 <p className="leading-8 text-[#6b5d57]">{item.text}</p>
 
-//                 <button className="group/btn mt-7 inline-flex items-center gap-4 text-sm font-bold uppercase tracking-[0.14em] text-[#380a0a]">
+//                 <button className="group/btn mt-7 inline-flex items-center gap-4 text-sm font-bold uppercase tracking-[0.14em] text-[#4a0a0a]">
 //                   Explore
 //                   <span className="h-px w-12 origin-left scale-x-[0.35] bg-current transition-transform duration-1000 ease-out group-hover:scale-x-100 group-hover/btn:scale-x-100" />
 //                 </button>
@@ -210,12 +210,12 @@ export function LifestyleAmenities() {
     <section className="bg-[#f8f3ec] py-16 md:py-24 lg:py-32">
       <div className="mx-auto max-w-[1400px] px-6">
         <div className="mb-12 max-w-3xl">
-          <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]">
-            <span className="h-px w-10 bg-[#380a0a]" />
+          <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]">
+            <span className="h-px w-10 bg-[#4a0a0a]" />
             Lifestyle Amenities
           </p>
 
-          <h2 className="text-3xl font-semibold leading-tight text-[#380a0a] md:text-5xl">
+          <h2 className="text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-5xl">
             A Lifestyle Beyond Ordinary
           </h2>
 
@@ -228,9 +228,9 @@ export function LifestyleAmenities() {
           {lifestyleAmenities.map((item, index) => (
             <article
               key={`${item.title}-${index}`}
-              className="group overflow-hidden border border-[#380a0a]/15 bg-white shadow-xl shadow-[#380a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#380a0a]/20"
+              className="group overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-xl shadow-[#4a0a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#4a0a0a]/20"
             >
-              <div className="relative h-[280px] overflow-hidden bg-[#380a0a]">
+              <div className="relative h-[280px] overflow-hidden bg-[#4a0a0a]">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -257,7 +257,7 @@ export function LifestyleAmenities() {
               <div className="p-7">
                 <p className="leading-8 text-[#6b5d57]">{item.text}</p>
 
-                <button className="group/btn mt-7 inline-flex items-center gap-4 text-sm font-bold uppercase tracking-[0.14em] text-[#380a0a]">
+                <button className="group/btn mt-7 inline-flex items-center gap-4 text-sm font-bold uppercase tracking-[0.14em] text-[#4a0a0a]">
                   Explore
                   <span className="h-px w-10 origin-left scale-x-[0.35] bg-current transition-transform duration-700 ease-out group-hover:scale-x-100 group-hover/btn:scale-x-100" />
                 </button>

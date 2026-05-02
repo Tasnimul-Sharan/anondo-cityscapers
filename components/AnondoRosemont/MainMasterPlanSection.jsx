@@ -85,13 +85,13 @@
 //   return (
 //     <section className="bg-[#f8f3ec] py-16 text-[#241818] md:py-24 lg:py-32">
 //       <div className="mx-auto max-w-[1180px] px-5">
-//         <div className="grid gap-10 border-b border-[#380a0a]/15 pb-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
+//         <div className="grid gap-10 border-b border-[#4a0a0a]/15 pb-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
 //           <div>
-//             <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]">
+//             <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]">
 //               <span className="h-px w-10 bg-current" />
 //               Main Master Plan
 //             </p>
-//             <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#380a0a] md:text-5xl">
+//             <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-5xl">
 //               807 Bigha Planned Estate with Roads, Villas, Nature, and Community
 //               Scale
 //             </h2>
@@ -105,8 +105,8 @@
 //           </p>
 //         </div>
 
-//         <div className="mt-12 grid overflow-hidden border border-[#380a0a]/15 bg-white shadow-2xl shadow-[#380a0a]/10 lg:grid-cols-[0.78fr_1.22fr]">
-//           <div className="bg-[#380a0a] p-7 text-white md:p-10 lg:p-12">
+//         <div className="mt-12 grid overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-2xl shadow-[#4a0a0a]/10 lg:grid-cols-[0.78fr_1.22fr]">
+//           <div className="bg-[#4a0a0a] p-7 text-white md:p-10 lg:p-12">
 //             <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-white/55">
 //               Land Area and Project Scale
 //             </p>
@@ -142,7 +142,7 @@
 //           </div>
 
 //           <div className="grid lg:grid-rows-[1.05fr_auto]">
-//             <div className="relative min-h-[390px] overflow-hidden bg-[#380a0a]">
+//             <div className="relative min-h-[390px] overflow-hidden bg-[#4a0a0a]">
 //               <Image
 //                 src={estateImage}
 //                 alt="Anondo Rosemont Estate master plan villa environment"
@@ -159,25 +159,25 @@
 //               </div>
 //             </div>
 
-//             <div className="grid border-t border-[#380a0a]/15 md:grid-cols-3">
+//             <div className="grid border-t border-[#4a0a0a]/15 md:grid-cols-3">
 //               {roadHighlights.map((road, index) => (
 //                 <article
 //                   key={road.title}
-//                   className="group border-b border-[#380a0a]/15 p-6 last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0"
+//                   className="group border-b border-[#4a0a0a]/15 p-6 last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0"
 //                 >
-//                   <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/45">
+//                   <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/45">
 //                     Road 0{index + 1}
 //                   </p>
-//                   <h4 className="mt-4 text-2xl font-semibold leading-tight text-[#380a0a]">
+//                   <h4 className="mt-4 text-2xl font-semibold leading-tight text-[#4a0a0a]">
 //                     {road.value}
 //                   </h4>
 //                   <p className="mt-3 leading-7 text-[#6b5d57]">
-//                     <span className="font-semibold text-[#380a0a]">
+//                     <span className="font-semibold text-[#4a0a0a]">
 //                       {road.title}
 //                     </span>{" "}
 //                     {road.text}
 //                   </p>
-//                   <span className="mt-6 block h-px w-16 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
+//                   <span className="mt-6 block h-px w-16 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
 //                 </article>
 //               ))}
 //             </div>
@@ -187,10 +187,10 @@
 //         <div className="mt-12">
 //           <div className="mb-7 flex flex-col justify-between gap-5 md:flex-row md:items-end">
 //             <div>
-//               <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/55">
+//               <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/55">
 //                 Plot Distribution and Layout
 //               </p>
-//               <h3 className="mt-3 text-3xl font-semibold leading-tight text-[#380a0a] md:text-4xl">
+//               <h3 className="mt-3 text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-4xl">
 //                 Three residential scales, one unified villa community.
 //               </h3>
 //             </div>
@@ -204,22 +204,22 @@
 //             {plotCategories.map((plot, index) => (
 //               <article
 //                 key={plot.title}
-//                 className="group border border-[#380a0a]/15 bg-white p-7 transition duration-500 hover:-translate-y-2 hover:bg-[#380a0a] hover:text-white"
+//                 className="group border border-[#4a0a0a]/15 bg-white p-7 transition duration-500 hover:-translate-y-2 hover:bg-[#4a0a0a] hover:text-white"
 //               >
 //                 <div className="flex items-center justify-between gap-5">
-//                   <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#380a0a]/45 transition duration-300 group-hover:text-white/50">
+//                   <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#4a0a0a]/45 transition duration-300 group-hover:text-white/50">
 //                     {String(index + 1).padStart(2, "0")}
 //                   </p>
 //                   <span className="h-px w-20 origin-left scale-x-[0.35] bg-current transition-transform duration-700 ease-out group-hover:scale-x-100" />
 //                 </div>
 
-//                 <h4 className="mt-8 text-2xl font-semibold leading-tight text-[#380a0a] transition duration-300 group-hover:text-white">
+//                 <h4 className="mt-8 text-2xl font-semibold leading-tight text-[#4a0a0a] transition duration-300 group-hover:text-white">
 //                   {plot.title}
 //                 </h4>
 //                 <p className="mt-5 text-4xl font-semibold leading-none">
 //                   {plot.plots}
 //                 </p>
-//                 <div className="mt-6 grid gap-3 border-t border-[#380a0a]/15 pt-6 text-[#6b5d57] transition duration-300 group-hover:border-white/15 group-hover:text-white/72">
+//                 <div className="mt-6 grid gap-3 border-t border-[#4a0a0a]/15 pt-6 text-[#6b5d57] transition duration-300 group-hover:border-white/15 group-hover:text-white/72">
 //                   <p>{plot.size}</p>
 //                   <p>{plot.floors}</p>
 //                   <p className="leading-8">{plot.note}</p>
@@ -230,11 +230,11 @@
 //         </div>
 
 //         <div className="mt-12 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-//           <div className="border border-[#380a0a]/15 bg-white p-7 md:p-10">
-//             <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/55">
+//           <div className="border border-[#4a0a0a]/15 bg-white p-7 md:p-10">
+//             <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/55">
 //               Elevated Design and Architectural Guidelines
 //             </p>
-//             <h3 className="mt-4 text-3xl font-semibold leading-tight text-[#380a0a] md:text-4xl">
+//             <h3 className="mt-4 text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-4xl">
 //               The details that keep the estate refined.
 //             </h3>
 //             <p className="mt-5 leading-8 text-[#6b5d57]">
@@ -249,7 +249,7 @@
 //                   key={feature}
 //                   className="flex gap-3 leading-7 text-[#6b5d57]"
 //                 >
-//                   <span className="mt-[10px] h-1.5 w-1.5 shrink-0 bg-[#380a0a]" />
+//                   <span className="mt-[10px] h-1.5 w-1.5 shrink-0 bg-[#4a0a0a]" />
 //                   <span>{feature}</span>
 //                 </li>
 //               ))}
@@ -262,14 +262,14 @@
 //                 key={item.title}
 //                 className={`group border p-7 transition duration-500 hover:-translate-y-2 ${
 //                   index === 0
-//                     ? "border-[#380a0a] bg-[#380a0a] text-white"
-//                     : "border-[#380a0a]/15 bg-white text-[#241818] hover:border-[#380a0a]"
+//                     ? "border-[#4a0a0a] bg-[#4a0a0a] text-white"
+//                     : "border-[#4a0a0a]/15 bg-white text-[#241818] hover:border-[#4a0a0a]"
 //                 }`}
 //               >
 //                 <span className="mb-7 block h-px w-20 origin-left scale-x-[0.35] bg-current transition-transform duration-700 ease-out group-hover:scale-x-100" />
 //                 <h4
 //                   className={`text-2xl font-semibold leading-tight ${
-//                     index === 0 ? "text-white" : "text-[#380a0a]"
+//                     index === 0 ? "text-white" : "text-[#4a0a0a]"
 //                   }`}
 //                 >
 //                   {item.title}
@@ -286,8 +286,8 @@
 //           </div>
 //         </div>
 
-//         {/* <div className="mt-12 grid overflow-hidden border border-[#380a0a]/15 bg-white lg:grid-cols-[0.72fr_1.28fr]">
-//           <div className="bg-[#380a0a] p-7 text-white md:p-10">
+//         {/* <div className="mt-12 grid overflow-hidden border border-[#4a0a0a]/15 bg-white lg:grid-cols-[0.72fr_1.28fr]">
+//           <div className="bg-[#4a0a0a] p-7 text-white md:p-10">
 //             <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-white/55">
 //               Nature and Open Space
 //             </p>
@@ -300,23 +300,23 @@
 //             </p>
 //           </div>
 
-//           <div className="divide-y divide-[#380a0a]/15">
+//           <div className="divide-y divide-[#4a0a0a]/15">
 //             {natureFeatures.map((item, index) => (
 //               <article
 //                 key={item.title}
 //                 className="group grid gap-6 p-7 transition duration-500 hover:bg-[#f8f3ec] md:grid-cols-[90px_1fr] md:p-9"
 //               >
-//                 <p className="text-sm font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/45">
+//                 <p className="text-sm font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/45">
 //                   0{index + 1}
 //                 </p>
 //                 <div>
-//                   <h4 className="text-2xl font-semibold leading-tight text-[#380a0a]">
+//                   <h4 className="text-2xl font-semibold leading-tight text-[#4a0a0a]">
 //                     {item.title}
 //                   </h4>
 //                   <p className="mt-4 max-w-2xl leading-8 text-[#6b5d57]">
 //                     {item.text}
 //                   </p>
-//                   <span className="mt-6 block h-px w-20 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
+//                   <span className="mt-6 block h-px w-20 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
 //                 </div>
 //               </article>
 //             ))}
@@ -328,7 +328,11 @@
 // }
 
 import Image from "next/image";
-import { designFeatures, estateImage, masterPlanMetrics } from "@/data/rosemontSite";
+import {
+  designFeatures,
+  estateImage,
+  masterPlanMetrics,
+} from "@/data/rosemontSite";
 
 const plotCategories = [
   {
@@ -382,13 +386,13 @@ export function MainMasterPlanSection() {
   return (
     <section className="bg-[#f8f3ec] py-16 text-[#241818] md:py-24 lg:py-32">
       <div className="mx-auto max-w-[1400px] px-5">
-        <div className="grid gap-10 border-b border-[#380a0a]/15 pb-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
+        <div className="grid gap-10 border-b border-[#4a0a0a]/15 pb-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
           <div>
-            <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]">
+            <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]">
               <span className="h-px w-10 bg-current" />
               Main Master Plan
             </p>
-            <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#380a0a] md:text-5xl">
+            <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-5xl">
               807 Bigha Planned Estate with Roads, Villas, Nature, and Community
               Scale
             </h2>
@@ -402,8 +406,8 @@ export function MainMasterPlanSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid overflow-hidden border border-[#380a0a]/15 bg-white shadow-2xl shadow-[#380a0a]/10 lg:grid-cols-[0.78fr_1.22fr]">
-          <div className="bg-[#380a0a] p-7 text-white md:p-10 lg:p-12">
+        <div className="mt-12 grid overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-2xl shadow-[#4a0a0a]/10 lg:grid-cols-[0.78fr_1.22fr]">
+          <div className="bg-[#4a0a0a] p-7 text-white md:p-10 lg:p-12">
             <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-white/55">
               Land Area and Project Scale
             </p>
@@ -439,7 +443,7 @@ export function MainMasterPlanSection() {
           </div>
 
           <div className="grid lg:grid-rows-[1.05fr_auto]">
-            <div className="relative min-h-[390px] overflow-hidden bg-[#380a0a]">
+            <div className="relative min-h-[390px] overflow-hidden bg-[#4a0a0a]">
               <Image
                 src={estateImage}
                 alt="Anondo Rosemont Estate master plan villa environment"
@@ -456,25 +460,25 @@ export function MainMasterPlanSection() {
               </div>
             </div>
 
-            <div className="grid border-t border-[#380a0a]/15 md:grid-cols-3">
+            <div className="grid border-t border-[#4a0a0a]/15 md:grid-cols-3">
               {roadHighlights.map((road, index) => (
                 <article
                   key={road.title}
-                  className="group border-b border-[#380a0a]/15 p-6 last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0"
+                  className="group border-b border-[#4a0a0a]/15 p-6 last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0"
                 >
-                  <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/45">
+                  <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/45">
                     Road 0{index + 1}
                   </p>
-                  <h4 className="mt-4 text-2xl font-semibold leading-tight text-[#380a0a]">
+                  <h4 className="mt-4 text-2xl font-semibold leading-tight text-[#4a0a0a]">
                     {road.value}
                   </h4>
                   <p className="mt-3 leading-7 text-[#6b5d57]">
-                    <span className="font-semibold text-[#380a0a]">
+                    <span className="font-semibold text-[#4a0a0a]">
                       {road.title}
                     </span>{" "}
                     {road.text}
                   </p>
-                  <span className="mt-6 block h-px w-16 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
+                  <span className="mt-6 block h-px w-16 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
                 </article>
               ))}
             </div>
@@ -484,10 +488,10 @@ export function MainMasterPlanSection() {
         <div className="mt-12">
           <div className="mb-7 flex flex-col justify-between gap-5 md:flex-row md:items-end">
             <div>
-              <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/55">
+              <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/55">
                 Plot Distribution and Layout
               </p>
-              <h3 className="mt-3 text-3xl font-semibold leading-tight text-[#380a0a] md:text-4xl">
+              <h3 className="mt-3 text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-4xl">
                 Three residential scales, one unified villa community.
               </h3>
             </div>
@@ -501,9 +505,9 @@ export function MainMasterPlanSection() {
             {plotCategories.map((plot, index) => (
               <article
                 key={plot.title}
-                className="group overflow-hidden border border-[#380a0a]/15 bg-white shadow-xl shadow-[#380a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#380a0a]/18"
+                className="group overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-xl shadow-[#4a0a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#4a0a0a]/18"
               >
-                <div className="relative h-[310px] overflow-hidden bg-[#380a0a]">
+                <div className="relative h-[310px] overflow-hidden bg-[#4a0a0a]">
                   <Image
                     src={plot.image}
                     alt={plot.title}
@@ -529,12 +533,12 @@ export function MainMasterPlanSection() {
                 </div>
 
                 <div className="p-7">
-                  <div className="grid gap-3 border-b border-[#380a0a]/15 pb-6">
+                  <div className="grid gap-3 border-b border-[#4a0a0a]/15 pb-6">
                     <div className="flex items-center justify-between gap-4">
                       <span className="text-sm font-semibold text-[#6b5d57]">
                         Villa Size
                       </span>
-                      <span className="text-right font-extrabold text-[#380a0a]">
+                      <span className="text-right font-extrabold text-[#4a0a0a]">
                         {plot.size}
                       </span>
                     </div>
@@ -542,7 +546,7 @@ export function MainMasterPlanSection() {
                       <span className="text-sm font-semibold text-[#6b5d57]">
                         Floor Plan
                       </span>
-                      <span className="max-w-[12rem] text-right text-sm font-semibold leading-6 text-[#380a0a]">
+                      <span className="max-w-[12rem] text-right text-sm font-semibold leading-6 text-[#4a0a0a]">
                         {plot.floors}
                       </span>
                     </div>
@@ -550,7 +554,7 @@ export function MainMasterPlanSection() {
                       <span className="text-sm font-semibold text-[#6b5d57]">
                         Access
                       </span>
-                      <span className="text-right text-sm font-semibold text-[#380a0a]">
+                      <span className="text-right text-sm font-semibold text-[#4a0a0a]">
                         {plot.frontage}
                       </span>
                     </div>
@@ -559,10 +563,10 @@ export function MainMasterPlanSection() {
                   <p className="mt-6 leading-8 text-[#6b5d57]">{plot.note}</p>
 
                   <div className="mt-7 flex items-center justify-between gap-5">
-                    <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#380a0a]/55">
+                    <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#4a0a0a]/55">
                       Villa Category
                     </p>
-                    <span className="h-px w-16 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
+                    <span className="h-px w-16 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
                   </div>
                 </div>
               </article>
@@ -570,8 +574,8 @@ export function MainMasterPlanSection() {
           </div>
         </div>
 
-        <div className="mt-12 grid overflow-hidden border border-[#380a0a]/15 bg-white shadow-2xl shadow-[#380a0a]/10 lg:grid-cols-[0.76fr_1.24fr]">
-          <div className="bg-[#380a0a] p-7 text-white md:p-10 lg:p-12">
+        <div className="mt-12 grid overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-2xl shadow-[#4a0a0a]/10 lg:grid-cols-[0.76fr_1.24fr]">
+          <div className="bg-[#4a0a0a] p-7 text-white md:p-10 lg:p-12">
             <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-white/55">
               Architectural Harmony Guidelines
             </p>
@@ -589,16 +593,16 @@ export function MainMasterPlanSection() {
             {designFeatures.map((feature, index) => (
               <article
                 key={feature}
-                className="group min-h-[210px] border-b border-[#380a0a]/15 p-7 transition duration-500 hover:bg-[#f8f3ec] sm:border-r sm:even:border-r-0 lg:p-9"
+                className="group min-h-[210px] border-b border-[#4a0a0a]/15 p-7 transition duration-500 hover:bg-[#f8f3ec] sm:border-r sm:even:border-r-0 lg:p-9"
               >
                 <div className="mb-8 flex items-center justify-between gap-5">
-                  <span className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/45 transition duration-300 group-hover:text-[#380a0a]">
+                  <span className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/45 transition duration-300 group-hover:text-[#4a0a0a]">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <span className="h-px w-20 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
+                  <span className="h-px w-20 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
                 </div>
 
-                <p className="text-xl font-semibold leading-snug text-[#380a0a] md:text-2xl">
+                <p className="text-xl font-semibold leading-snug text-[#4a0a0a] md:text-2xl">
                   {feature}
                 </p>
               </article>
@@ -665,13 +669,13 @@ export function MainMasterPlanSection() {
 //   return (
 //     <section className="bg-[#f8f3ec] py-16 text-[#241818] md:py-24 lg:py-32">
 //       <div className="mx-auto max-w-[1400px] px-5">
-//         <div className="grid gap-10 border-b border-[#380a0a]/15 pb-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
+//         <div className="grid gap-10 border-b border-[#4a0a0a]/15 pb-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
 //           <div>
-//             <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]">
+//             <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]">
 //               <span className="h-px w-10 bg-current" />
 //               Main Master Plan
 //             </p>
-//             <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#380a0a] md:text-5xl">
+//             <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-5xl">
 //               807 Bigha Planned Estate with Roads, Villas, Nature, and Community
 //               Scale
 //             </h2>
@@ -685,8 +689,8 @@ export function MainMasterPlanSection() {
 //           </p>
 //         </div>
 
-//         <div className="mt-12 grid overflow-hidden border border-[#380a0a]/15 bg-white shadow-2xl shadow-[#380a0a]/10 lg:grid-cols-[0.78fr_1.22fr]">
-//           <div className="bg-[#380a0a] p-7 text-white md:p-10 lg:p-12">
+//         <div className="mt-12 grid overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-2xl shadow-[#4a0a0a]/10 lg:grid-cols-[0.78fr_1.22fr]">
+//           <div className="bg-[#4a0a0a] p-7 text-white md:p-10 lg:p-12">
 //             <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-white/55">
 //               Land Area and Project Scale
 //             </p>
@@ -722,7 +726,7 @@ export function MainMasterPlanSection() {
 //           </div>
 
 //           <div className="grid lg:grid-rows-[1.05fr_auto]">
-//             <div className="relative min-h-[390px] overflow-hidden bg-[#380a0a]">
+//             <div className="relative min-h-[390px] overflow-hidden bg-[#4a0a0a]">
 //               <Image
 //                 src={estateImage}
 //                 alt="Anondo Rosemont Estate master plan villa environment"
@@ -739,25 +743,25 @@ export function MainMasterPlanSection() {
 //               </div>
 //             </div>
 
-//             <div className="grid border-t border-[#380a0a]/15 md:grid-cols-3">
+//             <div className="grid border-t border-[#4a0a0a]/15 md:grid-cols-3">
 //               {roadHighlights.map((road, index) => (
 //                 <article
 //                   key={road.title}
-//                   className="group border-b border-[#380a0a]/15 p-6 last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0"
+//                   className="group border-b border-[#4a0a0a]/15 p-6 last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0"
 //                 >
-//                   <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/45">
+//                   <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/45">
 //                     Road 0{index + 1}
 //                   </p>
-//                   <h4 className="mt-4 text-2xl font-semibold leading-tight text-[#380a0a]">
+//                   <h4 className="mt-4 text-2xl font-semibold leading-tight text-[#4a0a0a]">
 //                     {road.value}
 //                   </h4>
 //                   <p className="mt-3 leading-7 text-[#6b5d57]">
-//                     <span className="font-semibold text-[#380a0a]">
+//                     <span className="font-semibold text-[#4a0a0a]">
 //                       {road.title}
 //                     </span>{" "}
 //                     {road.text}
 //                   </p>
-//                   <span className="mt-6 block h-px w-16 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
+//                   <span className="mt-6 block h-px w-16 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
 //                 </article>
 //               ))}
 //             </div>
@@ -767,10 +771,10 @@ export function MainMasterPlanSection() {
 //         <div className="mt-12">
 //           <div className="mb-7 flex flex-col justify-between gap-5 md:flex-row md:items-end">
 //             <div>
-//               <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/55">
+//               <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/55">
 //                 Plot Distribution and Layout
 //               </p>
-//               <h3 className="mt-3 text-3xl font-semibold leading-tight text-[#380a0a] md:text-4xl">
+//               <h3 className="mt-3 text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-4xl">
 //                 Three residential scales, one unified villa community.
 //               </h3>
 //             </div>
@@ -784,9 +788,9 @@ export function MainMasterPlanSection() {
 //             {plotCategories.map((plot, index) => (
 //               <article
 //                 key={plot.title}
-//                 className="group overflow-hidden border border-[#380a0a]/15 bg-white shadow-xl shadow-[#380a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#380a0a]/18"
+//                 className="group overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-xl shadow-[#4a0a0a]/10 transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#4a0a0a]/18"
 //               >
-//                 <div className="relative h-[310px] overflow-hidden bg-[#380a0a]">
+//                 <div className="relative h-[310px] overflow-hidden bg-[#4a0a0a]">
 //                   <Image
 //                     src={plot.image}
 //                     alt={plot.title}
@@ -812,12 +816,12 @@ export function MainMasterPlanSection() {
 //                 </div>
 
 //                 <div className="p-7">
-//                   <div className="grid gap-3 border-b border-[#380a0a]/15 pb-6">
+//                   <div className="grid gap-3 border-b border-[#4a0a0a]/15 pb-6">
 //                     <div className="flex items-center justify-between gap-4">
 //                       <span className="text-sm font-semibold text-[#6b5d57]">
 //                         Villa Size
 //                       </span>
-//                       <span className="text-right font-extrabold text-[#380a0a]">
+//                       <span className="text-right font-extrabold text-[#4a0a0a]">
 //                         {plot.size}
 //                       </span>
 //                     </div>
@@ -825,7 +829,7 @@ export function MainMasterPlanSection() {
 //                       <span className="text-sm font-semibold text-[#6b5d57]">
 //                         Floor Plan
 //                       </span>
-//                       <span className="max-w-[12rem] text-right text-sm font-semibold leading-6 text-[#380a0a]">
+//                       <span className="max-w-[12rem] text-right text-sm font-semibold leading-6 text-[#4a0a0a]">
 //                         {plot.floors}
 //                       </span>
 //                     </div>
@@ -833,7 +837,7 @@ export function MainMasterPlanSection() {
 //                       <span className="text-sm font-semibold text-[#6b5d57]">
 //                         Access
 //                       </span>
-//                       <span className="text-right text-sm font-semibold text-[#380a0a]">
+//                       <span className="text-right text-sm font-semibold text-[#4a0a0a]">
 //                         {plot.frontage}
 //                       </span>
 //                     </div>
@@ -842,10 +846,10 @@ export function MainMasterPlanSection() {
 //                   <p className="mt-6 leading-8 text-[#6b5d57]">{plot.note}</p>
 
 //                   <div className="mt-7 flex items-center justify-between gap-5">
-//                     <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#380a0a]/55">
+//                     <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#4a0a0a]/55">
 //                       Villa Category
 //                     </p>
-//                     <span className="h-px w-16 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
+//                     <span className="h-px w-16 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
 //                   </div>
 //                 </div>
 //               </article>

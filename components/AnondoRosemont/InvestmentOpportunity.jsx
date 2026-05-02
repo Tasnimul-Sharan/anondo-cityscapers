@@ -39,17 +39,17 @@
 // export default function InvestmentOpportunity() {
 //   return (
 //     <section className="relative overflow-hidden bg-[#f8f3ec] py-16 text-[#241818] md:py-24 lg:py-32">
-//       <div className="absolute right-0 top-0 hidden h-full w-[32%] bg-[#380a0a] lg:block" />
+//       <div className="absolute right-0 top-0 hidden h-full w-[32%] bg-[#4a0a0a] lg:block" />
 
 //       <div className="relative z-10 mx-auto max-w-[1400px] px-5">
 //         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
 //           <div>
-//             <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]">
+//             <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]">
 //               <span className="h-px w-10 bg-current" />
 //               Investment Opportunity
 //             </p>
 
-//             <h2 className="max-w-3xl text-4xl font-semibold leading-[1.02] text-[#380a0a] md:text-6xl">
+//             <h2 className="max-w-3xl text-4xl font-semibold leading-[1.02] text-[#4a0a0a] md:text-6xl">
 //               A Secure Investment for the Future
 //             </h2>
 //           </div>
@@ -62,8 +62,8 @@
 //           </p>
 //         </div>
 
-//         <div className="mt-14 grid border border-[#380a0a]/15 bg-white shadow-2xl shadow-[#380a0a]/12 lg:grid-cols-[0.9fr_1.1fr]">
-//           <div className="relative min-h-[520px] overflow-hidden bg-[#380a0a]">
+//         <div className="mt-14 grid border border-[#4a0a0a]/15 bg-white shadow-2xl shadow-[#4a0a0a]/12 lg:grid-cols-[0.9fr_1.1fr]">
+//           <div className="relative min-h-[520px] overflow-hidden bg-[#4a0a0a]">
 //             <Image
 //               src="/10 katha villa/MAHI Final.jpeg"
 //               alt="Anondo Rosemont Estate investment"
@@ -104,10 +104,10 @@
 //               {investmentPillars.map((item, index) => (
 //                 <article
 //                   key={item.title}
-//                   className="group border border-[#380a0a]/15 bg-[#f8f3ec] p-6 transition duration-500 hover:-translate-y-1 hover:bg-[#380a0a] hover:text-white"
+//                   className="group border border-[#4a0a0a]/15 bg-[#f8f3ec] p-6 transition duration-500 hover:-translate-y-1 hover:bg-[#4a0a0a] hover:text-white"
 //                 >
 //                   <div className="mb-7 flex items-center justify-between gap-5">
-//                     <span className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#380a0a]/45 transition group-hover:text-white/50">
+//                     <span className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#4a0a0a]/45 transition group-hover:text-white/50">
 //                       {String(index + 1).padStart(2, "0")}
 //                     </span>
 
@@ -125,8 +125,8 @@
 //               ))}
 //             </div>
 
-//             <div className="mt-8 border-t border-[#380a0a]/15 pt-8">
-//               <h3 className="text-2xl font-semibold text-[#380a0a]">
+//             <div className="mt-8 border-t border-[#4a0a0a]/15 pt-8">
+//               <h3 className="text-2xl font-semibold text-[#4a0a0a]">
 //                 Key Investment Advantages
 //               </h3>
 
@@ -136,13 +136,13 @@
 //                     key={item}
 //                     className="flex gap-3 leading-7 text-[#6b5d57]"
 //                   >
-//                     <span className="mt-[10px] h-1.5 w-1.5 shrink-0 bg-[#380a0a]" />
+//                     <span className="mt-[10px] h-1.5 w-1.5 shrink-0 bg-[#4a0a0a]" />
 //                     <span>{item}</span>
 //                   </li>
 //                 ))}
 //               </ul>
 
-//               <button className="group mt-8 inline-flex items-center gap-4 bg-[#380a0a] px-7 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition duration-300 hover:bg-[#241818]">
+//               <button className="group mt-8 inline-flex items-center gap-4 bg-[#4a0a0a] px-7 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition duration-300 hover:bg-[#241818]">
 //                 Why Invest
 //                 <span className="h-px w-12 origin-left scale-x-[0.35] bg-current transition-transform duration-700 ease-out group-hover:scale-x-100" />
 //               </button>
@@ -153,7 +153,6 @@
 //     </section>
 //   );
 // }
-
 
 import { useState } from "react";
 import Image from "next/image";
@@ -243,17 +242,17 @@ export default function InvestmentOpportunity() {
   return (
     <>
       <section className="relative overflow-hidden bg-[#f8f3ec] py-16 text-[#241818] md:py-24 lg:py-32">
-        <div className="absolute right-0 top-0 hidden h-full w-[32%] bg-[#380a0a] lg:block" />
+        <div className="absolute right-0 top-0 hidden h-full w-[32%] bg-[#4a0a0a] lg:block" />
 
         <div className="relative z-10 mx-auto max-w-[1400px] px-5">
           <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
             <div>
-              <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]">
+              <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]">
                 <span className="h-px w-10 bg-current" />
                 Investment Opportunity
               </p>
 
-              <h2 className="max-w-3xl text-4xl font-semibold leading-[1.02] text-[#380a0a] md:text-6xl">
+              <h2 className="max-w-3xl text-4xl font-semibold leading-[1.02] text-[#4a0a0a] md:text-6xl">
                 A Secure Investment for the Future
               </h2>
             </div>
@@ -266,8 +265,8 @@ export default function InvestmentOpportunity() {
             </p>
           </div>
 
-          <div className="mt-14 grid border border-[#380a0a]/15 bg-white shadow-2xl shadow-[#380a0a]/12 lg:grid-cols-[0.9fr_1.1fr]">
-            <div className="relative min-h-[520px] overflow-hidden bg-[#380a0a]">
+          <div className="mt-14 grid border border-[#4a0a0a]/15 bg-white shadow-2xl shadow-[#4a0a0a]/12 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="relative min-h-[520px] overflow-hidden bg-[#4a0a0a]">
               <Image
                 src="/10 katha villa/MAHI Final.jpeg"
                 alt="Anondo Rosemont Estate investment"
@@ -308,10 +307,10 @@ export default function InvestmentOpportunity() {
                 {investmentPillars.map((item, index) => (
                   <article
                     key={item.title}
-                    className="group border border-[#380a0a]/15 bg-[#f8f3ec] p-6 transition duration-500 hover:-translate-y-1 hover:bg-[#380a0a] hover:text-white"
+                    className="group border border-[#4a0a0a]/15 bg-[#f8f3ec] p-6 transition duration-500 hover:-translate-y-1 hover:bg-[#4a0a0a] hover:text-white"
                   >
                     <div className="mb-7 flex items-center justify-between gap-5">
-                      <span className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#380a0a]/45 transition group-hover:text-white/50">
+                      <span className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#4a0a0a]/45 transition group-hover:text-white/50">
                         {String(index + 1).padStart(2, "0")}
                       </span>
 
@@ -329,8 +328,8 @@ export default function InvestmentOpportunity() {
                 ))}
               </div>
 
-              <div className="mt-8 border-t border-[#380a0a]/15 pt-8">
-                <h3 className="text-2xl font-semibold text-[#380a0a]">
+              <div className="mt-8 border-t border-[#4a0a0a]/15 pt-8">
+                <h3 className="text-2xl font-semibold text-[#4a0a0a]">
                   Key Investment Advantages
                 </h3>
 
@@ -340,7 +339,7 @@ export default function InvestmentOpportunity() {
                       key={item}
                       className="flex gap-3 leading-7 text-[#6b5d57]"
                     >
-                      <span className="mt-[10px] h-1.5 w-1.5 shrink-0 bg-[#380a0a]" />
+                      <span className="mt-[10px] h-1.5 w-1.5 shrink-0 bg-[#4a0a0a]" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -348,7 +347,7 @@ export default function InvestmentOpportunity() {
 
                 <button
                   onClick={() => setOpen(true)}
-                  className="group mt-8 inline-flex items-center gap-4 bg-[#380a0a] px-7 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition duration-300 hover:bg-[#241818]"
+                  className="group mt-8 inline-flex items-center gap-4 bg-[#4a0a0a] px-7 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition duration-300 hover:bg-[#241818]"
                 >
                   Why Invest
                   <span className="h-px w-12 origin-left scale-x-[0.35] bg-current transition-transform duration-700 ease-out group-hover:scale-x-100" />
@@ -363,7 +362,7 @@ export default function InvestmentOpportunity() {
         <div className="fixed inset-0 z-[999] overflow-y-auto bg-[#241818]/70 px-5 py-8 backdrop-blur-sm">
           <div className="mx-auto max-w-[1200px] overflow-hidden border border-white/15 bg-[#f8f3ec] shadow-2xl shadow-black/30">
             <div className="grid lg:grid-cols-[0.85fr_1.15fr]">
-              <div className="bg-[#380a0a] p-7 text-white md:p-10">
+              <div className="bg-[#4a0a0a] p-7 text-white md:p-10">
                 <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-white/70">
                   <span className="h-px w-10 bg-current" />
                   Why Invest
@@ -382,28 +381,28 @@ export default function InvestmentOpportunity() {
 
                 <button
                   onClick={() => setOpen(false)}
-                  className="group mt-10 inline-flex items-center gap-4 border border-white/25 px-6 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition hover:bg-white hover:text-[#380a0a]"
+                  className="group mt-10 inline-flex items-center gap-4 border border-white/25 px-6 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition hover:bg-white hover:text-[#4a0a0a]"
                 >
                   Close
                   <span className="h-px w-10 origin-left scale-x-[0.35] bg-current transition-transform duration-700 group-hover:scale-x-100" />
                 </button>
               </div>
 
-              <div className="divide-y divide-[#380a0a]/15">
+              <div className="divide-y divide-[#4a0a0a]/15">
                 {whyInvestDetails.map((item, index) => (
                   <article
                     key={item.title}
                     className="group grid gap-6 p-7 md:p-8 lg:grid-cols-[70px_1fr]"
                   >
                     <div>
-                      <p className="text-sm font-extrabold uppercase tracking-[0.22em] text-[#380a0a]/45 group-hover:text-[#380a0a]">
+                      <p className="text-sm font-extrabold uppercase tracking-[0.22em] text-[#4a0a0a]/45 group-hover:text-[#4a0a0a]">
                         {String(index + 1).padStart(2, "0")}
                       </p>
-                      <span className="mt-5 block h-px w-12 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 group-hover:scale-x-100" />
+                      <span className="mt-5 block h-px w-12 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 group-hover:scale-x-100" />
                     </div>
 
                     <div>
-                      <h4 className="text-2xl font-semibold leading-tight text-[#380a0a]">
+                      <h4 className="text-2xl font-semibold leading-tight text-[#4a0a0a]">
                         {item.title}
                       </h4>
 
@@ -417,7 +416,7 @@ export default function InvestmentOpportunity() {
                             key={point}
                             className="flex gap-3 leading-7 text-[#6b5d57]"
                           >
-                            <span className="mt-[10px] h-1.5 w-1.5 shrink-0 bg-[#380a0a]" />
+                            <span className="mt-[10px] h-1.5 w-1.5 shrink-0 bg-[#4a0a0a]" />
                             <span>{point}</span>
                           </li>
                         ))}
@@ -433,4 +432,3 @@ export default function InvestmentOpportunity() {
     </>
   );
 }
-

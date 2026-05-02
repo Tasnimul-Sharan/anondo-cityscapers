@@ -8,13 +8,13 @@
 //   return (
 //     <section className="bg-[#f8f3ec] py-16 text-[#241818] md:py-24 lg:py-32">
 //       <div className="mx-auto max-w-[1400px] px-5">
-//         <div className="grid gap-10 border-b border-[#380a0a]/15 pb-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+//         <div className="grid gap-10 border-b border-[#4a0a0a]/15 pb-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
 //           <div>
-//             <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]">
+//             <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]">
 //               <span className="h-px w-10 bg-current" />
 //               Community Facilities
 //             </p>
-//             <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#380a0a] md:text-5xl">
+//             <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-5xl">
 //               Everyday essentials planned inside a complete estate community.
 //             </h2>
 //           </div>
@@ -26,8 +26,8 @@
 //           </p>
 //         </div>
 
-//         <div className="mt-12 grid overflow-hidden border border-[#380a0a]/15 bg-white shadow-2xl shadow-[#380a0a]/10 lg:grid-cols-[0.82fr_1.18fr]">
-//           <div className="relative min-h-[560px] overflow-hidden bg-[#380a0a]">
+//         <div className="mt-12 grid overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-2xl shadow-[#4a0a0a]/10 lg:grid-cols-[0.82fr_1.18fr]">
+//           <div className="relative min-h-[560px] overflow-hidden bg-[#4a0a0a]">
 //             <Image
 //               src={estateImage}
 //               alt="Anondo Rosemont Estate community facilities"
@@ -68,21 +68,21 @@
 //             </div>
 //           </div>
 
-//           <div className="divide-y divide-[#380a0a]/15">
+//           <div className="divide-y divide-[#4a0a0a]/15">
 //             {primaryFacilities.map((item, index) => (
 //               <article
 //                 key={item.title}
 //                 className="group grid gap-7 p-7 transition duration-500 hover:bg-[#f8f3ec] md:p-9 lg:grid-cols-[92px_1fr]"
 //               >
 //                 <div>
-//                   <p className="text-sm font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/45 transition duration-300 group-hover:text-[#380a0a]">
+//                   <p className="text-sm font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/45 transition duration-300 group-hover:text-[#4a0a0a]">
 //                     0{index + 1}
 //                   </p>
-//                   <span className="mt-6 block h-px w-16 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
+//                   <span className="mt-6 block h-px w-16 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
 //                 </div>
 
 //                 <div>
-//                   <h3 className="text-2xl font-semibold leading-tight text-[#380a0a] md:text-3xl">
+//                   <h3 className="text-2xl font-semibold leading-tight text-[#4a0a0a] md:text-3xl">
 //                     {item.title}
 //                   </h3>
 //                   <p className="mt-4 max-w-2xl leading-8 text-[#6b5d57]">
@@ -95,30 +95,30 @@
 //             <div className="p-7 md:p-9">
 //               <div className="mb-7 flex flex-col justify-between gap-4 md:flex-row md:items-end">
 //                 <div>
-//                   <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/55">
+//                   <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/55">
 //                     Religious and Cultural Harmony
 //                   </p>
-//                   <h3 className="mt-3 text-2xl font-semibold leading-tight text-[#380a0a] md:text-3xl">
+//                   <h3 className="mt-3 text-2xl font-semibold leading-tight text-[#4a0a0a] md:text-3xl">
 //                     Inclusive places of worship for a balanced community.
 //                   </h3>
 //                 </div>
-//                 <span className="hidden h-px w-24 bg-[#380a0a]/35 md:block" />
+//                 <span className="hidden h-px w-24 bg-[#4a0a0a]/35 md:block" />
 //               </div>
 
 //               <div className="grid gap-5 md:grid-cols-3">
 //                 {religiousFacilities.map((item, index) => (
 //                   <article
 //                     key={item.title}
-//                     className="group border border-[#380a0a]/15 bg-[#f8f3ec] p-6 transition duration-500 hover:-translate-y-1 hover:bg-[#380a0a] hover:text-white"
+//                     className="group border border-[#4a0a0a]/15 bg-[#f8f3ec] p-6 transition duration-500 hover:-translate-y-1 hover:bg-[#4a0a0a] hover:text-white"
 //                   >
 //                     <div className="mb-7 flex items-center justify-between gap-4">
-//                       <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#380a0a]/45 transition duration-300 group-hover:text-white/50">
+//                       <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#4a0a0a]/45 transition duration-300 group-hover:text-white/50">
 //                         0{index + 4}
 //                       </p>
 //                       <span className="h-px w-12 origin-left scale-x-[0.35] bg-current transition-transform duration-700 ease-out group-hover:scale-x-100" />
 //                     </div>
 
-//                     <h4 className="text-xl font-semibold leading-tight text-[#380a0a] transition duration-300 group-hover:text-white">
+//                     <h4 className="text-xl font-semibold leading-tight text-[#4a0a0a] transition duration-300 group-hover:text-white">
 //                       {item.title}
 //                     </h4>
 //                     <p className="mt-4 text-sm leading-7 text-[#6b5d57] transition duration-300 group-hover:text-white/72">
@@ -144,16 +144,16 @@ const religiousFacilities = communityFacilities.slice(3);
 export function CommunityFacilitiesSection() {
   return (
     <section className="relative overflow-hidden bg-[#f8f3ec] py-16 text-[#241818] md:py-24 lg:py-32">
-      <div className="absolute left-0 top-0 hidden h-full w-[34%] bg-[#380a0a] lg:block" />
+      <div className="absolute left-0 top-0 hidden h-full w-[34%] bg-[#4a0a0a] lg:block" />
 
       <div className="relative z-10 mx-auto max-w-[1400px] px-5">
         <div className="grid gap-10 pb-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
-            <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a] lg:text-white">
+            <p className="mb-4 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a] lg:text-white">
               <span className="h-px w-10 bg-current" />
               Community Facilities
             </p>
-            <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#380a0a] md:text-5xl lg:text-white">
+            <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-[#4a0a0a] md:text-5xl lg:text-white">
               Everyday essentials planned inside a complete estate community.
             </h2>
           </div>
@@ -165,10 +165,10 @@ export function CommunityFacilitiesSection() {
           </p>
         </div>
 
-        <div className="h-px w-full bg-[#380a0a]/15 lg:bg-[linear-gradient(90deg,rgba(255,255,255,0.18)_0%,rgba(255,255,255,0.18)_34%,rgba(56,10,10,0.15)_34%,rgba(56,10,10,0.15)_100%)]" />
+        <div className="h-px w-full bg-[#4a0a0a]/15 lg:bg-[linear-gradient(90deg,rgba(255,255,255,0.18)_0%,rgba(255,255,255,0.18)_34%,rgba(56,10,10,0.15)_34%,rgba(56,10,10,0.15)_100%)]" />
 
-        <div className="mt-12 grid overflow-hidden border border-[#380a0a]/15 bg-white shadow-2xl shadow-[#380a0a]/10 lg:grid-cols-[0.82fr_1.18fr]">
-          <div className="relative min-h-[560px] overflow-hidden bg-[#380a0a] lg:min-h-[640px]">
+        <div className="mt-12 grid overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-2xl shadow-[#4a0a0a]/10 lg:grid-cols-[0.82fr_1.18fr]">
+          <div className="relative min-h-[560px] overflow-hidden bg-[#4a0a0a] lg:min-h-[640px]">
             <Image
               src={estateImage}
               alt="Anondo Rosemont Estate community facilities"
@@ -210,21 +210,21 @@ export function CommunityFacilitiesSection() {
             </div>
           </div>
 
-          <div className="divide-y divide-[#380a0a]/15">
+          <div className="divide-y divide-[#4a0a0a]/15">
             {primaryFacilities.map((item, index) => (
               <article
                 key={item.title}
                 className="group grid gap-7 p-7 transition duration-500 hover:bg-[#f8f3ec] md:p-9 lg:grid-cols-[92px_1fr]"
               >
                 <div>
-                  <p className="text-sm font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/45 transition duration-300 group-hover:text-[#380a0a]">
+                  <p className="text-sm font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/45 transition duration-300 group-hover:text-[#4a0a0a]">
                     0{index + 1}
                   </p>
-                  <span className="mt-6 block h-px w-16 origin-left scale-x-[0.35] bg-[#380a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
+                  <span className="mt-6 block h-px w-16 origin-left scale-x-[0.35] bg-[#4a0a0a] transition-transform duration-700 ease-out group-hover:scale-x-100" />
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-semibold leading-tight text-[#380a0a] md:text-3xl">
+                  <h3 className="text-2xl font-semibold leading-tight text-[#4a0a0a] md:text-3xl">
                     {item.title}
                   </h3>
                   <p className="mt-4 max-w-2xl leading-8 text-[#6b5d57]">
@@ -237,30 +237,30 @@ export function CommunityFacilitiesSection() {
             <div className="p-7 md:p-9">
               <div className="mb-7 flex flex-col justify-between gap-4 md:flex-row md:items-end">
                 <div>
-                  <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#380a0a]/55">
+                  <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#4a0a0a]/55">
                     Religious and Cultural Harmony
                   </p>
-                  <h3 className="mt-3 text-2xl font-semibold leading-tight text-[#380a0a] md:text-3xl">
+                  <h3 className="mt-3 text-2xl font-semibold leading-tight text-[#4a0a0a] md:text-3xl">
                     Inclusive places of worship for a balanced community.
                   </h3>
                 </div>
-                <span className="hidden h-px w-24 bg-[#380a0a]/35 md:block" />
+                <span className="hidden h-px w-24 bg-[#4a0a0a]/35 md:block" />
               </div>
 
               <div className="grid gap-5 md:grid-cols-3">
                 {religiousFacilities.map((item, index) => (
                   <article
                     key={item.title}
-                    className="group border border-[#380a0a]/15 bg-[#f8f3ec] p-6 transition duration-500 hover:-translate-y-1 hover:bg-[#380a0a] hover:text-white"
+                    className="group border border-[#4a0a0a]/15 bg-[#f8f3ec] p-6 transition duration-500 hover:-translate-y-1 hover:bg-[#4a0a0a] hover:text-white"
                   >
                     <div className="mb-7 flex items-center justify-between gap-4">
-                      <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#380a0a]/45 transition duration-300 group-hover:text-white/50">
+                      <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#4a0a0a]/45 transition duration-300 group-hover:text-white/50">
                         0{index + 4}
                       </p>
                       <span className="h-px w-12 origin-left scale-x-[0.35] bg-current transition-transform duration-700 ease-out group-hover:scale-x-100" />
                     </div>
 
-                    <h4 className="text-xl font-semibold leading-tight text-[#380a0a] transition duration-300 group-hover:text-white">
+                    <h4 className="text-xl font-semibold leading-tight text-[#4a0a0a] transition duration-300 group-hover:text-white">
                       {item.title}
                     </h4>
                     <p className="mt-4 text-sm leading-7 text-[#6b5d57] transition duration-300 group-hover:text-white/72">

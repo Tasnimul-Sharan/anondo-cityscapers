@@ -2,7 +2,7 @@ import { securityInfrastructure } from "@/data/rosemontSite";
 
 export function SecurityInfrastructure() {
   return (
-    <section className="relative overflow-hidden bg-[#380a0a] py-16 text-white md:py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-[#4a0a0a] py-16 text-white md:py-24 lg:py-32">
       <div className="absolute left-0 top-0 hidden h-full w-[28%] bg-black/12 lg:block" />
 
       <div className="relative z-10 mx-auto max-w-[1180px] px-5">

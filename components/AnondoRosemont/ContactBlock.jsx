@@ -2,8 +2,8 @@ export function ContactBlock() {
   return (
     <section className="bg-[#f8f3ec] py-16 md:py-24 lg:py-32">
       <div className="mx-auto max-w-[1180px] px-5">
-        <div className="grid overflow-hidden border border-[#380a0a]/15 bg-white shadow-2xl shadow-[#380a0a]/15 lg:grid-cols-[0.8fr_1.2fr]">
-          <div className="bg-[#380a0a] p-7 text-white md:p-12">
+        <div className="grid overflow-hidden border border-[#4a0a0a]/15 bg-white shadow-2xl shadow-[#4a0a0a]/15 lg:grid-cols-[0.8fr_1.2fr]">
+          <div className="bg-[#4a0a0a] p-7 text-white md:p-12">
             <p className="mb-5 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.24em]">
               <span className="h-px w-10 bg-current" />
               Enquiries
@@ -29,25 +29,25 @@ export function ContactBlock() {
             <div className="grid gap-4 md:grid-cols-2">
               <input
                 placeholder="Name"
-                className="border border-[#380a0a]/15 bg-[#f8f3ec] px-4 py-4 outline-none focus:border-[#380a0a]"
+                className="border border-[#4a0a0a]/15 bg-[#f8f3ec] px-4 py-4 outline-none focus:border-[#4a0a0a]"
               />
               <input
                 placeholder="Phone"
-                className="border border-[#380a0a]/15 bg-[#f8f3ec] px-4 py-4 outline-none focus:border-[#380a0a]"
+                className="border border-[#4a0a0a]/15 bg-[#f8f3ec] px-4 py-4 outline-none focus:border-[#4a0a0a]"
               />
             </div>
             <input
               placeholder="Email"
-              className="border border-[#380a0a]/15 bg-[#f8f3ec] px-4 py-4 outline-none focus:border-[#380a0a]"
+              className="border border-[#4a0a0a]/15 bg-[#f8f3ec] px-4 py-4 outline-none focus:border-[#4a0a0a]"
             />
             <textarea
               placeholder="Message"
-              className="min-h-[150px] resize-y border border-[#380a0a]/15 bg-[#f8f3ec] px-4 py-4 outline-none focus:border-[#380a0a]"
+              className="min-h-[150px] resize-y border border-[#4a0a0a]/15 bg-[#f8f3ec] px-4 py-4 outline-none focus:border-[#4a0a0a]"
             />
 
             <button
               type="button"
-              className="group inline-flex w-fit items-center gap-4 bg-[#380a0a] px-7 py-4 text-sm font-extrabold uppercase tracking-[0.14em] text-white hover:bg-[#241818]"
+              className="group inline-flex w-fit items-center gap-4 bg-[#4a0a0a] px-7 py-4 text-sm font-extrabold uppercase tracking-[0.14em] text-white hover:bg-[#241818]"
             >
               Request Brochure
               <span className="h-px w-12 origin-left scale-x-[0.35] bg-current transition-transform duration-700 group-hover:scale-x-100" />
