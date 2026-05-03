@@ -59,7 +59,7 @@ export default function NRBPage() {
       <NRBSupportSection />
       <FAQSection />
       <LeadCaptureCard />
-      <StickyCTA />
+      {/* <StickyCTA /> */}
     </div>
   );
 }

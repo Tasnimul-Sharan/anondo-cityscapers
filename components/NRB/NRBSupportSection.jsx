@@ -78,7 +78,7 @@ export default function NRBSupportSection() {
             {/* CTA Buttons */}
             <div className="space-y-3">
               <a
-                href="https://wa.me/880XXXXXXXXX"
+                href="https://wa.me/+8801313775333?text=Hello%20Anondo%20Cityscapers%2C%20I%20would%20like%20to%20inquire%20about%20your%20projects."
                 target="_blank"
                 className="flex items-center justify-center gap-2 w-full bg-green-500 text-white py-3 rounded-xl font-semibold hover:bg-green-600 transition"
               >
