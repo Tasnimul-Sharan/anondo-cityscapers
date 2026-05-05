@@ -1,9 +1,8 @@
 "use client";
-import ContactSection from "@/components/ContactSection";
 import HeroSection from "@/components/HeroSection";
 import Head from "next/head";
-import EventMap from "@/components/EventMap";
 import ContactPageSection from "@/components/ContactPageSection";
+import EventMap from "@/components/EventMap";
 export default function ContactPage() {
   const meta = {
     title:
@@ -43,7 +42,7 @@ export default function ContactPage() {
         }}
       />
       <ContactPageSection />
-      {/* <EventMap /> */}
+      <EventMap />
     </div>
   );
 }

@@ -49,7 +49,7 @@ export default function ProjectsSection() {
             Signature Developments
           </span>
 
-          <h2 className="text-4xl font-bold leading-tight text-secondary md:text-6xl">
+          <h2 className="text-4xl font-bold leading-tight text-gray-900 md:text-6xl">
             Our Premium Projects
           </h2>
 

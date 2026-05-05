@@ -3,7 +3,7 @@ import { investmentPaths } from "@/data/anondoBhubonData";
 
 export default function EconomicZonesSection() {
   return (
-    <section className="bg-[#FFFFFF] py-20 sm:py-24 lg:py-28">
+    <section className="bg-[#FFFFFF] py-20 md:py-24">
       <div className="site-shell">
         {/* Section Header */}
         <div className="mx-auto mb-12 max-w-5xl text-center">
@@ -15,7 +15,7 @@ export default function EconomicZonesSection() {
             <span className="h-[2px] w-12 bg-[#F48220]" />
           </div>
 
-          <h2 className="mx-auto mt-5 max-w-4xl text-4xl font-bold leading-[1.08] tracking-[-0.03em] text-[#2C3A83] sm:text-5xl">
+          <h2 className="mx-auto mt-5 max-w-4xl text-4xl font-bold leading-[1.08] tracking-[-0.03em] text-gray-900 sm:text-5xl">
             A self-sufficient lifestyle ecosystem with its own knowledge
             economy.
           </h2>
@@ -47,7 +47,7 @@ export default function EconomicZonesSection() {
                 <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#F48220]">
                   Economic Anchor
                 </p>
-                <p className="mt-1 text-sm font-bold text-[#2C3A83]">
+                <p className="mt-1 text-sm font-bold text-gray-700">
                   IT & Cyber Business Hub
                 </p>
               </div>
@@ -58,7 +58,7 @@ export default function EconomicZonesSection() {
                 Knowledge Economy
               </p>
 
-              <h3 className="mt-3 text-3xl font-bold leading-tight tracking-[-0.03em] text-[#2C3A83]">
+              <h3 className="mt-3 text-3xl font-bold leading-tight tracking-[-0.03em] text-gray-700">
                 A future-ready commercial ecosystem within the township.
               </h3>
 
@@ -88,7 +88,7 @@ export default function EconomicZonesSection() {
 
                   <div>
 
-                    <h3 className="mt-2 text-2xl font-bold leading-tight tracking-[-0.02em] text-[#2C3A83]">
+                    <h3 className="mt-2 text-2xl font-bold leading-tight tracking-[-0.02em] text-gray-700">
                       {item.name}
                     </h3>
 

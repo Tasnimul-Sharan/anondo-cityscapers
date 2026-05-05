@@ -312,7 +312,7 @@ export default function ContactPageSection() {
         </div>
       </div>
 
-      <div className="custom-container mx-auto mt-12">
+      {/* <div className="custom-container mx-auto mt-12">
         <div className="rounded overflow-hidden border mt-10">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4812.923042245769!2d90.41187546190507!3d23.729719178595598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85855d36dcd%3A0xc01cee8905afc935!2sPrinter&#39;s%20Building!5e1!3m2!1sen!2sbd!4v1775975838729!5m2!1sen!2sbd"
@@ -321,7 +321,7 @@ export default function ContactPageSection() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
