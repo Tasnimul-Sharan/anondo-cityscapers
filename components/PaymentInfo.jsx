@@ -1,68 +1,198 @@
+"use client";
+
+import { useState } from "react";
+import { FaBuildingColumns, FaRegCopy, FaCheck } from "react-icons/fa6";
 import PaymentInstructions from "./PaymentInstructions";
 
 export default function PaymentInfo() {
+  const [copied, setCopied] = useState("");
+
   const cityscapersBanks = [
-    [
-      "1",
-      "Sonali Bank PLC",
-      "Nagar Bhaban Branch, Dhaka",
-      "Anondo Cityscapers Ltd.",
-      "1623803000066",
-      "BSONBDDH",
-      "200274573",
-    ],
-    [
-      "2",
-      "Janata Bank PLC",
-      "Nagar Bhaban Branch, Dhaka",
-      "Anondo Cityscapers Ltd.",
-      "0100281648840",
-      "JANBBDDHKRN",
-      "135274572",
-    ],
+    {
+      sl: "01",
+      bank: "Sonali Bank PLC",
+      branch: "Nagar Bhaban Branch, Dhaka",
+      accountName: "Anondo Cityscapers Ltd.",
+      accountNo: "1623803000066",
+      swift: "BSONBDDH",
+      routing: "200274573",
+    },
+    {
+      sl: "02",
+      bank: "Janata Bank PLC",
+      branch: "Nagar Bhaban Branch, Dhaka",
+      accountName: "Anondo Cityscapers Ltd.",
+      accountNo: "0100281648840",
+      swift: "JANBBDDHKRN",
+      routing: "135274572",
+    },
   ];
 
+  const handleCopy = async (text) => {
+    await navigator.clipboard.writeText(text);
+    setCopied(text);
+
+    setTimeout(() => {
+      setCopied("");
+    }, 1500);
+  };
+
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16">
-      {/* Header */}
-      <p className="text-center text-gray-600 text-base max-w-3xl mx-auto leading-relaxed mb-10">
-        Payments may be made directly to our bank account from any country
-        through Bank to Bank or via Money Exchange. The account details are
-        listed below:
-      </p>
+    <section className="bg-off_white py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="mx-auto max-w-4xl text-center">
+          <span className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-white px-5 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-primary shadow-sm">
+            <FaBuildingColumns />
+            Payment Information
+          </span>
 
-      {/* New Section */}
-      <h2 className="text-xl font-bold mt-16 mb-4 text-primary">
-        Anondo Cityscapers Ltd.
-      </h2>
+          <h1 className="mt-6 text-3xl font-bold tracking-tight text-soft_black sm:text-4xl lg:text-5xl">
+            Bank Account Details for{" "}
+            <span className="text-primary">Anondo Cityscapers Ltd.</span>
+          </h1>
 
-      <div className="overflow-x-auto">
-        <table className="w-full border border-gray-300 text-sm">
-          <thead className="bg-gray-100">
-            <tr>
-              <th className="p-3 border">Sl</th>
-              <th className="p-3 border">Bank</th>
-              <th className="p-3 border">Branch</th>
-              <th className="p-3 border">Account Name</th>
-              <th className="p-3 border">Account No</th>
-              <th className="p-3 border">Swift</th>
-              <th className="p-3 border">Routing</th>
-            </tr>
-          </thead>
-          <tbody>
-            {cityscapersBanks.map((row, idx) => (
-              <tr key={idx} className="hover:bg-gray-50">
-                {row.map((cell, i) => (
-                  <td key={i} className="p-3 border">
-                    {cell}
-                  </td>
-                ))}
+          <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-gray-600">
+            Payments may be made directly to our bank account from any country
+            through Bank to Bank transfer or via Money Exchange. Please use the
+            account information below carefully.
+          </p>
+        </div>
+
+        {/* Bank Cards */}
+        <div className="mt-14 grid gap-6 lg:grid-cols-2">
+          {cityscapersBanks.map((bank) => (
+            <div
+              key={bank.sl}
+              className="group overflow-hidden rounded-3xl border border-border_color bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
+            >
+              <div className="relative bg-gradient-to-br from-primary via-primary to-secondary p-6 text-white">
+                <div className="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-white/10" />
+
+                <div className="relative flex items-start justify-between gap-5">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/70">
+                      Bank Account {bank.sl}
+                    </p>
+                    <h2 className="mt-3 text-2xl font-bold">{bank.bank}</h2>
+                    <p className="mt-2 text-sm text-white/80">{bank.branch}</p>
+                  </div>
+
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/15 text-xl">
+                    <FaBuildingColumns />
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-6">
+                <div className="space-y-4">
+                  <InfoRow label="Account Name" value={bank.accountName} />
+
+                  <CopyRow
+                    label="Account No"
+                    value={bank.accountNo}
+                    copied={copied}
+                    onCopy={handleCopy}
+                  />
+
+                  <CopyRow
+                    label="Swift Code"
+                    value={bank.swift}
+                    copied={copied}
+                    onCopy={handleCopy}
+                  />
+
+                  <CopyRow
+                    label="Routing No"
+                    value={bank.routing}
+                    copied={copied}
+                    onCopy={handleCopy}
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Table */}
+        <div className="mt-12 hidden overflow-hidden rounded-3xl border border-border_color bg-white shadow-soft lg:block">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-primary text-white">
+              <tr>
+                <th className="px-5 py-4 font-semibold">SL</th>
+                <th className="px-5 py-4 font-semibold">Bank</th>
+                <th className="px-5 py-4 font-semibold">Branch</th>
+                <th className="px-5 py-4 font-semibold">Account Name</th>
+                <th className="px-5 py-4 font-semibold">Account No</th>
+                <th className="px-5 py-4 font-semibold">Swift</th>
+                <th className="px-5 py-4 font-semibold">Routing</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+
+            <tbody>
+              {cityscapersBanks.map((bank) => (
+                <tr
+                  key={bank.sl}
+                  className="border-b border-border_color last:border-b-0 hover:bg-primary/5"
+                >
+                  <td className="px-5 py-4 font-semibold text-primary">
+                    {bank.sl}
+                  </td>
+                  <td className="px-5 py-4 font-medium text-soft_black">
+                    {bank.bank}
+                  </td>
+                  <td className="px-5 py-4 text-gray-600">{bank.branch}</td>
+                  <td className="px-5 py-4 text-gray-600">
+                    {bank.accountName}
+                  </td>
+                  <td className="px-5 py-4 font-semibold text-soft_black">
+                    {bank.accountNo}
+                  </td>
+                  <td className="px-5 py-4 text-gray-600">{bank.swift}</td>
+                  <td className="px-5 py-4 text-gray-600">{bank.routing}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <PaymentInstructions />
       </div>
-      <PaymentInstructions />
     </section>
+  );
+}
+
+function InfoRow({ label, value }) {
+  return (
+    <div className="rounded-2xl border border-border_color bg-gray-50 px-4 py-3">
+      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+        {label}
+      </p>
+      <p className="mt-1 text-sm font-semibold text-soft_black">{value}</p>
+    </div>
+  );
+}
+
+function CopyRow({ label, value, copied, onCopy }) {
+  const isCopied = copied === value;
+
+  return (
+    <div className="flex items-center justify-between gap-4 rounded-2xl border border-border_color bg-gray-50 px-4 py-3">
+      <div>
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+          {label}
+        </p>
+        <p className="mt-1 text-sm font-semibold text-soft_black">{value}</p>
+      </div>
+
+      <button
+        type="button"
+        onClick={() => onCopy(value)}
+        className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition hover:bg-primary hover:text-white"
+        aria-label={`Copy ${label}`}
+      >
+        {isCopied ? <FaCheck /> : <FaRegCopy />}
+      </button>
+    </div>
   );
 }

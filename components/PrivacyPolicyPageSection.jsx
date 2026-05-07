@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import {
   FaUserShield,
@@ -14,112 +15,123 @@ import {
 
 export default function PrivacyPolicyPageSection() {
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-white py-20">
-      <div className="max-w-6xl mx-auto px-6 text-gray-800 leading-7">
+    <section className="bg-primary/5 py-20 sm:py-24">
+      <div className="mx-auto max-w-6xl px-6 text-gray-800">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">
+        <div className="mx-auto mb-14 max-w-3xl text-center">
+          <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-primary">
+            Privacy & Data Protection
+          </p>
+
+          <h1 className="text-4xl font-bold tracking-[-0.03em] text-gray-900 md:text-5xl">
             Privacy Policy
           </h1>
-          <p className="text-gray-500 max-w-2xl mx-auto">
+
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-gray-600">
             At Anondo City Scapers, we respect your privacy and are committed to
             protecting your personal information. This page explains how we
             collect, use, and safeguard your data.
           </p>
-          <div className="w-24 h-[3px] bg-primary mx-auto mt-5 rounded-full" />
+
+          <div className="mx-auto mt-6 h-[3px] w-24 rounded-full bg-primary" />
         </div>
 
-        {/* Section 1 */}
-        <Card icon={<FaDatabase />} title="1. Information We Collect">
-          <List
-            items={[
-              "Personal Details: Name, email address, phone number, and address when you contact us or request services.",
-              "Payment Information: Billing details processed securely through trusted partners like bKash, Nagad, or bank cards.",
-              "Website Data: Anonymous usage data such as browser type and visited pages to improve our services.",
-            ]}
-          />
-        </Card>
+        {/* Policy Cards */}
+        <div className="space-y-6">
+          <Card icon={<FaDatabase />} title="1. Information We Collect">
+            <List
+              items={[
+                "Personal Details: Name, email address, phone number, and address when you contact us or request services.",
+                "Payment Information: Billing details processed securely through trusted partners like bKash, Nagad, bank transfer, or card services.",
+                "Website Data: Anonymous usage data such as browser type, device information, and visited pages to improve our services.",
+              ]}
+            />
+          </Card>
 
-        <Spacer />
+          <Card icon={<FaCogs />} title="2. How We Use Your Information">
+            <List
+              items={[
+                "To process service requests, inquiries, orders, and customer communication.",
+                "To respond to inquiries and provide customer support.",
+                "To send important updates, offers, or service-related notifications when applicable.",
+              ]}
+            />
+          </Card>
 
-        {/* Section 2 */}
-        <Card icon={<FaCogs />} title="2. How We Use Your Information">
-          <List
-            items={[
-              "To process orders and deliver our services.",
-              "To respond to inquiries and provide customer support.",
-              "To send important updates, offers, or service-related notifications (if you opt-in).",
-            ]}
-          />
-        </Card>
+          <Card icon={<FaShareAlt />} title="3. Information Sharing">
+            <List
+              items={[
+                "We do not sell your personal data to third parties.",
+                "We may share necessary information with trusted partners such as payment gateways or service providers.",
+                "We may disclose information if required by law, regulatory authorities, or legal process in Bangladesh.",
+              ]}
+            />
+          </Card>
 
-        <Spacer />
+          <Card icon={<FaLock />} title="4. Data Security">
+            <Paragraph text="We take reasonable technical and organizational measures to protect your data from unauthorized access, loss, misuse, or disclosure. However, no online system can be guaranteed 100% secure." />
+          </Card>
 
-        {/* Section 3 */}
-        <Card icon={<FaShareAlt />} title="3. Information Sharing">
-          <List
-            items={[
-              "We do not sell your personal data to third parties.",
-              "We may share information with trusted partners such as payment gateways or service providers.",
-              "We may disclose information if required by law or authorities in Bangladesh.",
-            ]}
-          />
-        </Card>
+          <Card icon={<FaCheckCircle />} title="5. Your Rights">
+            <List
+              items={[
+                "You may request access to the personal data we hold about you.",
+                "You may request correction or deletion of your personal information.",
+                "You may unsubscribe from marketing communications at any time.",
+              ]}
+            />
+          </Card>
 
-        <Spacer />
+          <Card icon={<FaUserShield />} title="6. Contact Us">
+            <div className="space-y-5">
+              <p className="text-sm leading-8 text-gray-600 sm:text-base">
+                If you have any questions about this Privacy Policy, please
+                contact us:
+              </p>
 
-        {/* Section 4 */}
-        <Card icon={<FaLock />} title="4. Data Security">
-          <Paragraph text="We take reasonable technical and organizational measures to protect your data from unauthorized access, loss, or misuse. However, no online system can be guaranteed 100% secure." />
-        </Card>
+              <div className="grid gap-4 md:grid-cols-3">
+                <ContactItem
+                  icon={<FaPhoneAlt />}
+                  label="Phone"
+                  value="+880 1318-252050"
+                  href="tel:+8801318252050"
+                />
 
-        <Spacer />
+                <ContactItem
+                  icon={<FaEnvelope />}
+                  label="Email"
+                  value="info@anondocityscapers.com"
+                  href="mailto:info@anondocityscapers.com"
+                />
 
-        {/* Section 5 */}
-        <Card icon={<FaCheckCircle />} title="5. Your Rights">
-          <List
-            items={[
-              "Request access to the personal data we hold about you.",
-              "Request correction or deletion of your information.",
-              "Unsubscribe from marketing communications at any time.",
-            ]}
-          />
-        </Card>
+                <ContactItem
+                  icon={<FaMapMarkerAlt />}
+                  label="Address"
+                  value="Motijheel, Dhaka 1000, Bangladesh"
+                />
+              </div>
+            </div>
+          </Card>
+        </div>
 
-        <Spacer />
-
-        {/* Contact Section */}
-        <Card icon={<FaUserShield />} title="6. Contact Us">
-          <div className="space-y-3 text-gray-600">
-            <p>
-              If you have any questions about this Privacy Policy, please
-              contact us:
-            </p>
-
-            <div className="flex items-center gap-3">
-              <FaPhoneAlt className="text-primary" />
-              <span>+880 1318-252050</span>
+        {/* Footer Notice */}
+        <div className="mt-12 rounded-3xl border border-primary/15 bg-white p-6 shadow-sm">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary text-xl text-white">
+              <FaUserShield />
             </div>
 
-            <div className="flex items-center gap-3">
-              <FaEnvelope className="text-primary" />
-              <span>info@anondocityscapers.com</span>
-            </div>
+            <div>
+              <h3 className="text-lg font-bold text-gray-900">
+                Privacy Commitment
+              </h3>
 
-            <div className="flex items-center gap-3">
-              <FaMapMarkerAlt className="text-primary" />
-              <span>Motijheel, Dhaka 1000, Bangladesh</span>
+              <p className="mt-1 text-sm leading-7 text-gray-600">
+                Your privacy is important to us. We are committed to protecting
+                your data with transparency, responsibility, and care.
+              </p>
             </div>
           </div>
-        </Card>
-
-        {/* Footer Note */}
-        <div className="mt-16 bg-blue-100 border border-blue-200 rounded-2xl p-6 flex items-center gap-3 shadow-sm">
-          <FaUserShield className="text-primary text-xl" />
-          <p className="font-medium">
-            Your privacy is important to us. We are committed to protecting your
-            data with transparency and care.
-          </p>
         </div>
       </div>
     </section>
@@ -130,32 +142,64 @@ export default function PrivacyPolicyPageSection() {
 
 function Card({ icon, title, children }) {
   return (
-    <div className="bg-white rounded-3xl border border-blue-100 p-8 shadow-sm hover:shadow-xl transition duration-300">
-      <div className="flex items-center gap-4 mb-6">
-        <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 text-primary text-xl">
+    <div className="rounded-3xl border border-primary/10 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg sm:p-8">
+      <div className="mb-5 flex items-start gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-xl text-primary">
           {icon}
         </div>
-        <h2 className="text-xl md:text-2xl font-bold text-gray-900">{title}</h2>
+
+        <h2 className="pt-2 text-xl font-bold tracking-[-0.02em] text-gray-900 md:text-2xl">
+          {title}
+        </h2>
       </div>
-      <div className="space-y-3">{children}</div>
+
+      <div>{children}</div>
     </div>
   );
 }
 
 function Paragraph({ text }) {
-  return <p className="text-gray-600 leading-relaxed">{text}</p>;
+  return <p className="text-sm leading-8 text-gray-600 sm:text-base">{text}</p>;
 }
 
 function List({ items }) {
   return (
-    <ul className="list-disc pl-5 space-y-2 text-gray-600">
+    <ul className="space-y-3">
       {items.map((item, i) => (
-        <li key={i}>{item}</li>
+        <li
+          key={i}
+          className="flex items-start gap-3 text-sm leading-7 text-gray-600 sm:text-base"
+        >
+          <FaCheckCircle className="mt-1 shrink-0 text-primary" />
+          <span>{item}</span>
+        </li>
       ))}
     </ul>
   );
 }
 
-function Spacer() {
-  return <div className="h-10" />;
+function ContactItem({ icon, label, value, href }) {
+  const content = (
+    <div className="h-full rounded-2xl border border-primary/10 bg-primary/5 p-5 transition hover:border-primary/30 hover:bg-white">
+      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white text-primary shadow-sm">
+        {icon}
+      </div>
+
+      <p className="text-xs font-bold uppercase tracking-[0.16em] text-primary">
+        {label}
+      </p>
+
+      <p className="mt-2 text-sm font-medium leading-6 text-gray-700">
+        {value}
+      </p>
+    </div>
+  );
+
+  return href ? (
+    <a href={href} className="block h-full">
+      {content}
+    </a>
+  ) : (
+    content
+  );
 }

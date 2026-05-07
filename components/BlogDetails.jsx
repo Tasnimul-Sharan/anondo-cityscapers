@@ -561,7 +561,7 @@ export default function BlogDetails({ blogsData }) {
             {sections.map((section, index) => (
               <div
                 key={index}
-                className="border-b border-gray-100 py-10 first:pt-6 last:border-b-0 last:pb-6"
+                className=" py-10 first:pt-6 last:pb-6"
               >
                 <div className="mb-5 flex items-center gap-4">
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white shadow-lg shadow-primary/25">

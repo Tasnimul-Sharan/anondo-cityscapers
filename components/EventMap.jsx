@@ -6,10 +6,6 @@ export default function OfficeMapSection() {
   const address =
     "Printers Building, 5 Rajuk Avenue, Motijheel, Dhaka, Bangladesh";
 
-  const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(
-    address,
-  )}&z=16&output=embed`;
-
   const directionUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
     address,
   )}`;
@@ -42,27 +38,27 @@ export default function OfficeMapSection() {
         {/* Main Layout */}
         <div className="grid gap-8 lg:grid-cols-[0.38fr_0.62fr] lg:items-stretch">
           {/* Info Card */}
-          <div className="border border-[#E5E7EB] bg-[#F8F9FC] p-7 sm:p-8">
-            <div className="flex h-12 w-12 items-center justify-center bg-gray-900 text-white">
+          <div className="rounded-[2rem] border border-border_color bg-[#F8F9FC] p-7 shadow-soft sm:p-8">
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-xl text-white">
               <FaMapMarkerAlt />
             </div>
 
-            <h3 className="mt-6 text-2xl font-bold text-gray-900">
+            <h3 className="mt-6 text-2xl font-bold text-soft_black">
               Printers Building
             </h3>
 
             <p className="mt-3 text-base leading-7 text-[#1F2937]/70">
-              12–13th Floor, 5 Rajuk Avenue, Motijheel, Dhaka, Bangladesh.
+              11–14th Floor, 5 Rajuk Avenue, Motijheel, Dhaka, Bangladesh.
             </p>
 
-            <div className="mt-8 space-y-5 border-t border-[#E5E7EB] pt-6">
+            <div className="mt-8 space-y-5 border-t border-border_color pt-6">
               <div className="flex gap-4">
-                <span className="mt-1 flex h-9 w-9 shrink-0 items-center justify-center bg-white text-gray-900">
+                <span className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-primary shadow-sm">
                   <FaClock />
                 </span>
 
                 <div>
-                  <p className="text-sm font-bold text-gray-900">
+                  <p className="text-sm font-bold text-soft_black">
                     Office Hours
                   </p>
 
@@ -73,12 +69,12 @@ export default function OfficeMapSection() {
               </div>
 
               <div className="flex gap-4">
-                <span className="mt-1 flex h-9 w-9 shrink-0 items-center justify-center bg-white text-gray-900">
+                <span className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-primary shadow-sm">
                   <FaPhoneAlt />
                 </span>
 
                 <div>
-                  <p className="text-sm font-bold text-gray-900">
+                  <p className="text-sm font-bold text-soft_black">
                     Contact Support
                   </p>
 
@@ -94,18 +90,19 @@ export default function OfficeMapSection() {
               href={directionUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex w-full items-center justify-center bg-gray-900 px-6 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white transition duration-300 hover:bg-[#F48220]"
+              className="mt-8 inline-flex w-full items-center justify-center rounded-2xl bg-primary px-6 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white transition duration-300 hover:-translate-y-1 hover:bg-secondary hover:shadow-lift"
             >
               Get Direction
             </a>
           </div>
 
           {/* Map */}
-          <div className="overflow-hidden border border-[#E5E7EB] bg-white p-3">
+
+          <div className="overflow-hidden rounded-[2rem] border border-border_color bg-white p-3 shadow-soft">
             <iframe
               title="Printers Building Location Map"
-              src={mapSrc}
-              className="h-[480px] w-full border-0 md:h-[600px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4812.923042245769!2d90.41187546190507!3d23.729719178595598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85855d36dcd%3A0xc01cee8905afc935!2sPrinter&#39;s%20Building!5e1!3m2!1sen!2sbd!4v1775975838729!5m2!1sen!2sbd"
+              className="h-[480px] w-full rounded-[1.5rem] border-0 md:h-[600px]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
