@@ -5,72 +5,100 @@
 // export default function HowToBecomeOwner() {
 //   const steps = [
 //     {
-//       icon: <FiPhoneCall size={28} />,
+//       icon: <FiPhoneCall />,
 //       title: "Contact Us",
 //       desc: "Get in touch with our marketing representative or visit our office directly.",
 //     },
 //     {
-//       icon: <FaClipboardList size={28} />,
+//       icon: <FaClipboardList />,
 //       title: "Fill Out the Form",
 //       desc: "Complete the required documents and wait for verification.",
 //     },
 //     {
-//       icon: <FaUserCheck size={28} />,
+//       icon: <FaUserCheck />,
 //       title: "Membership",
 //       desc: "After verification, you will be registered and receive project details.",
 //     },
 //     {
-//       icon: <FaMoneyCheckAlt size={28} />,
+//       icon: <FaMoneyCheckAlt />,
 //       title: "Complete Payment",
 //       desc: "Finalize payment and become a proud plot owner.",
+//     },
+//     {
+//       icon: <FaUserCheck />,
+//       title: "Registration",
+//       desc: "Submit your documents and complete the official registration process.",
 //     },
 //   ];
 
 //   return (
-//     <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+//     <section className="py-24 bg-white">
 //       {/* Heading */}
 //       <div className="text-center mb-20 px-4">
 //         <h2 className="text-4xl font-bold text-gray-900">
-//           Your Journey to Land Ownership
+//           Your Ownership Journey
 //         </h2>
 //         <p className="text-gray-500 mt-3">
-//           Simple steps to secure your dream property
+//           A simple and transparent process to secure your land
 //         </p>
 //         <div className="w-24 h-[3px] bg-primary mx-auto mt-4 rounded-full" />
 //       </div>
 
-//       {/* Steps */}
-//       <div className="max-w-7xl mx-auto px-4 relative">
-//         <div className="grid md:grid-cols-4 gap-10 relative">
-//           {/* Line */}
-//           <div className="hidden md:block absolute top-10 left-0 w-full h-[2px] bg-gradient-to-r from-primary/20 via-primary to-primary/20"></div>
+//       {/* Timeline */}
+//       <div className="max-w-5xl mx-auto px-6 relative">
+//         {/* Vertical line */}
+//         <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-[2px] h-full bg-gradient-to-b from-primary/20 via-primary to-primary/20"></div>
 
-//           {steps.map((step, index) => (
-//             <div key={index} className="relative group text-center">
-//               {/* Step Number */}
-//               <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-white text-sm w-8 h-8 flex items-center justify-center rounded-full shadow-md z-20">
-//                 {index + 1}
-//               </div>
+//         <div className="space-y-16">
+//           {steps.map((step, index) => {
+//             const isLeft = index % 2 === 0;
 
-//               {/* Card */}
-//               <div className="bg-white rounded-2xl shadow-lg p-6 pt-10 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-//                 {/* Icon */}
-//                 <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-500">
-//                   {step.icon}
+//             return (
+//               <div
+//                 key={index}
+//                 className={`relative flex items-center ${
+//                   isLeft ? "justify-start" : "justify-end"
+//                 }`}
+//               >
+//                 {/* Card */}
+//                 <div
+//                   className={`w-full md:w-[45%] bg-primary/5 border border-primary/20 rounded-2xl p-6 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 ${
+//                     isLeft ? "mr-auto text-right" : "ml-auto text-left"
+//                   }`}
+//                 >
+//                   {/* Icon */}
+//                   <div
+//                     className={`flex items-center gap-3 mb-3 ${
+//                       isLeft ? "justify-end" : "justify-start"
+//                     }`}
+//                   >
+//                     {!isLeft && (
+//                       <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+//                         {step.icon}
+//                       </div>
+//                     )}
+
+//                     <h3 className="text-lg font-semibold text-gray-800">
+//                       {step.title}
+//                     </h3>
+
+//                     {isLeft && (
+//                       <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+//                         {step.icon}
+//                       </div>
+//                     )}
+//                   </div>
+
+//                   <p className="text-gray-500 text-sm leading-relaxed">
+//                     {step.desc}
+//                   </p>
 //                 </div>
 
-//                 {/* Title */}
-//                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
-//                   {step.title}
-//                 </h3>
-
-//                 {/* Desc */}
-//                 <p className="text-gray-500 text-sm leading-relaxed">
-//                   {step.desc}
-//                 </p>
+//                 {/* Center Dot */}
+//                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary rounded-full border-4 border-white shadow-lg z-10"></div>
 //               </div>
-//             </div>
-//           ))}
+//             );
+//           })}
 //         </div>
 //       </div>
 //     </section>
@@ -78,8 +106,15 @@
 // }
 
 "use client";
+
 import { FiPhoneCall } from "react-icons/fi";
-import { FaClipboardList, FaUserCheck, FaMoneyCheckAlt } from "react-icons/fa";
+import {
+  FaClipboardList,
+  FaUserCheck,
+  FaMoneyCheckAlt,
+  FaFileSignature,
+  FaCheckCircle,
+} from "react-icons/fa";
 
 export default function HowToBecomeOwner() {
   const steps = [
@@ -104,80 +139,146 @@ export default function HowToBecomeOwner() {
       desc: "Finalize payment and become a proud plot owner.",
     },
     {
-      icon: <FaUserCheck />,
+      icon: <FaFileSignature />,
       title: "Registration",
       desc: "Submit your documents and complete the official registration process.",
     },
   ];
 
   return (
-    <section className="py-24 bg-white">
-      {/* Heading */}
-      <div className="text-center mb-20 px-4">
-        <h2 className="text-4xl font-bold text-gray-900">
-          Your Ownership Journey
-        </h2>
-        <p className="text-gray-500 mt-3">
-          A simple and transparent process to secure your land
-        </p>
-        <div className="w-24 h-[3px] bg-primary mx-auto mt-4 rounded-full" />
-      </div>
+    <section className="relative overflow-hidden bg-primary/5 py-20 sm:py-24">
+      {/* Soft Background */}
+      <div className="pointer-events-none absolute left-0 top-0 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
+      <div className="pointer-events-none absolute bottom-0 right-0 h-80 w-80 rounded-full bg-primary/5 blur-3xl" />
 
-      {/* Timeline */}
-      <div className="max-w-5xl mx-auto px-6 relative">
-        {/* Vertical line */}
-        <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-[2px] h-full bg-gradient-to-b from-primary/20 via-primary to-primary/20"></div>
+      <div className="relative mx-auto max-w-7xl px-6">
+        {/* Heading */}
+        <div className="mx-auto mb-16 max-w-3xl text-center">
+          <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-primary">
+            Ownership Process
+          </p>
 
-        <div className="space-y-16">
-          {steps.map((step, index) => {
-            const isLeft = index % 2 === 0;
+          <h2 className="text-4xl font-bold tracking-[-0.03em] text-gray-900 md:text-5xl">
+            Your Ownership Journey
+          </h2>
 
-            return (
-              <div
-                key={index}
-                className={`relative flex items-center ${
-                  isLeft ? "justify-start" : "justify-end"
-                }`}
-              >
-                {/* Card */}
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-gray-600">
+            A simple, transparent, and guided process to secure your land with
+            proper verification, payment, and registration support.
+          </p>
+
+          <div className="mx-auto mt-6 h-[3px] w-24 rounded-full bg-primary" />
+        </div>
+
+        {/* Timeline */}
+        <div className="relative mx-auto max-w-6xl">
+          {/* Center Line */}
+          <div className="pointer-events-none absolute left-1/2 top-0 hidden h-full w-[2px] -translate-x-1/2 rounded-full bg-primary/20 md:block" />
+
+          <div className="space-y-8 md:space-y-12">
+            {steps.map((step, index) => {
+              const isLeft = index % 2 === 0;
+
+              return (
                 <div
-                  className={`w-full md:w-[45%] bg-primary/5 border border-primary/20 rounded-2xl p-6 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 ${
-                    isLeft ? "mr-auto text-right" : "ml-auto text-left"
+                  key={index}
+                  className={`relative flex ${
+                    isLeft ? "md:justify-start" : "md:justify-end"
                   }`}
                 >
-                  {/* Icon */}
+                  {/* Card */}
                   <div
-                    className={`flex items-center gap-3 mb-3 ${
-                      isLeft ? "justify-end" : "justify-start"
+                    className={`group relative w-full overflow-hidden rounded-[2rem] border border-primary/10 bg-white p-6 shadow-sm transition-all duration-300 hover:border-primary/30 hover:shadow-xl md:w-[46%] md:p-7 ${
+                      isLeft ? "md:text-right" : "md:text-left"
                     }`}
                   >
-                    {!isLeft && (
-                      <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary">
-                        {step.icon}
-                      </div>
-                    )}
+                    {/* Top Accent */}
+                    <div className="pointer-events-none absolute left-0 top-0 h-1 w-full bg-primary" />
 
-                    <h3 className="text-lg font-semibold text-gray-800">
-                      {step.title}
-                    </h3>
+                    {/* Soft Shape */}
+                    <div className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-primary/5 transition duration-300 group-hover:bg-primary/10" />
 
-                    {isLeft && (
-                      <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary">
-                        {step.icon}
+                    {/* Mobile Number */}
+                    <div className="relative mb-5 flex items-center justify-between md:hidden">
+                      <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-primary text-sm font-bold text-white">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+
+                      <span className="rounded-full bg-primary/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-primary">
+                        Step
+                      </span>
+                    </div>
+
+                    {/* Connector Line */}
+                    <div
+                      className={`pointer-events-none absolute top-1/2 hidden h-[2px] w-12 -translate-y-1/2 bg-primary/25 md:block ${
+                        isLeft ? "-right-12" : "-left-12"
+                      }`}
+                    />
+
+                    {/* Header */}
+                    <div
+                      className={`relative mb-4 flex items-center gap-4 ${
+                        isLeft ? "md:justify-end" : "md:justify-start"
+                      }`}
+                    >
+                      {!isLeft && (
+                        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-xl text-primary transition duration-300 group-hover:bg-primary group-hover:text-white">
+                          {step.icon}
+                        </div>
+                      )}
+
+                      <div>
+                        <p className="mb-1 text-xs font-bold uppercase tracking-[0.18em] text-primary/70">
+                          Step {String(index + 1).padStart(2, "0")}
+                        </p>
+
+                        <h3 className="text-xl font-bold tracking-[-0.02em] text-gray-900 md:text-2xl">
+                          {step.title}
+                        </h3>
                       </div>
-                    )}
+
+                      {isLeft && (
+                        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-xl text-primary transition duration-300 group-hover:bg-primary group-hover:text-white">
+                          {step.icon}
+                        </div>
+                      )}
+                    </div>
+
+                    <p className="relative text-sm leading-7 text-gray-600 md:text-base">
+                      {step.desc}
+                    </p>
+
+                    <div
+                      className={`relative mt-6 h-[2px] w-14 rounded-full bg-primary/30 transition-all duration-300 group-hover:w-24 group-hover:bg-primary ${
+                        isLeft ? "md:ml-auto" : ""
+                      }`}
+                    />
                   </div>
 
-                  <p className="text-gray-500 text-sm leading-relaxed">
-                    {step.desc}
-                  </p>
+                  {/* Center Dot */}
+                  <div className="pointer-events-none absolute left-1/2 top-1/2 z-10 hidden h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-4 border-white bg-primary text-sm font-bold text-white shadow-lg md:flex">
+                    {String(index + 1).padStart(2, "0")}
+                  </div>
                 </div>
+              );
+            })}
+          </div>
+        </div>
 
-                {/* Center Dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary rounded-full border-4 border-white shadow-lg z-10"></div>
-              </div>
-            );
-          })}
+        {/* Bottom Note */}
+        <div className="mx-auto mt-14 max-w-4xl rounded-[2rem] border border-primary/10 bg-white p-6 shadow-sm">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary text-xl text-white">
+              <FaCheckCircle />
+            </div>
+
+            <p className="text-sm leading-7 text-gray-600">
+              Our team supports you through every stage — from first contact and
+              document verification to payment completion and official
+              registration.
+            </p>
+          </div>
         </div>
       </div>
     </section>

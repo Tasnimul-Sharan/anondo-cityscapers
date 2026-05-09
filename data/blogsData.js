@@ -9,16 +9,16 @@ export const blogsData = [
       "Purbachal is becoming the most promising real estate hub in Bangladesh. Discover why investors are choosing this location.",
     slug: "invest-in-purbachal",
   },
-  {
-    id: 2,
-    title: "Anondo Rosemont Estate – Luxury Villa Living",
-    date: "07 January, 2026",
-    author: "Admin",
-    image: "/projects/rosemont.jpg",
-    description:
-      "Explore premium villa lifestyle with modern facilities, wide roads, and green landscapes.",
-    slug: "anondo-rosemont-estate",
-  },
+  // {
+  //   id: 2,
+  //   title: "Anondo Rosemont Estate – Luxury Villa Living",
+  //   date: "07 January, 2026",
+  //   author: "Admin",
+  //   image: "/projects/rosemont.jpg",
+  //   description:
+  //     "Explore premium villa lifestyle with modern facilities, wide roads, and green landscapes.",
+  //   slug: "anondo-rosemont-estate",
+  // },
   {
     id: 3,
     title: "Anondo Bhubon – Future Smart City",

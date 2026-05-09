@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 import { FaChevronCircleRight } from "react-icons/fa";
 
 const projects = [
-  {
-    img: "/slider/slider1.jpg",
-    title: "Anondo Rosemont Estate",
-    desc: "A premium 807-bigha duplex villa township redefining structured luxury living in Bangladesh.",
-    slug: "anondo-rosemont-estate",
-    tag: "Luxury Villa Township",
-  },
+  // {
+  //   img: "/slider/slider1.jpg",
+  //   title: "Anondo Rosemont Estate",
+  //   desc: "A premium 807-bigha duplex villa township redefining structured luxury living in Bangladesh.",
+  //   slug: "anondo-rosemont-estate",
+  //   tag: "Luxury Villa Township",
+  // },
   {
     img: "/slider/slider2.jpg",
     title: "Anondo Park City",
@@ -36,7 +36,7 @@ export default function ProjectsSection() {
       <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
       <div className="absolute right-0 bottom-20 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
 
-      <div className="relative mx-auto max-w-7xl">
+      <div className="relative mx-auto max-w-5xl">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -62,7 +62,7 @@ export default function ProjectsSection() {
         </motion.div>
 
         {/* Grid */}
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2">
           {projects.map((project, index) => (
             <motion.div
               key={project.slug}

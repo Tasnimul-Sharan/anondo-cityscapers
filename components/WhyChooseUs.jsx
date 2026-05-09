@@ -28,37 +28,62 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-16 bg-gray-50 px-6 md:px-16">
-      <div className="max-w-7xl mx-auto text-center">
-        {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold mb-4">Why Choose Us</h2>
+    <section className="bg-white py-20 sm:py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        {/* Header */}
+        <div className="mx-auto mb-14 max-w-3xl text-center">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-primary">
+            Why Choose Us
+          </p>
 
-        <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-          We deliver more than just land — we create sustainable, future-ready
-          communities built on trust and excellence.
-        </p>
+          <h2 className="text-4xl font-bold tracking-[-0.03em] text-gray-900 md:text-5xl">
+            Built for Better Living
+          </h2>
 
-        <div className="w-20 h-[3px] bg-primary mx-auto mb-12"></div>
-        {/* Grid */}
-        <div className="grid md:grid-cols-4 gap-8">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-gray-600">
+            We deliver more than just land — we create sustainable, future-ready
+            communities built on trust and excellence.
+          </p>
+
+          <div className="mx-auto mt-6 h-[3px] w-20 rounded-full bg-primary" />
+        </div>
+
+        {/* Feature Cards */}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((item, index) => (
             <motion.div
-              key={index}
-              whileHover={{ y: -10 }}
-              className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition duration-500"
+              key={item.title}
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.35, delay: index * 0.06 }}
+              className="group relative overflow-hidden rounded-3xl p-[1px] shadow-sm"
             >
-              {/* Icon */}
-              <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-primary/10 text-primary text-2xl mb-5 group-hover:scale-110 transition">
-                {item.icon}
+              {/* Animated Border */}
+              <div className="absolute inset-0 rounded-3xl bg-gray-200 transition duration-700 group-hover:bg-transparent" />
+
+              <div className="absolute -inset-20 rounded-3xl bg-[conic-gradient(from_0deg,transparent_0deg,transparent_80deg,var(--tw-gradient-from)_120deg,transparent_180deg,transparent_360deg)] from-primary opacity-0 transition-opacity duration-700 group-hover:animate-[spin_4s_linear_infinite] group-hover:opacity-100" />
+
+              {/* Card Inner */}
+              <div className="relative h-full rounded-[1.45rem] bg-white p-7 text-center transition duration-300 group-hover:shadow-lg">
+                {/* Icon */}
+                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-2xl text-primary transition duration-500 group-hover:bg-primary group-hover:text-white">
+                  {item.icon}
+                </div>
+
+                {/* Title */}
+                <h3 className="text-xl font-bold text-gray-900">
+                  {item.title}
+                </h3>
+
+                {/* Description */}
+                <p className="mt-3 text-sm leading-7 text-gray-600">
+                  {item.desc}
+                </p>
+
+                {/* Small Line */}
+                <div className="mx-auto mt-6 h-[2px] w-10 rounded-full bg-primary/30 transition-all duration-700 group-hover:w-16 group-hover:bg-primary" />
               </div>
-
-              {/* Title */}
-              <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-
-              {/* Description */}
-              <p className="text-gray-600 text-sm leading-relaxed">
-                {item.desc}
-              </p>
             </motion.div>
           ))}
         </div>

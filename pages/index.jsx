@@ -9,6 +9,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import StatsSection from "@/components/StatsSection";
 import NoticeSection from "@/components/BlogsSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import BlogsSection from "@/components/BlogsSection";
 
 export default function Home() {
   const meta = {
@@ -53,6 +54,7 @@ export default function Home() {
       {/* <PresidentSection /> */}
       <FAQSection />
       {/* <NoticeSection /> */}
+      <BlogsSection />
       <ContactSection />
     </div>
   );

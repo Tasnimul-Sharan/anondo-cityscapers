@@ -26,9 +26,9 @@ const menuItems = [
     name: "Projects",
     path: "#",
     submenu: [
-      { name: "Anondo Rosemont Estate", path: "/rosemont" },
-      { name: "Anondo Parkcity", path: "/parkcity" },
+      // { name: "Anondo Rosemont Estate", path: "/rosemont" },
       { name: "Anondo Bhubon", path: "/anondo-bhubon" },
+      { name: "Anondo Parkcity", path: "/parkcity" },
     ],
   },
 

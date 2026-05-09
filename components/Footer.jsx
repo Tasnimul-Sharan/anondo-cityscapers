@@ -11,7 +11,6 @@ import { FiPhoneCall } from "react-icons/fi";
 import { PiMapPinBold } from "react-icons/pi";
 import Image from "next/image";
 import Link from "next/link";
-import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -32,23 +31,15 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <SocialIcon
               icon={<FaFacebookF />}
-              href="https://www.facebook.com/AnondoHousing"
-            />
-            <SocialIcon
-              icon={<FaXTwitter />}
-              href="https://twitter.com/AnondoPolice"
+              href="https://www.facebook.com/anondo.cityscapers.ltd/"
             />
             <SocialIcon
               icon={<FaLinkedinIn />}
-              href="https://www.linkedin.com/company/anondo-housing-society"
-            />
-            <SocialIcon
-              icon={<FaYoutube />}
-              href="https://www.youtube.com/@AnondoHousingSocietyOfficial"
+              href="https://www.linkedin.com/company/anondo-cityscapers-ltd/"
             />
             <SocialIcon
               icon={<FaInstagram />}
-              href="https://www.instagram.com/aphs_bd/"
+              href="https://www.instagram.com/anondo_cityscapers/"
             />
           </div>
         </div>
@@ -64,8 +55,9 @@ export default function Footer() {
               { name: "Home", href: "/" },
               { name: "About", href: "/about" },
               { name: "Contact", href: "/contact" },
-              { name: "Project", href: "/project" },
+              { name: "Blogs", href: "/blogs" },
               { name: "Terms and Conditions", href: "/terms-and-conditions" },
+              { name: "Privacy Policy", href: "/privacy-policy" },
             ].map((item, i) => (
               <li key={i} className="relative group w-fit">
                 <Link href={item.href}>
@@ -91,10 +83,10 @@ export default function Footer() {
             {[
               { name: "Anondo Bhubon", link: "/anondo-bhubon" },
               { name: "Anondo Parkcity", link: "/anondo-parkcity" },
-              {
-                name: "Anondo Rosemont Estate",
-                link: "/anondo-rosemont-estate",
-              },
+              // {
+              //   name: "Anondo Rosemont Estate",
+              //   link: "/anondo-rosemont-estate",
+              // },
             ].map((item, i) => (
               <li key={i} className="relative group w-fit">
                 <Link href={item.link}>
