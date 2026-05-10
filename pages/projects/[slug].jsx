@@ -37,7 +37,7 @@ export default function ProjectDetailsPage() {
 
   const projectData = project?.projectData || {};
 
-  const siteName = "Anondo Cityscapers";
+  const siteName = "Anondo Cityscapers Ltd";
   const siteUrl = "https://anondocityscapers.com";
 
   const projectTitle = project.title || projectData.title || "Project Details";
