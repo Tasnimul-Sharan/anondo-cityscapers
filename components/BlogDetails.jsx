@@ -507,7 +507,7 @@ export default function BlogDetails({ blogsData }) {
         {/* Main Image */}
         <div className="mx-auto max-w-6xl">
           <div className="relative overflow-hidden rounded-[30px] border border-white bg-white p-2 shadow-[0_30px_90px_rgba(15,23,42,0.12)]">
-            <div className="relative h-[300px] overflow-hidden rounded-[24px] md:h-[540px]">
+            <div className="relative h-[300px] overflow-hidden rounded-[24px] md:h-[600px]">
               <Image
                 src={blogPost.image}
                 alt={blogPost.title}
@@ -535,23 +535,6 @@ export default function BlogDetails({ blogsData }) {
           <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-gray-600 md:text-lg">
             {blogPost.description}
           </p>
-
-          {/* <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm">
-            <div className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-gray-600 shadow-sm">
-              <FiUser className="text-primary" />
-              <span>
-                Written by{" "}
-                <strong className="font-semibold text-gray-950">
-                  {blogPost.author}
-                </strong>
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-gray-600 shadow-sm">
-              <FiCalendar className="text-primary" />
-              <span>{blogPost.date}</span>
-            </div>
-          </div> */}
         </div>
 
         {/* Article Body */}

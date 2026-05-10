@@ -1,95 +1,127 @@
 export const projectDetailsData = {
   projects: [
-    {
-      slug: "anondo-rosemont-estate",
-      projectData: {
-        title: "Anondo Rosemont Estate",
-        description: "Luxury villa project near Purbachal.",
-        image: "/projects/rosemont.jpg",
-        date: "07 January, 2026",
-        author: "Admin",
-        postTags: ["Villa", "Luxury"],
-      },
+    // {
+    //   slug: "anondo-rosemont-estate",
+    //   projectData: {
+    //     title: "Anondo Rosemont Estate",
+    //     description: "Luxury villa project near Purbachal.",
+    //     image: "/projects/rosemont.jpg",
+    //     date: "07 January, 2026",
+    //     author: "Admin",
+    //     postTags: ["Villa", "Luxury"],
+    //   },
 
-      sections: [
-        {
-          title: "A New Chapter of Estate Living",
-          content:
-            "In a world where living spaces are shrinking, Anondo Rosemont Estate offers a refreshing alternative focused on land, openness, and tranquility. Located in Ulukhola near Purbachal New Town beside the Turag River, it creates a premium lifestyle where nature, architecture, and community exist in harmony.",
-        },
-        {
-          title: "The Spirit of Rosemont",
-          content:
-            "‘Rosemont’ reflects elegance and elevation. ‘Rose’ symbolizes beauty and harmony, while ‘Mont’ represents elevated land and distinction. Together, it defines a lifestyle of refined living where every home becomes part of a legacy.",
-        },
-        {
-          title: "Master Planning & Infrastructure",
-          list: [
-            "807 Bigha master planned estate",
-            "60 ft & 40 ft wide grand roads",
-            "25 ft internal residential roads",
-            "Plots elevated 18–24 inches",
-            "Organized villa clusters for privacy",
-          ],
-        },
-        {
-          title: "Elegant Duplex Villas",
-          list: [
-            "5 Katha: 2750 sq ft duplex villa",
-            "10 Katha: 4500 sq ft villa with garden",
-            "20 Katha: 7200 sq ft signature estate",
-            "Optional private swimming pool",
-          ],
-        },
-        {
-          title: "Unique Estate Design",
-          content:
-            "The estate follows a European open-front design where plots are visually open from the front, creating a clean and elegant streetscape while maintaining privacy through rear and side boundaries.",
-        },
-        {
-          title: "Nature & Landscape",
-          list: [
-            "12 Bigha Central Park",
-            "12 Bigha Scenic Lake",
-            "Walking paths & green zones",
-            "Natural cooling environment",
-          ],
-        },
-        {
-          title: "Lifestyle & Recreation",
-          list: [
-            "Grand Sports Complex",
-            "3 playgrounds for families",
-            "Fitness & recreational zones",
-            "Open lawn for leisure & events",
-          ],
-        },
-        {
-          title: "Community Farming",
-          content:
-            "A dedicated community farming area allows residents to grow plants, vegetables, and flowers—connecting modern living with traditional roots and nature.",
-        },
-        {
-          title: "Facilities & Security",
-          list: [
-            "24/7 CCTV surveillance",
-            "Controlled gated entry",
-            "School & healthcare facilities",
-            "Mosque, Mandir & Church",
-          ],
-        },
-        {
-          title: "Location Advantage",
-          content:
-            "Situated beside Purbachal New Town, the estate offers strong connectivity while maintaining a peaceful riverside environment. A portion of the project is uniquely located on a river island.",
-        },
-        {
-          title: "Investment & Legacy",
-          content:
-            "Designed for families and NRBs, Rosemont Estate is not just a residence but a long-term investment. It ensures strong future value, secure living, and a legacy for generations.",
-        },
-      ],
-    },
+    //   sections: [
+    //     {
+    //       title: "A New Chapter of Estate Living",
+    //       content:
+    //         "In a world where living spaces are shrinking, Anondo Rosemont Estate offers a refreshing alternative focused on land, openness, and tranquility. Located in Ulukhola near Purbachal New Town beside the Turag River, it creates a premium lifestyle where nature, architecture, and community exist in harmony.",
+    //     },
+    //     {
+    //       title: "The Spirit of Rosemont",
+    //       content:
+    //         "‘Rosemont’ reflects elegance and elevation. ‘Rose’ symbolizes beauty and harmony, while ‘Mont’ represents elevated land and distinction. Together, it defines a lifestyle of refined living where every home becomes part of a legacy.",
+    //     },
+    //     {
+    //       title: "Master Planning & Infrastructure",
+    //       list: [
+    //         "807 Bigha master planned estate",
+    //         "60 ft & 40 ft wide grand roads",
+    //         "25 ft internal residential roads",
+    //         "Plots elevated 18–24 inches",
+    //         "Organized villa clusters for privacy",
+    //       ],
+    //     },
+    //     {
+    //       title: "Elegant Duplex Villas",
+    //       list: [
+    //         "5 Katha: 2750 sq ft duplex villa",
+    //         "10 Katha: 4500 sq ft villa with garden",
+    //         "20 Katha: 7200 sq ft signature estate",
+    //         "Optional private swimming pool",
+    //       ],
+    //     },
+    //     {
+    //       title: "Unique Estate Design",
+    //       content:
+    //         "The estate follows a European open-front design where plots are visually open from the front, creating a clean and elegant streetscape while maintaining privacy through rear and side boundaries.",
+    //     },
+    //     {
+    //       title: "Nature & Landscape",
+    //       list: [
+    //         "12 Bigha Central Park",
+    //         "12 Bigha Scenic Lake",
+    //         "Walking paths & green zones",
+    //         "Natural cooling environment",
+    //       ],
+    //     },
+    //     {
+    //       title: "Lifestyle & Recreation",
+    //       list: [
+    //         "Grand Sports Complex",
+    //         "3 playgrounds for families",
+    //         "Fitness & recreational zones",
+    //         "Open lawn for leisure & events",
+    //       ],
+    //     },
+    //     {
+    //       title: "Community Farming",
+    //       content:
+    //         "A dedicated community farming area allows residents to grow plants, vegetables, and flowers—connecting modern living with traditional roots and nature.",
+    //     },
+    //     {
+    //       title: "Facilities & Security",
+    //       list: [
+    //         "24/7 CCTV surveillance",
+    //         "Controlled gated entry",
+    //         "School & healthcare facilities",
+    //         "Mosque, Mandir & Church",
+    //       ],
+    //     },
+    //     {
+    //       title: "Location Advantage",
+    //       content:
+    //         "Situated beside Purbachal New Town, the estate offers strong connectivity while maintaining a peaceful riverside environment. A portion of the project is uniquely located on a river island.",
+    //     },
+    //     {
+    //       title: "Investment & Legacy",
+    //       content:
+    //         "Designed for families and NRBs, Rosemont Estate is not just a residence but a long-term investment. It ensures strong future value, secure living, and a legacy for generations.",
+    //     },
+    //   ],
+    // images: [
+    //   {
+    //     src: "/projects/bhubon-1.jpg",
+    //     title: "Masterplan Vision",
+    //     label: "Masterplan",
+    //   },
+    //   {
+    //     src: "/projects/bhubon-2.jpg",
+    //     title: "Riverside Lifestyle",
+    //     label: "Lifestyle",
+    //   },
+    //   {
+    //     src: "/projects/bhubon-3.jpg",
+    //     title: "Green Walkway",
+    //     label: "Nature",
+    //   },
+    //   {
+    //     src: "/projects/bhubon-4.jpg",
+    //     title: "Commercial Zone",
+    //     label: "Business",
+    //   },
+    //   {
+    //     src: "/projects/bhubon-5.jpg",
+    //     title: "Residential Community",
+    //     label: "Residential",
+    //   },
+    //   {
+    //     src: "/projects/bhubon-6.jpg",
+    //     title: "Smart Infrastructure",
+    //     label: "Infrastructure",
+    //   },
+    // ],
+    // },
     {
       slug: "anondo-bhubon",
       projectData: {
@@ -179,6 +211,38 @@ export const projectDetailsData = {
           title: "Sustainability",
           content:
             "40–50% of the land is reserved for green and water systems, ensuring eco-friendly living with clean air, natural beauty, and environmental stability.",
+        },
+      ],
+      images: [
+        {
+          src: "/projects/bhubon-1.jpg",
+          title: "Masterplan Vision",
+          label: "Masterplan",
+        },
+        {
+          src: "/projects/bhubon-2.jpg",
+          title: "Riverside Lifestyle",
+          label: "Lifestyle",
+        },
+        {
+          src: "/projects/bhubon-3.jpg",
+          title: "Green Walkway",
+          label: "Nature",
+        },
+        {
+          src: "/projects/bhubon-4.jpg",
+          title: "Commercial Zone",
+          label: "Business",
+        },
+        {
+          src: "/projects/bhubon-5.jpg",
+          title: "Residential Community",
+          label: "Residential",
+        },
+        {
+          src: "/projects/bhubon-6.jpg",
+          title: "Smart Infrastructure",
+          label: "Infrastructure",
         },
       ],
     },
@@ -311,6 +375,48 @@ export const projectDetailsData = {
           title: "Summary",
           content:
             "Anondo ParkCity represents a future-ready smart township combining sustainability, technology, and modern urban design—creating a complete living ecosystem for generations.",
+        },
+      ],
+      images: [
+        {
+          src: "/projects/parkcity-1.png",
+          title: "Masterplan City Vision",
+          label: "Masterplan",
+        },
+        {
+          src: "/projects/parkcity-2.png",
+          title: "Waterfront Promenade",
+          label: "Waterfront",
+        },
+        {
+          src: "/projects/parkcity-3.png",
+          title: "Lifestyle Amenities",
+          label: "Amenities",
+        },
+        {
+          src: "/projects/parkcity-4.png",
+          title: "Urban District",
+          label: "Commercial",
+        },
+        {
+          src: "/projects/parkcity-5.png",
+          title: "Central Green Park",
+          label: "Landscape",
+        },
+        {
+          src: "/projects/parkcity-6.png",
+          title: "Bridge & Water Network",
+          label: "Connectivity",
+        },
+        {
+          src: "/projects/parkcity-7.png",
+          title: "Residential Villas",
+          label: "Residential",
+        },
+        {
+          src: "/projects/parkcity-8.png",
+          title: "Future Smart Cityscape",
+          label: "Smart City",
         },
       ],
     },

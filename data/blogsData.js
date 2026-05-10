@@ -24,7 +24,7 @@ export const blogsData = [
     title: "Anondo Bhubon – Future Smart City",
     date: "10 January, 2026",
     author: "Admin",
-    image: "/projects/bhubon.jpg",
+    image: "/blogs/bhubon.jpg",
     description:
       "A next-generation eco-friendly township with smart infrastructure and sustainable living.",
     slug: "anondo-bhubon",

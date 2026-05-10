@@ -1,59 +1,107 @@
+// "use client";
+
 // import Image from "next/image";
 // import EventMap from "@/components/EventMap";
 // import { FaCheckCircle } from "react-icons/fa";
 // import { BsStarFill } from "react-icons/bs";
+// import ProjectLocation from "./ProjectLocation";
 
 // export default function ProjectDetails({ project }) {
 //   const { banner, title, description, priceTable, notes, images } = project;
 
+//   // 👉 NEW BLOG STRUCTURE SUPPORT
+//   const projectData = project?.projectData;
+//   const sections = project?.sections;
+
 //   return (
 //     <div className="w-full">
-//       {/* Top Banner Image */}
+//       {/* 🔥 Banner */}
 //       <div className="max-w-6xl mx-auto py-6 px-6 md:px-0">
 //         <Image
-//           src={banner}
+//           src={banner || projectData?.image}
 //           width={1600}
 //           height={700}
 //           alt="Project Banner"
-//           className="w-full max-h-[500px] object-cover"
+//           className="w-full max-h-[500px] object-cover rounded-2xl"
 //         />
 //       </div>
 
-//       {/* MAIN WRAPPER */}
 //       <div className="max-w-6xl mx-auto px-6">
-//         {/* Title */}
-//         {/* <h1 className="text-center text-3xl font-bold my-8">{title}</h1> */}
+//         {/* 🔥 TITLE */}
+//         <div className="text-center mb-10">
+//           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+//             {title || projectData?.title}
+//           </h1>
 
-//         {/* Description */}
-//         {/* <div className="text-lg leading-relaxed whitespace-pre-line">
-//           {description}
-//         </div> */}
-
-//         <div className="text-lg leading-relaxed space-y-3">
-//           {description.map((item, idx) => (
-//             <div key={idx} className="flex gap-3 items-start">
-//               <FaCheckCircle className="text-primary text-xl mt-1" />
-//               <span>{item}</span>
-//             </div>
-//           ))}
+//           {projectData?.description && (
+//             <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+//               {projectData.description}
+//             </p>
+//           )}
 //         </div>
 
-//         {/* Price Table */}
-//         {priceTable && priceTable.length > 0 && (
+//         {/* 🔥 OLD DESCRIPTION (for prokolpo pages) */}
+//         {description && (
+//           <div className="text-lg space-y-3 mb-10">
+//             {description.map((item, idx) => (
+//               <div key={idx} className="flex gap-3 items-start">
+//                 <FaCheckCircle className="text-primary mt-1" />
+//                 <span>{item}</span>
+//               </div>
+//             ))}
+//           </div>
+//         )}
+
+//         {/* 🔥 NEW SECTIONS (MAIN UPGRADE) */}
+//         {sections && (
+//           <div className="space-y-10 mb-12">
+//             {sections.map((section, index) => (
+//               <div
+//                 key={index}
+//                 className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition"
+//               >
+//                 <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+//                   {section.title}
+//                 </h2>
+
+//                 {/* Paragraph */}
+//                 {section.content && (
+//                   <p className="text-gray-600 leading-relaxed">
+//                     {section.content}
+//                   </p>
+//                 )}
+
+//                 {/* List */}
+//                 {section.list && (
+//                   <ul className="mt-4 space-y-2">
+//                     {section.list.map((item, i) => (
+//                       <li key={i} className="flex gap-3 items-center">
+//                         <FaCheckCircle className="text-primary" />
+//                         <span className="text-gray-600">{item}</span>
+//                       </li>
+//                     ))}
+//                   </ul>
+//                 )}
+//               </div>
+//             ))}
+//           </div>
+//         )}
+
+//         {/* 🔥 PRICE TABLE (ONLY FOR OLD DATA) */}
+//         {/* {priceTable && priceTable.length > 0 && (
 //           <div className="my-12">
 //             <h2 className="text-2xl font-bold mb-4">📋 মূল্য তালিকা</h2>
 
 //             <div className="overflow-x-auto">
-//               <table className="w-full border border-gray-300">
+//               <table className="w-full border">
 //                 <thead className="bg-gray-100">
 //                   <tr>
 //                     <th className="border p-3">ক্রমিক</th>
-//                     <th className="border p-3">প্লটের ধরন</th>
+//                     <th className="border p-3">প্লট</th>
 //                     <th className="border p-3">ইউনিট</th>
-//                     <th className="border p-3">মূল্য (টাকা)</th>
+//                     <th className="border p-3">মূল্য</th>
 //                   </tr>
 //                 </thead>
-
 //                 <tbody>
 //                   {priceTable.map((row) => (
 //                     <tr key={row.serial} className="text-center">
@@ -66,21 +114,21 @@
 //                 </tbody>
 //               </table>
 //             </div>
+
 //             {project?.approvedAt && (
-//               <div className="mt-6 flex justify-center md:justify-end">
-//                 <p className="flex items-center gap-2 text-base font-medium text-primary">
-//                   <BsStarFill className="text-primary" />
-//                   মূল্য তালিকা {project.approvedAt} তারিখ হতে অনুমোদিত।
-//                 </p>
-//               </div>
+//               <p className="mt-4 text-primary flex items-center gap-2">
+//                 <BsStarFill />
+//                 অনুমোদিত: {project.approvedAt}
+//               </p>
 //             )}
 //           </div>
-//         )}
-//         {/* Notes Section */}
+//         )} */}
+
+//         {/* 🔥 NOTES */}
 //         {notes && notes.length > 0 && (
 //           <div className="bg-orange-50 border-l-4 border-primary p-6 rounded mb-12">
-//             <h3 className="text-xl font-bold mb-3">📌 নোট / শর্তাবলী</h3>
-//             <ul className="list-disc pl-6 space-y-2 text-lg">
+//             <h3 className="text-xl font-bold mb-3">📌 নোট</h3>
+//             <ul className="list-disc pl-6 space-y-2">
 //               {notes.map((item, idx) => (
 //                 <li key={idx}>{item}</li>
 //               ))}
@@ -88,67 +136,26 @@
 //           </div>
 //         )}
 
-//         {/* Application + Brochure Buttons */}
-//         <div className="flex gap-4 justify-center mt-10">
-//           <a
-//             href="/form/Application Form-2.pdf"
-//             target="_blank"
-//             className="bg-primary text-white px-6 py-3 rounded font-semibold hover:bg-primary/90 transition-all transform duration-500"
-//           >
-//             APPLICATION FORM
-//           </a>
-
-//           <a
-//             href="/form/Brochure.pdf"
-//             target="_blank"
-//             className="bg-secondary text-white px-6 py-3 rounded font-semibold hover:bg-secondary/90 transition-all transform duration-500"
-//           >
-//             BROCHURE
-//           </a>
-//         </div>
-
-//         {/* Phase Images */}
-//         <div className="grid md:grid-cols-3 gap-6 my-12">
-//           {images?.map((img, i) => (
-//             <div key={i}>
+//         {/* 🔥 IMAGES */}
+//         {images && (
+//           <div className="grid md:grid-cols-3 gap-6 my-12">
+//             {images.map((img, i) => (
 //               <Image
+//                 key={i}
 //                 src={img}
 //                 width={1200}
-//                 height={1080}
-//                 alt="Project Image"
-//                 className="rounded w-full h-full object-cover"
+//                 height={800}
+//                 alt="Project"
+//                 className="rounded-xl object-cover"
 //               />
-//             </div>
-//           ))}
-//         </div>
+//             ))}
+//           </div>
+//         )}
 //       </div>
 
-//       {/* Map (Wrapper আলাদা কারণ width বড়) */}
-//       <div className="max-w-6xl mx-auto my-12 px-6">
-//         <EventMap />
-//       </div>
-
-//       <div className="max-w-5xl mx-auto flex flex-wrap gap-4 justify-center mt-6 mb-16 px-6">
-//         <a
-//           href="/prokolpo/prokolpo-1"
-//           className="bg-primary px-6 py-3 rounded hover:bg-secondary text-white transition-all transform duration-500"
-//         >
-//           ফেইজ ১ লেআউট
-//         </a>
-
-//         <a
-//           href="/prokolpo/prokolpo-2"
-//           className="bg-primary px-6 py-3 rounded hover:bg-secondary text-white transition-all transform duration-500"
-//         >
-//           ফেইজ ২ লেআউট
-//         </a>
-
-//         <a
-//           href="/prokolpo/prokolpo-3"
-//           className="bg-primary px-6 py-3 rounded hover:bg-secondary text-white transition-all transform duration-500"
-//         >
-//           ফেইজ ৩ লেআউট
-//         </a>
+//       {/* 🔥 MAP */}
+//       <div className="max-w-7xl mx-auto my-12 px-6">
+//         <ProjectLocation />
 //       </div>
 //     </div>
 //   );
@@ -157,161 +164,406 @@
 "use client";
 
 import Image from "next/image";
-import EventMap from "@/components/EventMap";
-import { FaCheckCircle } from "react-icons/fa";
-import { BsStarFill } from "react-icons/bs";
+import {
+  FaCalendarAlt,
+  FaCheckCircle,
+  FaImages,
+  FaMapMarkerAlt,
+  FaUser,
+} from "react-icons/fa";
+import ProjectLocation from "./ProjectLocation";
+
+function normalizeImage(item, index) {
+  if (!item) return null;
+
+  if (typeof item === "string") {
+    return {
+      src: item,
+      title: `Project Visual ${index + 1}`,
+      label: "Gallery",
+    };
+  }
+
+  return {
+    src: item.src || item.image || item.url,
+    title: item.title || `Project Visual ${index + 1}`,
+    label: item.label || "Gallery",
+  };
+}
+
+function getGalleryImages(project, projectData) {
+  const rawImages = [
+    project?.banner || projectData?.image,
+    ...(project?.images || []),
+    ...(projectData?.images || []),
+    ...(projectData?.gallery || []),
+  ];
+
+  const seen = new Set();
+
+  return rawImages
+    .map((item, index) => normalizeImage(item, index))
+    .filter((item) => {
+      if (!item?.src || seen.has(item.src)) return false;
+      seen.add(item.src);
+      return true;
+    });
+}
 
 export default function ProjectDetails({ project }) {
-  const { banner, title, description, priceTable, notes, images } = project;
+  const { title, description, notes } = project;
 
-  // 👉 NEW BLOG STRUCTURE SUPPORT
   const projectData = project?.projectData;
-  const sections = project?.sections;
+  const sections = project?.sections || [];
+
+  const projectTitle = title || projectData?.title || "Project Details";
+  const projectDescription =
+    projectData?.description ||
+    "A thoughtfully planned real estate project designed for modern lifestyle, long-term value, and sustainable community living.";
+
+  const galleryImages = getGalleryImages(project, projectData);
+  const heroImage = galleryImages[0]?.src || "/projects/bhubon.jpg";
+  const showcaseImages = galleryImages.slice(1, 5);
+  const allGalleryImages = galleryImages.slice(0, 12);
 
   return (
-    <div className="w-full">
-      {/* 🔥 Banner */}
-      <div className="max-w-6xl mx-auto py-6 px-6 md:px-0">
-        <Image
-          src={banner || projectData?.image}
-          width={1600}
-          height={700}
-          alt="Project Banner"
-          className="w-full max-h-[500px] object-cover rounded-2xl"
-        />
-      </div>
+    <div className="w-full overflow-hidden bg-[#F7F8FC]">
+      {/* ================= HERO ================= */}
+      <section className="relative">
+        <div className="mx-auto max-w-7xl px-6 pt-8">
+          <div className="relative overflow-hidden rounded-[2rem] bg-[#07111F] shadow-[0_35px_100px_rgba(8,17,31,0.22)] sm:rounded-[2.8rem]">
+            <div className="relative h-[520px] w-full md:h-[660px]">
+              <Image
+                src={heroImage}
+                alt={projectTitle}
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 1280px"
+                className="object-cover"
+              />
 
-      <div className="max-w-6xl mx-auto px-6">
-        {/* 🔥 TITLE */}
-        <div className="text-center mb-10">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-            {title || projectData?.title}
-          </h1>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#07111F]/95 via-[#07111F]/55 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#07111F]/90 via-transparent to-[#07111F]/20" />
 
-          {projectData?.description && (
-            <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-              {projectData.description}
-            </p>
-          )}
-        </div>
+              {/* Hero Content */}
+              <div className="absolute inset-0 flex items-end">
+                <div className="w-full p-6 sm:p-10 lg:p-14">
+                  <div className="max-w-3xl">
+                    <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur-xl">
+                      <span className="h-2 w-2 rounded-full bg-[#F48220]" />
+                      <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-white/80">
+                        Premium Project Showcase
+                      </p>
+                    </div>
 
-        {/* 🔥 OLD DESCRIPTION (for prokolpo pages) */}
-        {description && (
-          <div className="text-lg space-y-3 mb-10">
-            {description.map((item, idx) => (
-              <div key={idx} className="flex gap-3 items-start">
-                <FaCheckCircle className="text-primary mt-1" />
-                <span>{item}</span>
+                    <h1 className="text-4xl font-bold leading-[1.05] tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
+                      {projectTitle}
+                    </h1>
+
+                    <p className="mt-6 max-w-2xl text-base leading-8 text-white/72 sm:text-lg">
+                      {projectDescription}
+                    </p>
+
+                    <div className="mt-8 flex flex-wrap gap-3">
+                      {projectData?.date && (
+                        <div className="inline-flex items-center gap-3 rounded-full bg-white/12 px-4 py-3 text-sm font-semibold text-white backdrop-blur-xl">
+                          <FaCalendarAlt className="text-[#F48220]" />
+                          {projectData.date}
+                        </div>
+                      )}
+
+                      {projectData?.author && (
+                        <div className="inline-flex items-center gap-3 rounded-full bg-white/12 px-4 py-3 text-sm font-semibold text-white backdrop-blur-xl">
+                          <FaUser className="text-[#F48220]" />
+                          {projectData.author}
+                        </div>
+                      )}
+
+                      <div className="inline-flex items-center gap-3 rounded-full bg-white/12 px-4 py-3 text-sm font-semibold text-white backdrop-blur-xl">
+                        <FaImages className="text-[#F48220]" />
+                        {galleryImages.length} Visuals
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            ))}
-          </div>
-        )}
 
-        {/* 🔥 NEW SECTIONS (MAIN UPGRADE) */}
-        {sections && (
-          <div className="space-y-10 mb-12">
-            {sections.map((section, index) => (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition"
-              >
-                <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                  {section.title}
-                </h2>
-
-                {/* Paragraph */}
-                {section.content && (
-                  <p className="text-gray-600 leading-relaxed">
-                    {section.content}
-                  </p>
-                )}
-
-                {/* List */}
-                {section.list && (
-                  <ul className="mt-4 space-y-2">
-                    {section.list.map((item, i) => (
-                      <li key={i} className="flex gap-3 items-center">
-                        <FaCheckCircle className="text-primary" />
-                        <span className="text-gray-600">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* 🔥 PRICE TABLE (ONLY FOR OLD DATA) */}
-        {/* {priceTable && priceTable.length > 0 && (
-          <div className="my-12">
-            <h2 className="text-2xl font-bold mb-4">📋 মূল্য তালিকা</h2>
-
-            <div className="overflow-x-auto">
-              <table className="w-full border">
-                <thead className="bg-gray-100">
-                  <tr>
-                    <th className="border p-3">ক্রমিক</th>
-                    <th className="border p-3">প্লট</th>
-                    <th className="border p-3">ইউনিট</th>
-                    <th className="border p-3">মূল্য</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {priceTable.map((row) => (
-                    <tr key={row.serial} className="text-center">
-                      <td className="border p-3">{row.serial}</td>
-                      <td className="border p-3">{row.type}</td>
-                      <td className="border p-3">{row.unit}</td>
-                      <td className="border p-3">{row.price}</td>
-                    </tr>
+              {/* Floating Mini Showcase */}
+              {showcaseImages.length > 0 && (
+                <div className="absolute bottom-8 right-8 hidden w-[380px] grid-cols-2 gap-3 lg:grid">
+                  {showcaseImages.map((img, index) => (
+                    <div
+                      key={img.src}
+                      className={`group relative overflow-hidden rounded-2xl border border-white/15 bg-white/10 shadow-[0_20px_55px_rgba(0,0,0,0.22)] backdrop-blur-xl ${
+                        index === 0 ? "col-span-2 h-36" : "h-28"
+                      }`}
+                    >
+                      <Image
+                        src={img.src}
+                        alt={img.title}
+                        fill
+                        sizes="380px"
+                        className="object-cover transition duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    </div>
                   ))}
-                </tbody>
-              </table>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= IMAGE SHOWCASE ================= */}
+      {allGalleryImages.length > 1 && (
+        <section className="mx-auto max-w-7xl px-6 py-16">
+          <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.26em] text-[#F48220]">
+                Visual Gallery
+              </p>
+
+              <h2 className="mt-3 text-3xl font-bold tracking-[-0.03em] text-[#111827] sm:text-4xl">
+                Explore the project through curated visuals.
+              </h2>
             </div>
 
-            {project?.approvedAt && (
-              <p className="mt-4 text-primary flex items-center gap-2">
-                <BsStarFill />
-                অনুমোদিত: {project.approvedAt}
+            <p className="max-w-md text-sm leading-7 text-[#1F2937]/65">
+              A premium image showcase designed to highlight masterplan,
+              lifestyle, location, landscape, and development vision.
+            </p>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-4 md:grid-rows-[260px_260px]">
+            {allGalleryImages.slice(0, 7).map((img, index) => {
+              const isLarge = index === 0;
+              const isWide = index === 3;
+
+              return (
+                <div
+                  key={img.src}
+                  className={`group relative overflow-hidden rounded-[1.6rem] bg-white shadow-[0_22px_65px_rgba(15,23,42,0.1)] ${
+                    isLarge
+                      ? "md:col-span-2 md:row-span-2"
+                      : isWide
+                        ? "md:col-span-2"
+                        : ""
+                  }`}
+                >
+                  <Image
+                    src={img.src}
+                    alt={img.title}
+                    fill
+                    sizes={
+                      isLarge
+                        ? "(max-width: 768px) 100vw, 640px"
+                        : "(max-width: 768px) 100vw, 320px"
+                    }
+                    className="object-cover transition duration-700 group-hover:scale-110"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#07111F]/72 via-[#07111F]/10 to-transparent opacity-80" />
+
+                  <div className="absolute bottom-0 left-0 right-0 p-5">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#F48220]">
+                      {img.label}
+                    </p>
+
+                    <h3 className="mt-1 text-base font-bold text-white">
+                      {img.title}
+                    </h3>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {allGalleryImages.length > 7 && (
+            <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+              {allGalleryImages.slice(7, 12).map((img) => (
+                <div
+                  key={img.src}
+                  className="group relative h-56 overflow-hidden rounded-[1.4rem] bg-white shadow-[0_18px_55px_rgba(15,23,42,0.09)]"
+                >
+                  <Image
+                    src={img.src}
+                    alt={img.title}
+                    fill
+                    sizes="(max-width: 768px) 50vw, 240px"
+                    className="object-cover transition duration-700 group-hover:scale-110"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-sm font-bold text-white">
+                      {img.title}
+                    </h3>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+      )}
+
+      {/* ================= CONTENT ================= */}
+      <section className="mx-auto max-w-7xl px-6 pb-10">
+        <div className="grid gap-8 lg:grid-cols-[0.34fr_0.66fr]">
+          {/* Left Sticky Panel */}
+          <aside className="lg:sticky lg:top-24 lg:h-fit">
+            <div className="overflow-hidden rounded-[2rem] bg-[#07111F] p-8 text-white shadow-[0_28px_80px_rgba(8,17,31,0.18)]">
+              <p className="text-xs font-bold uppercase tracking-[0.26em] text-[#F48220]">
+                Project Overview
               </p>
+
+              <h3 className="mt-4 text-3xl font-bold tracking-[-0.03em]">
+                Designed for future-focused living.
+              </h3>
+
+              <p className="mt-5 text-sm leading-7 text-white/65">
+                Explore the key planning, lifestyle, infrastructure, investment,
+                and location advantages of this project.
+              </p>
+
+              {projectData?.postTags?.length > 0 && (
+                <div className="mt-7 flex flex-wrap gap-2">
+                  {projectData.postTags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-bold text-white/85"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              <div className="mt-8 border-t border-white/10 pt-6">
+                <div className="flex items-start gap-4">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#F48220] text-white">
+                    <FaMapMarkerAlt />
+                  </span>
+
+                  <div>
+                    <h4 className="font-bold">Location Advantage</h4>
+                    <p className="mt-1 text-sm leading-6 text-white/60">
+                      Strategic project location with strong connectivity and
+                      long-term growth potential.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          {/* Right Details */}
+          <div>
+            {/* Old Description Support */}
+            {description && description.length > 0 && (
+              <div className="mb-8 rounded-[2rem] border border-white bg-white p-7 shadow-[0_22px_65px_rgba(15,23,42,0.08)]">
+                <h2 className="text-2xl font-bold text-[#111827]">
+                  Key Highlights
+                </h2>
+
+                <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                  {description.map((item, idx) => (
+                    <div
+                      key={idx}
+                      className="flex gap-3 rounded-2xl bg-[#F8F9FC] p-4"
+                    >
+                      <FaCheckCircle className="mt-1 shrink-0 text-primary" />
+                      <span className="text-sm leading-7 text-[#1F2937]/75">
+                        {item}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* New Sections */}
+            {sections.length > 0 && (
+              <div className="grid gap-6">
+                {sections.map((section, index) => (
+                  <article
+                    key={index}
+                    className="group relative overflow-hidden rounded-[2rem] border border-white bg-white p-7 shadow-[0_22px_65px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_30px_90px_rgba(15,23,42,0.13)] sm:p-8"
+                  >
+                    <div className="pointer-events-none absolute right-0 top-0 h-32 w-32 rounded-bl-full bg-primary/[0.04] transition duration-300 group-hover:bg-[#F48220]/10" />
+
+                    <div className="relative">
+                      <div className="mb-5 flex items-center gap-4">
+                        <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary text-sm font-bold text-white shadow-[0_14px_35px_rgba(44,58,131,0.25)]">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+
+                        <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-[#F48220]">
+                          Project Detail
+                        </p>
+                      </div>
+
+                      <h2 className="text-2xl font-bold tracking-[-0.02em] text-[#111827] sm:text-3xl">
+                        {section.title}
+                      </h2>
+
+                      {section.content && (
+                        <p className="mt-4 text-base leading-8 text-[#1F2937]/68">
+                          {section.content}
+                        </p>
+                      )}
+
+                      {section.list && (
+                        <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                          {section.list.map((item, i) => (
+                            <div
+                              key={i}
+                              className="flex items-start gap-3 rounded-2xl bg-[#F8F9FC] p-4 transition duration-300 group-hover:bg-[#F4F6FB]"
+                            >
+                              <FaCheckCircle className="mt-1 shrink-0 text-primary" />
+
+                              <span className="text-sm leading-7 text-[#1F2937]/75">
+                                {item}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            )}
+
+            {/* Notes */}
+            {notes && notes.length > 0 && (
+              <div className="mt-8 rounded-[2rem] border border-[#F48220]/20 bg-[#FFF7ED] p-7 shadow-[0_22px_65px_rgba(15,23,42,0.06)]">
+                <h3 className="text-xl font-bold text-[#111827]">
+                  Important Notes
+                </h3>
+
+                <ul className="mt-5 space-y-3">
+                  {notes.map((item, idx) => (
+                    <li
+                      key={idx}
+                      className="flex gap-3 text-sm leading-7 text-[#1F2937]/75"
+                    >
+                      <FaCheckCircle className="mt-1 shrink-0 text-[#F48220]" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             )}
           </div>
-        )} */}
+        </div>
+      </section>
 
-        {/* 🔥 NOTES */}
-        {notes && notes.length > 0 && (
-          <div className="bg-orange-50 border-l-4 border-primary p-6 rounded mb-12">
-            <h3 className="text-xl font-bold mb-3">📌 নোট</h3>
-            <ul className="list-disc pl-6 space-y-2">
-              {notes.map((item, idx) => (
-                <li key={idx}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {/* 🔥 IMAGES */}
-        {images && (
-          <div className="grid md:grid-cols-3 gap-6 my-12">
-            {images.map((img, i) => (
-              <Image
-                key={i}
-                src={img}
-                width={1200}
-                height={800}
-                alt="Project"
-                className="rounded-xl object-cover"
-              />
-            ))}
-          </div>
-        )}
-      </div>
-
-      {/* 🔥 MAP */}
-      <div className="max-w-6xl mx-auto my-12 px-6">
-        <EventMap />
-      </div>
+      {/* ================= MAP ================= */}
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <ProjectLocation />
+      </section>
     </div>
   );
 }
