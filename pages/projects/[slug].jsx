@@ -107,7 +107,6 @@ export default function ProjectDetailsPage() {
   return (
     <div>
       <Head>
-        {/* Primary SEO */}
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
         <meta name="keywords" content={meta.keywords} />
@@ -116,7 +115,6 @@ export default function ProjectDetailsPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href={meta.url} />
 
-        {/* Open Graph / Facebook / LinkedIn */}
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta property="og:type" content="website" />
@@ -126,14 +124,12 @@ export default function ProjectDetailsPage() {
         <meta property="og:site_name" content={siteName} />
         <meta property="og:locale" content="en_BD" />
 
-        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
         <meta name="twitter:image:alt" content={projectTitle} />
 
-        {/* Extra Project Info */}
         {projectData.date && (
           <meta property="article:published_time" content={projectData.date} />
         )}
@@ -146,7 +142,6 @@ export default function ProjectDetailsPage() {
           <meta key={tag} property="article:tag" content={tag} />
         ))}
 
-        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
