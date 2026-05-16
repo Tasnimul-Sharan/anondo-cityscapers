@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import { FaCity, FaShieldAlt, FaUsers, FaRocket } from "react-icons/fa";
+import SectionBadge from "./SectionBadge";
+import { HiOutlinePhone } from "react-icons/hi";
 
 const features = [
   {
@@ -32,9 +34,10 @@ export default function WhyChooseUs() {
       <div className="mx-auto max-w-7xl px-6">
         {/* Header */}
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-primary">
-            Why Choose Us
-          </p>
+          <SectionBadge
+            label="Contact Us"
+            icon={<HiOutlinePhone className="text-base" />}
+          />
 
           <h2 className="text-4xl font-bold tracking-[-0.03em] text-gray-900 md:text-5xl">
             Built for Better Living

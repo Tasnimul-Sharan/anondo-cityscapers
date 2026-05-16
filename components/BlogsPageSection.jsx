@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaRegNewspaper, FaUser } from "react-icons/fa";
 import { FiArrowRight, FiCalendar } from "react-icons/fi";
+import SectionBadge from "./SectionBadge";
+import { HiOutlineNewspaper } from "react-icons/hi";
 
 export default function BlogsPageSection() {
   const featuredBlog = blogsData?.[0];
@@ -20,11 +22,10 @@ export default function BlogsPageSection() {
         {/* Heading */}
         <div className="mx-auto mb-14 max-w-3xl text-center">
           <div className="mb-5 flex items-center justify-center gap-4">
-            <span className="h-[2px] w-12 bg-primary" />
-            <p className="text-xs font-bold uppercase tracking-[0.28em] text-primary">
-              Articles & Insights
-            </p>
-            <span className="h-[2px] w-12 bg-primary" />
+            <SectionBadge
+              label="Articles & Insights"
+              icon={<HiOutlineNewspaper />}
+            />
           </div>
 
           <h2 className="text-4xl font-bold tracking-[-0.03em] text-soft_black sm:text-5xl">

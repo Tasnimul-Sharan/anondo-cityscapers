@@ -9,6 +9,8 @@ import {
   FaRegNewspaper,
 } from "react-icons/fa";
 import { blogsData } from "@/data/blogsData";
+import SectionBadge from "./SectionBadge";
+import { HiOutlineNewspaper } from "react-icons/hi";
 
 export default function BlogsSection() {
   const blogs = (blogsData || []).slice(0, 3);
@@ -23,9 +25,10 @@ export default function BlogsSection() {
         {/* Header */}
         <div className="mb-12 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl text-left">
-            <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-primary">
-              Our Blog
-            </p>
+            <SectionBadge
+              label="Our Blog"
+              icon={<HiOutlineNewspaper className="text-base" />}
+            />
 
             <h2 className="text-4xl font-bold tracking-[-0.03em] text-gray-900 md:text-5xl">
               Latest Real Estate Insights

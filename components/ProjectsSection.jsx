@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaChevronCircleRight } from "react-icons/fa";
+import { HiSparkles } from "react-icons/hi";
+import SectionBadge from "./SectionBadge";
 
 const projects = [
   // {
@@ -45,9 +47,10 @@ export default function ProjectsSection() {
           transition={{ duration: 0.7 }}
           className="mx-auto mb-16 max-w-3xl text-center"
         >
-          <span className="mb-4 inline-flex rounded-full border border-primary/20 bg-primary/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-primary">
-            Signature Developments
-          </span>
+          <SectionBadge
+            label="Signature Developments"
+            icon={<HiSparkles className="text-base" />}
+          />
 
           <h2 className="text-4xl font-bold leading-tight text-gray-900 md:text-6xl">
             Our Premium Projects

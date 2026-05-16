@@ -11,6 +11,8 @@ import {
   FaCheckCircle,
   FaBuilding,
 } from "react-icons/fa";
+import SectionBadge from "./SectionBadge";
+import { HiOutlinePhone } from "react-icons/hi";
 
 export default function ContactSection() {
   const [result, setResult] = useState("");
@@ -65,9 +67,10 @@ export default function ContactSection() {
       <div className="relative mx-auto max-w-7xl px-6">
         {/* Header */}
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-primary">
-            Contact Us
-          </p>
+          <SectionBadge
+            label="Contact Us"
+            icon={<HiOutlinePhone className="text-base" />}
+          />
 
           <h2 className="text-4xl font-bold tracking-[-0.03em] text-gray-900 md:text-5xl">
             Request Property Information

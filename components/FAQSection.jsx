@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { IoAdd, IoRemove } from "react-icons/io5";
 import { FaQuestionCircle, FaCheckCircle } from "react-icons/fa";
+import SectionBadge from "./SectionBadge";
+import { HiOutlineQuestionMarkCircle } from "react-icons/hi";
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -79,9 +81,10 @@ export default function FAQ() {
       <div className="relative mx-auto max-w-7xl px-6">
         {/* Header */}
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-primary">
-            FAQ
-          </p>
+          <SectionBadge
+            label="FAQ"
+            icon={<HiOutlineQuestionMarkCircle className="text-base" />}
+          />
 
           <h2 className="text-4xl font-bold tracking-[-0.03em] text-gray-900 md:text-5xl">
             Frequently Asked Questions

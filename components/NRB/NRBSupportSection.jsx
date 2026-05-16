@@ -14,7 +14,8 @@ export default function NRBSupportSection() {
   const WHATSAPP_NUMBER = "8801318252050";
 
   // Replace this with your real Zoom booking page link
-  const ZOOM_BOOKING_URL = "https://scheduler.zoom.us/YOUR_BOOKING_PAGE_LINK";
+  // const ZOOM_BOOKING_URL = "https://scheduler.zoom.us/YOUR_BOOKING_PAGE_LINK";
+  const ZOOM_MEETING_URL = "https://us05web.zoom.us/j/7402885304";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -193,6 +194,16 @@ Please confirm my Zoom consultation schedule.
               </a>
 
               <a
+                href={ZOOM_MEETING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-4 text-sm font-bold text-white transition hover:bg-primary/90"
+              >
+                <FaVideo />
+                Join Zoom
+              </a>
+
+              {/* <a
                 href={ZOOM_BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -200,7 +211,7 @@ Please confirm my Zoom consultation schedule.
               >
                 <FaVideo />
                 Schedule Zoom
-              </a>
+              </a> */}
             </div>
 
             <div className="my-7 flex items-center gap-3">

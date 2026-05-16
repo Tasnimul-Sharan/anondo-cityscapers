@@ -1,6 +1,7 @@
 "use client";
 
-import { FaGlobeAsia, FaHome, FaCogs } from "react-icons/fa";
+import { FaGlobeAsia, FaHome, FaCogs, FaLandmark } from "react-icons/fa";
+import SectionBadge from "./SectionBadge";
 
 export default function CoreValuesSection() {
   const values = [
@@ -33,9 +34,10 @@ export default function CoreValuesSection() {
       <div className="relative z-10 mx-auto max-w-7xl">
         {/* Header */}
         <div className="mx-auto mb-16 max-w-3xl text-center">
-          <span className="mb-4 inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-primary">
-            Our Foundation
-          </span>
+          <SectionBadge
+            label="Our Foundation"
+            icon={<FaLandmark className="text-sm" />}
+          />
 
           <h2 className="text-3xl font-bold leading-tight text-gray-900 md:text-5xl">
             Our Core Values
