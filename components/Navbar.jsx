@@ -27,8 +27,8 @@ const menuItems = [
     path: "#",
     submenu: [
       // { name: "Anondo Rosemont Estate", path: "/rosemont" },
-      { name: "Anondo Bhubon", path: "/anondo-bhubon" },
-      { name: "Anondo Parkcity", path: "/parkcity" },
+      { name: "Anondo Bhubon", path: "/projects/anondo-bhubon" },
+      { name: "Anondo Parkcity", path: "/projects/anondo-parkcity" },
     ],
   },
 
@@ -145,27 +145,33 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-4 text-xl">
-            <Link href="https://facebook.com/AnondoHousing" target="_blank">
+            <Link
+              href="https://www.facebook.com/anondo.cityscapers.ltd/"
+              target="_blank"
+            >
               <FaFacebookF className="hover:text-primary transition-all transform duration-500 cursor-pointer" />
             </Link>
 
             <Link
-              href="https://linkedin.com/company/anondo-housing-society"
+              href="https://www.linkedin.com/company/anondo-cityscapers-ltd/"
               target="_blank"
             >
               <FaLinkedinIn className="hover:text-primary transition-all transform duration-500 cursor-pointer" />
             </Link>
 
-            <Link href="https://instagram.com/aphs_bd/" target="_blank">
+            <Link
+              href="https://www.instagram.com/anondo_cityscapers/"
+              target="_blank"
+            >
               <FaInstagram className="hover:text-primary transition-all transform duration-500 cursor-pointer" />
             </Link>
 
-            <Link
+            {/* <Link
               href="https://youtube.com/@AnondoHousingSocietyOfficial"
               target="_blank"
             >
               <FaYoutube className="hover:text-primary transition-all transform duration-500 cursor-pointer" />
-            </Link>
+            </Link> */}
 
             <select
               className="text-black text-base px-2 py-1 rounded ml-3"

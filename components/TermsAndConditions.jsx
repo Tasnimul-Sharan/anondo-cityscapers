@@ -11,6 +11,7 @@ import {
   FaShieldAlt,
   FaCheckCircle,
 } from "react-icons/fa";
+import SectionBadge from "./SectionBadge";
 
 export default function TermsAndConditions() {
   return (
@@ -18,10 +19,10 @@ export default function TermsAndConditions() {
       <div className="mx-auto max-w-6xl px-6 text-gray-800">
         {/* Header */}
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-primary">
-            Legal Information
-          </p>
-
+          <SectionBadge
+            label="Legal Information"
+            icon={<FaFileContract className="text-sm" />}
+          />
           <h1 className="text-4xl font-bold tracking-[-0.03em] text-gray-900 md:text-5xl">
             Terms & Conditions
           </h1>

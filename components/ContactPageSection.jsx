@@ -9,6 +9,7 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
+import SectionBadge from "./SectionBadge";
 
 export default function ContactPageSection() {
   const [result, setResult] = useState("");
@@ -91,13 +92,10 @@ export default function ContactPageSection() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="mx-auto mb-14 max-w-4xl text-center">
-          <div className="mb-5 flex items-center justify-center gap-4">
-            <span className="h-[2px] w-12 bg-primary" />
-            <p className="text-xs font-bold uppercase tracking-[0.28em] text-primary">
-              Contact Us
-            </p>
-            <span className="h-[2px] w-12 bg-primary" />
-          </div>
+          <SectionBadge
+            label="Contact Us"
+            icon={<FaPaperPlane className="text-sm" />}
+          />
 
           <h2 className="text-4xl font-bold tracking-[-0.03em] text-soft_black sm:text-5xl lg:text-6xl">
             Get In Touch With Us
@@ -109,7 +107,6 @@ export default function ContactPageSection() {
           </p>
         </div>
 
-        {/* Contact Cards */}
         <div className="mb-12 grid gap-6 md:grid-cols-3">
           {contactCards.map((card) => (
             <div

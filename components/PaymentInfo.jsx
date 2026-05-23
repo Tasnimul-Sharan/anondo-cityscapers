@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { FaBuildingColumns, FaRegCopy, FaCheck } from "react-icons/fa6";
 import PaymentInstructions from "./PaymentInstructions";
+import SectionBadge from "./SectionBadge";
 
 export default function PaymentInfo() {
   const [copied, setCopied] = useState("");
@@ -42,10 +43,10 @@ export default function PaymentInfo() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mx-auto max-w-4xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-white px-5 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-primary shadow-sm">
-            <FaBuildingColumns />
-            Payment Information
-          </span>
+          <SectionBadge
+            label="Payment Information"
+            icon={<FaBuildingColumns className="text-sm" />}
+          />
 
           <h1 className="mt-6 text-3xl font-bold tracking-tight text-soft_black sm:text-4xl lg:text-5xl">
             Bank Account Details for{" "}
@@ -115,7 +116,7 @@ export default function PaymentInfo() {
         </div>
 
         {/* Desktop Table */}
-        <div className="mt-12 hidden overflow-hidden rounded-3xl border border-border_color bg-white shadow-soft lg:block">
+        {/* <div className="mt-12 hidden overflow-hidden rounded-3xl border border-border_color bg-white shadow-soft lg:block">
           <table className="w-full text-left text-sm">
             <thead className="bg-primary text-white">
               <tr>
@@ -154,7 +155,7 @@ export default function PaymentInfo() {
               ))}
             </tbody>
           </table>
-        </div>
+        </div> */}
 
         <PaymentInstructions />
       </div>

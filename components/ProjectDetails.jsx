@@ -221,10 +221,14 @@ export default function ProjectDetails({ project }) {
     projectData?.description ||
     "A thoughtfully planned real estate project designed for modern lifestyle, long-term value, and sustainable community living.";
 
-  const galleryImages = getGalleryImages(project, projectData);
+  const isComingSoon = Boolean(project?.comingSoon);
+  const galleryImages = getGalleryImages(
+    isComingSoon ? { ...project, images: [] } : project,
+    projectData,
+  );
   const heroImage = galleryImages[0]?.src || "/projects/bhubon.jpg";
   const showcaseImages = galleryImages.slice(1, 5);
-  const allGalleryImages = galleryImages.slice(0, 12);
+  const allGalleryImages = galleryImages;
 
   return (
     <div className="w-full overflow-hidden bg-[#F7F8FC]">
@@ -252,7 +256,7 @@ export default function ProjectDetails({ project }) {
                     <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur-xl">
                       <span className="h-2 w-2 rounded-full bg-[#F48220]" />
                       <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-white/80">
-                        Premium Project Showcase
+                        {isComingSoon ? "Coming Soon" : "Premium Project Showcase"}
                       </p>
                     </div>
 
@@ -279,17 +283,19 @@ export default function ProjectDetails({ project }) {
                         </div>
                       )}
 
-                      <div className="inline-flex items-center gap-3 rounded-full bg-white/12 px-4 py-3 text-sm font-semibold text-white backdrop-blur-xl">
-                        <FaImages className="text-[#F48220]" />
-                        {galleryImages.length} Visuals
-                      </div>
+                      {!isComingSoon && (
+                        <div className="inline-flex items-center gap-3 rounded-full bg-white/12 px-4 py-3 text-sm font-semibold text-white backdrop-blur-xl">
+                          <FaImages className="text-[#F48220]" />
+                          {galleryImages.length} Visuals
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Floating Mini Showcase */}
-              {showcaseImages.length > 0 && (
+              {/* {showcaseImages.length > 0 && (
                 <div className="absolute bottom-8 right-8 hidden w-[380px] grid-cols-2 gap-3 lg:grid">
                   {showcaseImages.map((img, index) => (
                     <div
@@ -309,14 +315,14 @@ export default function ProjectDetails({ project }) {
                     </div>
                   ))}
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         </div>
       </section>
 
       {/* ================= IMAGE SHOWCASE ================= */}
-      {allGalleryImages.length > 1 && (
+      {!isComingSoon && allGalleryImages.length > 1 && (
         <section className="mx-auto max-w-7xl px-6 py-16">
           <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
@@ -380,8 +386,8 @@ export default function ProjectDetails({ project }) {
           </div>
 
           {allGalleryImages.length > 7 && (
-            <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
-              {allGalleryImages.slice(7, 12).map((img) => (
+            <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {allGalleryImages.slice(7).map((img) => (
                 <div
                   key={img.src}
                   className="group relative h-56 overflow-hidden rounded-[1.4rem] bg-white shadow-[0_18px_55px_rgba(15,23,42,0.09)]"
@@ -409,8 +415,26 @@ export default function ProjectDetails({ project }) {
       )}
 
       {/* ================= CONTENT ================= */}
-      <section className="mx-auto max-w-7xl px-6 pb-10">
-        <div className="grid gap-8 lg:grid-cols-[0.34fr_0.66fr]">
+      {isComingSoon ? (
+        <section className="mx-auto max-w-4xl px-6 py-16 text-center">
+          <div className="rounded-[2rem] border border-white bg-white p-8 shadow-[0_22px_65px_rgba(15,23,42,0.08)] sm:p-12">
+            <p className="text-xs font-bold uppercase tracking-[0.26em] text-[#F48220]">
+              Coming Soon
+            </p>
+
+            <h2 className="mt-4 text-3xl font-bold tracking-[-0.03em] text-[#111827] sm:text-5xl">
+              This project will be coming soon.
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-[#1F2937]/68">
+              Details, amenities, visuals, and investment information will be
+              published once the project is ready.
+            </p>
+          </div>
+        </section>
+      ) : (
+        <section className="mx-auto max-w-7xl px-6 pb-10">
+          <div className="grid gap-8 lg:grid-cols-[0.34fr_0.66fr]">
           {/* Left Sticky Panel */}
           <aside className="lg:sticky lg:top-24 lg:h-fit">
             <div className="overflow-hidden rounded-[2rem] bg-[#07111F] p-8 text-white shadow-[0_28px_80px_rgba(8,17,31,0.18)]">
@@ -557,13 +581,16 @@ export default function ProjectDetails({ project }) {
               </div>
             )}
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      )}
 
       {/* ================= MAP ================= */}
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <ProjectLocation />
-      </section>
+      {!isComingSoon && (
+        <section className="mx-auto max-w-7xl px-6 py-16">
+          <ProjectLocation />
+        </section>
+      )}
     </div>
   );
 }

@@ -9,6 +9,7 @@ import {
   FaMagnifyingGlass,
 } from "react-icons/fa6";
 import { FiArrowRight, FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import SectionBadge from "./SectionBadge";
 
 export default function CareerPageSection() {
   const jobs = [
@@ -125,13 +126,10 @@ export default function CareerPageSection() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="mx-auto mb-12 max-w-4xl text-center">
-          <div className="mb-5 flex items-center justify-center gap-4">
-            <span className="h-[2px] w-12 bg-primary" />
-            <p className="text-xs font-bold uppercase tracking-[0.28em] text-primary">
-              Career Opportunities
-            </p>
-            <span className="h-[2px] w-12 bg-primary" />
-          </div>
+          <SectionBadge
+            label="Careers at Anondo Cityscapers"
+            icon={<FaBriefcase className="text-sm" />}
+          />
 
           <h1 className="text-4xl font-bold tracking-[-0.03em] text-soft_black sm:text-5xl lg:text-6xl">
             Join Our Growing Team
