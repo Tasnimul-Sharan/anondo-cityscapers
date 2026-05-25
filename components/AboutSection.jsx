@@ -12,13 +12,13 @@ import SectionBadge from "./SectionBadge";
 import { HiOutlineInformationCircle } from "react-icons/hi";
 
 const cards = [
-  {
-    title: "Anondo ParkCity",
-    text: "A premium project by Anondo Police Family Welfare Multipurpose Co-operative Society.",
-    icon: FaBuilding,
-    type: "small",
-    color: "bg-primary",
-  },
+  // {
+  //   title: "Anondo ParkCity",
+  //   text: "A premium project by Anondo Police Family Welfare Multipurpose Co-operative Society.",
+  //   icon: FaBuilding,
+  //   type: "small",
+  //   color: "bg-primary",
+  // },
   {
     title: "Anondo Bhuban",
     text: "Eco-friendly urban living near Purbachal with modern homes, green spaces & community amenities.",
