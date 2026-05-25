@@ -309,40 +309,40 @@ function social() {
 
 export const blogDetailsData = {
   blogDetails: [
-    {
-      slug: "invest-in-purbachal",
-      blogPost: {
-        title: "Why Invest in Purbachal Right Now?",
-        description:
-        "Purbachal is rapidly transforming into the most promising real estate hub in Bangladesh, backed by massive government projects and infrastructure development.",
-        image: "/blogs/purbachal.jpg",
-        date: "05 January, 2026",
-        author: "Admin",
-        postTags: ["Investment", "Purbachal", "Real Estate"],
-      },
-      sections: [
-        {
-          title: "Rapid Infrastructure Growth",
-          content:
-          "Purbachal is witnessing significant development including 300 ft expressway, metro rail connectivity, and modern road networks. These projects are directly increasing land value and future demand.",
-        },
-        {
-          title: "High Investment Return",
-          content:
-            "Land prices in Purbachal are still relatively affordable compared to future projections. Investors are already seeing strong appreciation within short time periods.",
-          },
-          {
-            title: "Why You Should Invest Now",
-            list: [
-              "Prices are still lower than upcoming market value",
-              "Strong government backing and planning",
-            "High demand from both residential and commercial buyers",
-            "Safe and secure investment opportunity",
-          ],
-        },
-      ],
-      socialIcons: social(),
-    },
+    // {
+    //   slug: "invest-in-purbachal",
+    //   blogPost: {
+    //     title: "Why Invest in Purbachal Right Now?",
+    //     description:
+    //     "Purbachal is rapidly transforming into the most promising real estate hub in Bangladesh, backed by massive government projects and infrastructure development.",
+    //     image: "/blogs/purbachal.jpg",
+    //     date: "05 January, 2026",
+    //     author: "Admin",
+    //     postTags: ["Investment", "Purbachal", "Real Estate"],
+    //   },
+    //   sections: [
+    //     {
+    //       title: "Rapid Infrastructure Growth",
+    //       content:
+    //       "Purbachal is witnessing significant development including 300 ft expressway, metro rail connectivity, and modern road networks. These projects are directly increasing land value and future demand.",
+    //     },
+    //     {
+    //       title: "High Investment Return",
+    //       content:
+    //         "Land prices in Purbachal are still relatively affordable compared to future projections. Investors are already seeing strong appreciation within short time periods.",
+    //       },
+    //       {
+    //         title: "Why You Should Invest Now",
+    //         list: [
+    //           "Prices are still lower than upcoming market value",
+    //           "Strong government backing and planning",
+    //         "High demand from both residential and commercial buyers",
+    //         "Safe and secure investment opportunity",
+    //       ],
+    //     },
+    //   ],
+    //   socialIcons: social(),
+    // },
     
     {
       slug: "anondo-rosemont-estate",

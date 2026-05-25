@@ -1,14 +1,14 @@
 export const blogsData = [
-  {
-    id: 1,
-    title: "Why Invest in Purbachal Right Now?",
-    date: "05 January, 2026",
-    author: "Admin",
-    image: "/blogs/purbachal.jpg",
-    description:
-      "Purbachal is becoming the most promising real estate hub in Bangladesh. Discover why investors are choosing this location.",
-    slug: "invest-in-purbachal",
-  },
+  // {
+  //   id: 1,
+  //   title: "Why Invest in Purbachal Right Now?",
+  //   date: "05 January, 2026",
+  //   author: "Admin",
+  //   image: "/blogs/purbachal.jpg",
+  //   description:
+  //     "Purbachal is becoming the most promising real estate hub in Bangladesh. Discover why investors are choosing this location.",
+  //   slug: "invest-in-purbachal",
+  // },
   // {
   //   id: 2,
   //   title: "Anondo Rosemont Estate – Luxury Villa Living",
