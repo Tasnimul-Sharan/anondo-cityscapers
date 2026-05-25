@@ -102,7 +102,7 @@ export default function AboutSection() {
             </p>
 
             {/* Cards */}
-            <div className="mt-10 grid gap-5 sm:grid-cols-2">
+            <div className="mt-10 grid gap-5 sm:grid-cols-1">
               {cards.map((item, index) => {
                 const Icon = item.icon;
 

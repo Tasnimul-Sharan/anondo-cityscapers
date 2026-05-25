@@ -17,28 +17,28 @@ import Link from "next/link";
 import Button from "./Button";
 
 const sliderData = [
-//   {
-//     subtitle: "Anondo Rosemont Estate",
-//     title: "Where Elegance Becomes Heritage",
-//     description: `
-// Where the Hills Whisper and Roses Welcome You Home
-// Elegantia in Aeternum — Elegance Forever
-// A Signature Duplex Township by Anondo Rosemont Estate under Anondo CityScappers Ltd.`,
-//     image: "/slider/slider1.jpg",
-//     buttons: [
-//       {
-//         text: "Explore Rosemont Estate",
-//         link: "/rosemont",
-//         variant: "primary",
-//       },
-//       { text: "Download Brochure", link: "/brochure", variant: "outline" },
-//     ],
-//   },
+  //   {
+  //     subtitle: "Anondo Rosemont Estate",
+  //     title: "Where Elegance Becomes Heritage",
+  //     description: `
+  // Where the Hills Whisper and Roses Welcome You Home
+  // Elegantia in Aeternum — Elegance Forever
+  // A Signature Duplex Township by Anondo Rosemont Estate under Anondo CityScappers Ltd.`,
+  //     image: "/slider/slider1.jpg",
+  //     buttons: [
+  //       {
+  //         text: "Explore Rosemont Estate",
+  //         link: "/rosemont",
+  //         variant: "primary",
+  //       },
+  //       { text: "Download Brochure", link: "/brochure", variant: "outline" },
+  //     ],
+  //   },
   {
     subtitle: "Anondo Bhubon",
     title: "A New Horizon in Eco-Friendly Urban Living",
     description: `
-Discover Bangladesh’s first eco-conscious township — where nature, wellness, and modern living exist in harmony.
+We are not just offering homes — we are offering a lifestyle rooted in health, harmony, and sustainability
 `,
     image: "/slider/slider2.jpg",
     buttons: [
