@@ -217,46 +217,6 @@ export default function ProjectDetails({ project }) {
                       </div>
                     )}
                   </div>
-
-                  {!isComingSoon && showcaseImages.length > 0 && (
-                    <div className="hidden gap-3 lg:grid">
-                      {showcaseImages.map((img, index) => (
-                        <div
-                          key={img.src}
-                          className={`group relative overflow-hidden rounded-lg border border-white/15 bg-white/10 shadow-[0_20px_55px_rgba(0,0,0,0.24)] backdrop-blur-xl ${
-                            index === 0 ? "h-40" : "h-28"
-                          }`}
-                        >
-                          <Image
-                            src={img.src}
-                            alt={img.title}
-                            fill
-                            sizes="380px"
-                            className="object-cover transition duration-700 group-hover:scale-110"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
-                          <button
-                            type="button"
-                            onClick={() => setActiveImageIndex(index + 1)}
-                            aria-label={`View ${img.title}`}
-                            className="absolute inset-0 z-10 flex items-center justify-center bg-[#07111F]/0 opacity-0 transition duration-300 group-hover:bg-[#07111F]/30 group-hover:opacity-100 focus:bg-[#07111F]/30 focus:opacity-100"
-                          >
-                            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#07111F] shadow-[0_16px_35px_rgba(0,0,0,0.28)]">
-                              <FaEye />
-                            </span>
-                          </button>
-                          <div className="pointer-events-none absolute bottom-3 left-3 right-3 z-20">
-                            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#F48220]">
-                              {img.label}
-                            </p>
-                            <h3 className="mt-1 text-sm font-bold text-white">
-                              {img.title}
-                            </h3>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
                 </div>
               </div>
             </div>
@@ -301,8 +261,8 @@ export default function ProjectDetails({ project }) {
                 </div>
 
                 <p className="max-w-md text-sm leading-7 text-[#1F2937]/65">
-                  Curated visuals covering landscape, community life,
-                  commercial zones, civic facilities, and lifestyle amenities.
+                  Curated visuals covering landscape, community life, commercial
+                  zones, civic facilities, and lifestyle amenities.
                 </p>
               </div>
 
