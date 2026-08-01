@@ -25,7 +25,7 @@ export default function AboutUsSection() {
   ];
 
   const stats = [
-    { number: "2007", label: "Established" },
+    { number: "2006", label: "Established" },
     { number: "100%", label: "Client Focused" },
     { number: "Future", label: "Ready Projects" },
   ];

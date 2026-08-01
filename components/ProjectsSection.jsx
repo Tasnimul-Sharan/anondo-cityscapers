@@ -28,6 +28,7 @@ const projects = [
     desc: "Eco-conscious township blending nature, wellness, and modern urban living.",
     slug: "anondo-bhubon",
     tag: "Eco Lifestyle Township",
+    externalUrl: "https://www.anondobhubon.com/",
   },
 ];
 
@@ -64,7 +65,6 @@ export default function ProjectsSection() {
           <div className="mx-auto mt-7 h-[3px] w-24 rounded-full bg-primary" />
         </motion.div>
 
-        {/* Grid */}
         <div className="grid gap-8 md:grid-cols-2">
           {projects.map((project, index) => (
             <motion.div
@@ -78,7 +78,12 @@ export default function ProjectsSection() {
                 ease: "easeOut",
               }}
             >
-              <Link href={`/projects/${project.slug}`} className="block h-full">
+              <Link
+                href={project.externalUrl || `/projects/${project.slug}`}
+                target={project.externalUrl ? "_blank" : "_self"}
+                rel={project.externalUrl ? "noopener noreferrer" : undefined}
+                className="block h-full"
+              >
                 <motion.article
                   whileHover={{ y: -12 }}
                   transition={{ duration: 0.35, ease: "easeOut" }}

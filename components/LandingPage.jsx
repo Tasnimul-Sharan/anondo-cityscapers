@@ -48,7 +48,7 @@ We are not just offering homes — we are offering a lifestyle rooted in health,
         variant: "primary",
         download: "Anondo-Bhubon-Brochure.pdf",
       },
-      { text: "View Pricing", link: "/pricing", variant: "outline" },
+      { text: "Get Connected", link: "/contact", variant: "outlineWhite" },
     ],
   },
   {
@@ -59,8 +59,8 @@ A visionary residential project by Bangladesh Police, spanning 115 hectares in t
 `,
     image: "/slider/slider3.jpg",
     buttons: [
-      { text: "Get Connect", link: "/contact", variant: "primary" },
-      { text: "View Pricing", link: "/pricing", variant: "outline" },
+      { text: "Get Connected", link: "/contact", variant: "primary" },
+      { text: "Learn More", link: "/about", variant: "outlineWhite" },
     ],
   },
 ];
@@ -149,8 +149,13 @@ const LandingPage = () => {
                   variants={textVariants}
                 >
                   {slide.buttons.map((btn, i) =>
-                    btn.download ? (
-                      <a key={i} href={btn.link} download={btn.download}>
+                    btn.newTab ? (
+                      <a
+                        key={i}
+                        href={btn.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Button variant={btn.variant || "primary"}>
                           {btn.text}
                         </Button>

@@ -27,12 +27,16 @@ const menuItems = [
     path: "#",
     submenu: [
       // { name: "Anondo Rosemont Estate", path: "/rosemont" },
-      { name: "Anondo Bhubon", path: "/projects/anondo-bhubon" },
+      {
+        name: "Anondo Bhubon",
+        path: "https://www.anondobhubon.com/",
+        target: "_blank",
+      },
       { name: "Anondo Parkcity", path: "/projects/anondo-parkcity" },
     ],
   },
 
-  { name: "Blogs", path: "/blogs" },
+  // { name: "Blogs", path: "/blogs" },
   { name: "NRB", path: "/nrb" },
   {
     name: "Corporate",
@@ -269,6 +273,12 @@ export default function Navbar() {
                       <li key={j} className="group/item">
                         <Link
                           href={sub.path}
+                          target={sub.target || "_self"}
+                          rel={
+                            sub.target === "_blank"
+                              ? "noopener noreferrer"
+                              : undefined
+                          }
                           className="flex items-center justify-between px-6 py-3 text-gray-700 hover:text-primary transition-all duration-300"
                         >
                           {/* Text */}
@@ -331,6 +341,12 @@ export default function Navbar() {
                     <li key={j}>
                       <Link
                         href={sub.path}
+                        target={sub.target || "_self"}
+                        rel={
+                          sub.target === "_blank"
+                            ? "noopener noreferrer"
+                            : undefined
+                        }
                         onClick={() => setIsMenuOpen(false)}
                         className="block py-1 hover:text-primary"
                       >

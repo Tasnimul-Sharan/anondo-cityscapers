@@ -7,9 +7,8 @@ import HowToBecomeOwner from "@/components/HowToBecomeOwner";
 import LandingPage from "@/components/LandingPage";
 import ProjectsSection from "@/components/ProjectsSection";
 import StatsSection from "@/components/StatsSection";
-import NoticeSection from "@/components/BlogsSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import BlogsSection from "@/components/BlogsSection";
+import BlogsSection from "@/components/BlogsSection";``
 
 export default function Home() {
   const meta = {
@@ -51,10 +50,8 @@ export default function Home() {
       <ProjectsSection />
       <HowToBecomeOwner />
       <WhyChooseUs />
-      {/* <PresidentSection /> */}
       <FAQSection />
-      {/* <NoticeSection /> */}
-      <BlogsSection />
+      {/* <BlogsSection /> */}
       <ContactSection />
     </div>
   );
