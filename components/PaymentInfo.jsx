@@ -44,19 +44,19 @@ export default function PaymentInfo() {
         {/* Header */}
         <div className="mx-auto max-w-4xl text-center">
           <SectionBadge
-            label="Payment Information"
+            label="Payment Guidelines"
             icon={<FaBuildingColumns className="text-sm" />}
           />
 
           <h1 className="mt-6 text-3xl font-bold tracking-tight text-soft_black sm:text-4xl lg:text-5xl">
-            Bank Account Details for{" "}
-            <span className="text-primary">Anondo Cityscapers Ltd.</span>
+            Payment Guidelines &amp;{" "}
+            <span className="text-primary">Important Information</span>
           </h1>
 
           <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-gray-600">
-            Payments may be made directly to our bank account from any country
-            through Bank to Bank transfer or via Money Exchange. Please use the
-            account information below carefully.
+            Review the payment process, booking requirements, installment
+            instructions, rules and regulations, and contact information before
+            proceeding with your application.
           </p>
         </div>
 
