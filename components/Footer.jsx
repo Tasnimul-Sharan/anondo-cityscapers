@@ -82,15 +82,25 @@ export default function Footer() {
 
           <ul className="space-y-3 text-sm">
             {[
-              { name: "Anondo Bhubon", link: "/anondo-bhubon" },
-              { name: "Anondo Parkcity", link: "/anondo-parkcity" },
+              {
+                name: "Anondo Bhubon",
+                link: "https://www.anondobhubon.com/",
+                target: "_blank",
+              },
+              { name: "Anondo Parkcity", link: "/projects/anondo-parkcity" },
               // {
               //   name: "Anondo Rosemont Estate",
               //   link: "/anondo-rosemont-estate",
               // },
             ].map((item, i) => (
               <li key={i} className="relative group w-fit">
-                <Link href={item.link}>
+                <Link
+                  href={item.link}
+                  target={item.target || "_self"}
+                  rel={
+                    item.target === "_blank" ? "noopener noreferrer" : undefined
+                  }
+                >
                   <span className="transition-colors duration-300 group-hover:text-primary">
                     {item.name}
                   </span>
