@@ -61,7 +61,7 @@ export default function PaymentInfo() {
         </div>
 
         {/* Bank Cards */}
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
+        {/* <div className="mt-14 grid gap-6 lg:grid-cols-2">
           {cityscapersBanks.map((bank) => (
             <div
               key={bank.sl}
@@ -113,7 +113,7 @@ export default function PaymentInfo() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Desktop Table */}
         {/* <div className="mt-12 hidden overflow-hidden rounded-3xl border border-border_color bg-white shadow-soft lg:block">

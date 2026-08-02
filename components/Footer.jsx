@@ -54,6 +54,8 @@ export default function Footer() {
               { name: "Home", href: "/" },
               { name: "About", href: "/about" },
               { name: "Contact", href: "/contact" },
+              { name: "FAQ", href: "/faq" },
+              { name: "Documents", href: "/documents" },
               { name: "Blogs", href: "/blogs" },
               { name: "Terms and Conditions", href: "/terms-and-conditions" },
               { name: "Privacy Policy", href: "/privacy-policy" },

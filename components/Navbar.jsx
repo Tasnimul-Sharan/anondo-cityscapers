@@ -38,6 +38,8 @@ const menuItems = [
 
   // { name: "Blogs", path: "/blogs" },
   { name: "NRB", path: "/nrb" },
+  { name: "FAQ", path: "/faq" },
+  { name: "Documents", path: "/documents" },
   {
     name: "Corporate",
     path: "#",

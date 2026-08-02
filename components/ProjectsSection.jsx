@@ -16,14 +16,14 @@ const projects = [
   //   tag: "Luxury Villa Township",
   // },
   {
-    img: "/slider/slider2.jpg",
-    title: "Anondo Park City",
+    img: "/slider/slider3.jpg",
+    title: "Anondo ParkCity",
     desc: "Smart and sustainable gated community in Purbachal with modern amenities and eco-friendly design.",
     slug: "anondo-parkcity",
     tag: "Smart Gated Community",
   },
   {
-    img: "/slider/slider3.jpg",
+    img: "/slider/slider2.jpg",
     title: "Anondo Bhubon",
     desc: "Eco-conscious township blending nature, wellness, and modern urban living.",
     slug: "anondo-bhubon",
@@ -97,6 +97,7 @@ export default function ProjectsSection() {
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      priority
                     />
 
                     {/* Premium Gradient Overlay */}

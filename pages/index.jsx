@@ -2,7 +2,6 @@
 import Head from "next/head";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
-import FAQSection from "@/components/FAQSection";
 import HowToBecomeOwner from "@/components/HowToBecomeOwner";
 import LandingPage from "@/components/LandingPage";
 import ProjectsSection from "@/components/ProjectsSection";
@@ -50,7 +49,6 @@ export default function Home() {
       <ProjectsSection />
       <HowToBecomeOwner />
       <WhyChooseUs />
-      <FAQSection />
       {/* <BlogsSection /> */}
       <ContactSection />
     </div>
