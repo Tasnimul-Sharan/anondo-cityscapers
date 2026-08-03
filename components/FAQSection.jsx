@@ -11,64 +11,92 @@ export default function FAQ() {
 
   const faqs = [
     {
-      q: "What types of villas are available?",
-      a: "The project offers 5 Katha, 10 Katha, and 20 Katha duplex villas with modern architecture, spacious layouts, and premium lifestyle features.",
+      q: "What is Anondo Bhubon?",
+      a: "Anondo Bhubon is a master-planned, eco-conscious residential township near Purbachal New Town. It combines homes, smart infrastructure, green and water networks, commercial areas, civic facilities, and community-focused amenities in one integrated environment.",
     },
     {
-      q: "Are the villas developer-built?",
-      a: "Yes, all villas are developed by the project authority to maintain architectural consistency, construction quality, and a premium community environment.",
+      q: "Where is Anondo Bhubon located, and how is it connected?",
+      a: "The project is located on the east bank of the River Sitalakhya near Purbachal New Town. It is approximately 30 minutes from Hazrat Shahjalal International Airport and 10 minutes from the MRT-1 Depot Station, with access via the Dhaka Bypass Expressway and Purbachal Expressway.",
     },
     {
-      q: "What makes this estate a premium villa community?",
-      a: "The estate combines luxury duplex villas, wide roads, green landscapes, secure gated living, community facilities, and modern lifestyle amenities.",
+      q: "How is the master plan organized?",
+      a: "Anondo Bhubon follows a sector-based master plan. Every 100 bighas forms a block, and four blocks form a 400-bigha sector. Each sector is planned with its own architectural identity, lifestyle focus, infrastructure, and community facilities.",
     },
     {
-      q: "What facilities are included in the estate?",
-      a: "The estate includes parks, scenic lake, sports facilities, playgrounds, community spaces, farming areas, and essential civic amenities.",
+      q: "What types of residential properties are planned?",
+      a: "The residential plan includes luxury villas, mid-rise apartments, and condominiums. These options are designed for different groups, including families, professionals, returning expatriates, government and NGO officials, and corporate residents.",
     },
     {
-      q: "Are educational and healthcare facilities available?",
-      a: "Yes, the estate is planned with important facilities such as school, hospital or clinic support, and other essential community services.",
+      q: "What features are planned for the luxury villas?",
+      a: "Luxury villas are planned on generous plots with private gardens and pools. Proposed features include 4-6 bedrooms, private terraces, double-height ceilings, rooftop solar readiness, energy-efficient architecture, smart-home technology, lakeside access, and a private clubhouse.",
     },
     {
-      q: "Are religious facilities included?",
-      a: "Yes, the project includes religious facilities such as mosque, mandir, and church to support an inclusive community lifestyle.",
+      q: "What will the mid-rise apartments offer?",
+      a: "The mid-rise residential blocks are planned as 4-7 story buildings with 2-4 bedroom units, elevators, underground parking, rooftop gardens, shared courtyards, and mini parks. They are intended to remain close to schools, clinics, shopping, and other daily services.",
     },
     {
-      q: "What kind of road infrastructure is available?",
-      a: "The project features 60 ft and 40 ft wide grand avenues, along with 25 ft residential roads for organized and comfortable connectivity.",
+      q: "What facilities are planned for the condominiums?",
+      a: "Condominium buildings are planned to rise up to 10 stories and offer 1-3 bedroom suites. Proposed facilities include rooftop lounges, co-working spaces, mixed-use podiums with cafes, groceries and daycare, and convenient access to transit and IT business districts.",
     },
     {
-      q: "Is the project suitable for NRB buyers?",
-      a: "Yes, the estate is suitable for NRBs due to developer-built villas, secure infrastructure, premium lifestyle facilities, and long-term investment potential.",
+      q: "How will the artificial river, lake, and canal network function?",
+      a: "A central artificial river connected to the River Sitalakhya is planned to circulate water through the township. The central lake will serve as a stormwater reservoir and leisure hub, while the canal network is designed to support rainwater harvesting, flood control, irrigation, drainage, beautification, and habitat restoration.",
     },
     {
-      q: "How is security maintained in the estate?",
-      a: "Security is maintained through 24/7 CCTV surveillance, controlled entry points, and professional security personnel.",
+      q: "What is special about the forest walkway and green zones?",
+      a: "The plan includes a 3-kilometer forest walkway with native trees, fitness areas, solar lighting, rest decks, meditation pavilions, edible gardens, butterfly sanctuaries, and nature-education signage. Blocks will also include green buffers, orchards, and herb gardens.",
     },
     {
-      q: "Are there parks and open green spaces?",
-      a: "Yes, the estate includes central parks, landscaped green zones, playgrounds, walkways, and community open spaces.",
+      q: "What everyday amenities will be available within the community?",
+      a: "Each block is planned with a community park, playground, religious facility, mini market, waste-management point, and security post. Sector-level plans include community gathering spaces, open-air theatres, picnic lawns, farming plots, stadiums, transit facilities, and commercial services.",
     },
     {
-      q: "Is the estate suitable for family living?",
-      a: "Yes, the estate is designed for family living with secure roads, playgrounds, parks, community spaces, and essential daily facilities.",
+      q: "What education, healthcare, and civic facilities are planned?",
+      a: "The brochure proposes primary schools, daycares, tutoring centers, a central modern hospital, sector-level clinics, mobile emergency units, and telehealth services. Civic infrastructure includes police outposts, fire stations, surveillance hubs, and underground utility corridors.",
     },
     {
-      q: "Are private pools available with the villas?",
-      a: "Private pools may be available as an optional luxury feature depending on villa type, plot size, and design package.",
+      q: "Will the township include religious and cultural spaces?",
+      a: "Yes. The plan includes mosques in every sector, temples and churches where population permits, interfaith prayer halls, and cultural centers for arts, music, and drama.",
     },
     {
-      q: "What lifestyle amenities are planned?",
-      a: "The estate includes lifestyle amenities such as central park, scenic lake, sports complex, community spaces, playgrounds, and green recreational areas.",
+      q: "What commercial and employment zones are proposed?",
+      a: "Anondo Bhubon plans a dedicated IT and Cyber Business Hub with high-speed fiber connectivity, co-working spaces, startup support, and green-certified offices. Commercial plans also include sector markets, shopping centers, a mega mall, food courts, organic-produce areas, and handicraft markets.",
     },
     {
-      q: "When will possession be handed over?",
-      a: "Possession is expected between 2027 and 2028, subject to completion of payments and project development progress.",
+      q: "What transport and mobility options are planned?",
+      a: "The mobility plan includes wide arterial roads, pedestrian promenades, bicycle lanes, internal bus terminals, shuttle loops, bicycle sharing, e-scooter lanes, and a logistics hub. MRT-1 connectivity expansion and water-taxi terminals are identified as planned future options.",
     },
     {
-      q: "Why should someone invest in this estate?",
-      a: "The estate offers premium villa living, planned infrastructure, secure community lifestyle, green surroundings, and strong long-term real estate value.",
+      q: "How is security planned for Anondo Bhubon?",
+      a: "The township is designed as a gated smart community with 24/7 CCTV coverage, AI-assisted monitoring, trained in-house security teams, visitor-management systems, RFID access in condominiums, and emergency-response networks with community alerts.",
+    },
+    {
+      q: "What sustainability measures are included?",
+      a: "The brochure states that 40%-50% of the land is reserved for green, water, and open infrastructure. Planned measures include solar lighting, future solar farms, wastewater recycling, rainwater harvesting, low-carbon materials, smart waste segregation, EV charging, and renewable-ready utilities.",
+    },
+    {
+      q: "What lifestyle and wellness facilities are planned?",
+      a: "Planned facilities include yoga and meditation gardens, wellness centers, spa clinics, swimming and hydrotherapy zones, football, cricket, tennis and volleyball facilities, social clubs, senior zones, reading cafes, community farming, gardening, and artisan workshops.",
+    },
+    {
+      q: "Who may consider Anondo Bhubon as an investment opportunity?",
+      a: "The brochure identifies opportunities for residential investors, NRBs, expatriates, government officers, institutional investors in malls, hospitals and schools, partners in IT and co-working zones, and organizations interested in community housing. Any investment decision should be based on independent legal and financial verification.",
+    },
+    {
+      q: "Is Anondo Bhubon suitable for NRBs and returning expatriates?",
+      a: "Yes. The brochure identifies NRBs and expatriates among the project's intended residential investors and describes the Luxury Villas Block as suitable for returning expatriates and families seeking secure, eco-conscious living. Buyers can also explore the planned apartment and condominium options according to their needs.",
+    },
+    {
+      q: "What should an NRB verify before investing in Anondo Bhubon?",
+      a: "Before investing from abroad, an NRB should verify the latest land title and mutation records, relevant approvals, current availability and pricing, payment and remittance procedures, registration requirements, applicable taxes and fees, and the updated development timeline directly with the project authority and independent legal advisers.",
+    },
+    {
+      q: "What does the brochure say about legal and regulatory compliance?",
+      a: "According to the brochure, development approvals involve relevant RAJUK and Department of Environment authorities; zoning, FAR, EIA and utility permissions are either in process or cleared; environmental and flood-resilience studies have been conducted; and land registration and mutation are complete. Buyers should verify the latest documents directly with the project authority and relevant agencies.",
+    },
+    {
+      q: "What is the proposed project implementation timeline?",
+      a: "The brochure presents four phases: roads, utilities and canals during 2026; luxury villas, the forest walkway and lake during 2027; condominiums, the IT park and civic facilities during 2028-2029; and schools, hospitals, malls and full smart integration from 2030 onward. These are proposed timeframes and should be reconfirmed with the developer.",
     },
   ];
 
@@ -91,8 +119,9 @@ export default function FAQ() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-gray-600">
-            Everything you need to know about Rosemont Estate, villa ownership,
-            facilities, security, registration, and investment value.
+            Explore the most important information about Anondo Bhubon,
+            including its location, master plan, homes, facilities,
+            sustainability, security, investment potential, and timeline.
           </p>
 
           <div className="mx-auto mt-6 h-[3px] w-24 rounded-full bg-primary" />
@@ -111,16 +140,16 @@ export default function FAQ() {
             </h3>
 
             <p className="mt-4 text-sm leading-8 text-gray-600">
-              Browse the most common questions about Rosemont Estate. For more
-              specific project, payment, or registration details, contact our
-              authorized team.
+              These answers summarize the Anondo Bhubon brochure. For current
+              pricing, availability, approvals, payment, or registration
+              details, please contact the authorized project team.
             </p>
 
             <div className="mt-7 space-y-4 border-t border-primary/10 pt-6">
-              <SupportPoint text="Villa type and size information" />
-              <SupportPoint text="Developer-built project guidance" />
-              <SupportPoint text="Facilities and lifestyle details" />
-              <SupportPoint text="Registration and possession support" />
+              <SupportPoint text="Location and connectivity overview" />
+              <SupportPoint text="Residential and master-plan details" />
+              <SupportPoint text="Facilities and sustainability features" />
+              <SupportPoint text="Legal, investment, and timeline guidance" />
             </div>
           </div>
 
@@ -208,10 +237,10 @@ export default function FAQ() {
             </div>
 
             <p className="text-sm leading-7 text-gray-600">
-              Information may vary based on villa type, plot size, design
-              package, payment status, and project development progress. Please
-              verify final details with the project authority before making any
-              decision.
+              This page is a summary of the supplied brochure. Planned
+              facilities, approvals, specifications, availability, and
+              timelines may change. Please verify the latest official documents
+              with the project authority before making any decision.
             </p>
           </div>
         </div>
