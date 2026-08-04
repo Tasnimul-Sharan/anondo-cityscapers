@@ -20,7 +20,7 @@ export default function HowToBecomeOwner() {
     },
     {
       icon: <FaClipboardList />,
-      title: "Fill Out the Form",
+      title: "Fill Out the Form & Deposit Application Money",
       desc: "Complete the required documents and wait for verification.",
     },
     {
