@@ -11,8 +11,8 @@ export default function ProjectPage() {
     keywords:
       "Anondo Cityscapers projects, housing projects Bangladesh, residential projects Bangladesh, real estate projects Bangladesh, apartment projects Bangladesh, land development projects, gated community projects, ongoing housing projects Bangladesh",
     author: "Anondo Cityscapers",
-    url: "https://anondocityscapers.com/projects",
-    image: "https://anondocityscapers.com/projects/projects-og.jpg",
+    url: "https://www.anondocityscapers.com/projects",
+    image: "https://www.anondocityscapers.com/slider/slider2.jpg",
   };
 
   return (

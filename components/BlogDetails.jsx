@@ -6,7 +6,7 @@ import { FiCalendar, FiShare2, FiUser } from "react-icons/fi";
 export default function BlogDetails({ blogsData }) {
   const { blogPost, sections = [], socialIcons = [] } = blogsData;
 
-  const currentUrl = `https://anondocityscapers.com/blogs/${blogsData.slug}`;
+  const currentUrl = `https://www.anondocityscapers.com/blogs/${blogsData.slug}`;
 
   return (
     <section className="bg-[#f8f7f3]">

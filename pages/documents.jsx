@@ -10,8 +10,8 @@ export default function DocumentsPage() {
     keywords:
       "Anondo Cityscapers documents, booking form, property booking form Bangladesh, housing documents",
     author: "Anondo Cityscapers",
-    url: "https://anondocityscapers.com/documents",
-    image: "https://anondocityscapers.com/slider/slider2.jpg",
+    url: "https://www.anondocityscapers.com/documents",
+    image: "https://www.anondocityscapers.com/slider/slider2.jpg",
   };
 
   return (

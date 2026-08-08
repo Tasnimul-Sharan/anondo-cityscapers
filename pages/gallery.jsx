@@ -10,8 +10,8 @@ export default function GalleryPage() {
     keywords:
       "Anondo Cityscapers gallery, housing project gallery Bangladesh, residential project photos, real estate development gallery, apartment project images Bangladesh, land development photos, housing construction progress",
     author: "Anondo Cityscapers",
-    url: "https://anondocityscapers.com/gallery",
-    image: "https://anondocityscapers.com/gallery/gallery-og.jpg",
+    url: "https://www.anondocityscapers.com/gallery",
+    image: "https://www.anondocityscapers.com/gallery/gallery1.jpg",
   };
 
   return (

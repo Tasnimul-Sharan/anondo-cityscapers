@@ -40,7 +40,8 @@ export default function Custom404() {
     <>
       <Head>
         <title>404 – Page Not Found | Anondo Cityscapers</title>
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="noindex, follow" />
+        <meta name="googlebot" content="noindex, follow" />
         <meta
           name="description"
           content="The page you are looking for could not be found. Return to the Anondo Cityscapers homepage."

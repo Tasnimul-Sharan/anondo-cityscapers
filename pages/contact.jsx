@@ -12,8 +12,8 @@ export default function ContactPage() {
     keywords:
       "Contact Anondo Cityscapers, housing contact Bangladesh, real estate contact Bangladesh, apartment booking contact, plot purchase inquiry, housing project contact, residential housing Bangladesh",
     author: "Anondo Cityscapers",
-    url: "https://anondocityscapers.com/contact",
-    image: "https://anondocityscapers.com/contact/contact-og.jpg",
+    url: "https://www.anondocityscapers.com/contact",
+    image: "https://www.anondocityscapers.com/slider/slider2.jpg",
   };
 
   return (

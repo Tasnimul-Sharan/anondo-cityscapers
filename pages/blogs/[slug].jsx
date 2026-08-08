@@ -47,10 +47,10 @@ export default function NewsDetailsDataPage() {
       ...blog.blogPost.postTags,
     ].join(", "),
     author: blog.blogPost.author || "Anondo Cityscapers",
-    url: `https://anondocityscapers.com/notice/${slug}`,
+    url: `https://www.anondocityscapers.com/blogs/${slug}`,
     image:
       blog.blogPost.image ||
-      "https://anondocityscapers.com/assets/og/notice-og.jpg",
+      "https://www.anondocityscapers.com/blogs/bhubon.jpg",
   };
 
   return (
@@ -60,7 +60,9 @@ export default function NewsDetailsDataPage() {
         <meta name="description" content={meta.description} />
         <meta name="keywords" content={meta.keywords} />
         <meta name="author" content={meta.author} />
+        <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href={meta.url} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta property="og:type" content="website" />

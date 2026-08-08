@@ -38,7 +38,7 @@ export default function ProjectDetailsPage() {
   const projectData = project?.projectData || {};
 
   const siteName = "Anondo Cityscapers Ltd";
-  const siteUrl = "https://anondocityscapers.com";
+  const siteUrl = "https://www.anondocityscapers.com";
 
   const projectTitle = project.title || projectData.title || "Project Details";
 
@@ -55,7 +55,10 @@ export default function ProjectDetailsPage() {
     ? heroImage
     : `${siteUrl}${heroImage.startsWith("/") ? heroImage : `/${heroImage}`}`;
 
-  const pageUrl = `${siteUrl}/projects/${project.slug}`;
+  const pageUrl =
+    project.slug === "anondo-bhubon"
+      ? `${siteUrl}/anondo-bhubon`
+      : `${siteUrl}/projects/${project.slug}`;
 
   const meta = {
     title: `${projectTitle} | Premium Real Estate Project by ${siteName}`,

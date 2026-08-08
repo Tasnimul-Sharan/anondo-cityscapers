@@ -11,8 +11,8 @@ export default function NoticePage() {
     keywords:
       "Anondo Cityscapers blog, housing project blogs Bangladesh, real estate updates Bangladesh, apartment booking blog, plot ownership blogs, housing society announcements, Anondo Cityscapers news",
     author: "Anondo Cityscapers",
-    url: "https://anondocityscapers.com/blogs",
-    image: "https://anondocityscapers.com/blogs/blogs-og.jpg",
+    url: "https://www.anondocityscapers.com/blogs",
+    image: "https://www.anondocityscapers.com/blogs/bhubon.jpg",
   };
 
   return (

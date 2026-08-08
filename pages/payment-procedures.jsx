@@ -12,8 +12,8 @@ export default function PaymentProceduresPage() {
     keywords:
       "Anondo Cityscapers payment procedures, housing payment guide Bangladesh, apartment payment steps, plot payment process, installment plans housing Bangladesh, secure payment housing project",
     author: "Anondo Cityscapers",
-    url: "https://anondocityscapers.com/payment-procedures",
-    image: "https://anondocityscapers.com/payment/payment-og.jpg",
+    url: "https://www.anondocityscapers.com/payment-procedures",
+    image: "https://www.anondocityscapers.com/slider/slider2.jpg",
   };
 
   return (

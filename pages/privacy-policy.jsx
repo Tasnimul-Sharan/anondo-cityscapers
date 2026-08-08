@@ -10,8 +10,8 @@ export default function ProjectLotteryPolicy() {
     keywords:
       "Anondo Cityscapers privacy policy, housing project privacy Bangladesh, personal data protection, residential project policy, housing society data handling",
     author: "Anondo Cityscapers",
-    url: "https://anondocityscapers.com/privacy-policy",
-    image: "https://anondocityscapers.com/privacy/privacy-og.jpg",
+    url: "https://www.anondocityscapers.com/privacy-policy",
+    image: "https://www.anondocityscapers.com/slider/slider2.jpg",
   };
 
   return (

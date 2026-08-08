@@ -20,8 +20,8 @@ export default function NRBPage() {
     keywords:
       "Anondo Cityscapers, housing society Bangladesh, residential housing project Bangladesh, modern housing society, secure residential area, apartment housing Bangladesh, land development project Bangladesh, gated community Bangladesh, real estate Bangladesh, housing project Dhaka",
     author: "Anondo Cityscapers",
-    url: "https://anondocityscapers.com/nrb",
-    image: "https://anondocityscapers.com/og/home-og.jpg",
+    url: "https://www.anondocityscapers.com/nrb",
+    image: "https://www.anondocityscapers.com/slider/slider2.jpg",
   };
 
   return (

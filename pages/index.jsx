@@ -11,15 +11,22 @@ import BlogsSection from "@/components/BlogsSection";``
 
 export default function Home() {
   const meta = {
-    title:
-      "Home | Anondo Cityscapers - Modern & Secure Residential Community in Bangladesh",
+    title: "Anondo Cityscapers | Modern Residential Communities",
     description:
       "Anondo Cityscapers offers a modern, secure, and well-planned residential community in Bangladesh with quality housing, reliable utilities, green spaces, and a peaceful living environment for families and investors.",
     keywords:
       "Anondo Cityscapers, housing society Bangladesh, residential housing project Bangladesh, modern housing society, secure residential area, apartment housing Bangladesh, land development project Bangladesh, gated community Bangladesh, real estate Bangladesh, housing project Dhaka",
     author: "Anondo Cityscapers",
-    url: "https://anondocityscapers.com",
-    image: "https://anondocityscapers.com/og/home-og.jpg",
+    url: "https://www.anondocityscapers.com/",
+    image: "https://www.anondocityscapers.com/slider/slider1.jpg",
+  };
+
+  const websiteStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Anondo Cityscapers",
+    alternateName: "Anondo Cityscapers Ltd.",
+    url: meta.url,
   };
 
   return (
@@ -30,6 +37,7 @@ export default function Home() {
         <meta name="description" content={meta.description} />
         <meta name="keywords" content={meta.keywords} />
         <meta name="author" content={meta.author} />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href={meta.url} />
         <meta property="og:site_name" content="Anondo Cityscapers" />
         <meta property="og:type" content="website" />
@@ -42,6 +50,12 @@ export default function Home() {
         <meta property="twitter:title" content={meta.title} />
         <meta property="twitter:description" content={meta.description} />
         <meta property="twitter:image" content={meta.image} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteStructuredData),
+          }}
+        />
       </Head>
       <LandingPage />
       <AboutSection />

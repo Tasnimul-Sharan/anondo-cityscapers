@@ -18,8 +18,8 @@ export default function AboutPage() {
     keywords:
       "About Anondo Cityscapers, housing society Bangladesh, residential community Bangladesh, real estate development Bangladesh, housing project company Bangladesh, trusted housing developer, gated community Bangladesh, modern housing society",
     author: "Anondo Cityscapers",
-    url: "https://anondocityscapers.com/about",
-    image: "https://anondocityscapers.com/about/about-og.jpg",
+    url: "https://www.anondocityscapers.com/about",
+    image: "https://www.anondocityscapers.com/about.jpg",
   };
 
   return (
@@ -30,6 +30,8 @@ export default function AboutPage() {
         <meta name="keywords" content={meta.keywords} />
         <meta name="author" content={meta.author} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={meta.url} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:site_name" content="Anondo Cityscapers" />
         <meta property="og:description" content={meta.description} />

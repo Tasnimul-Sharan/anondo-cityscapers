@@ -10,8 +10,8 @@ export default function FAQPage() {
     keywords:
       "Anondo Cityscapers FAQ, villa ownership Bangladesh, housing project questions, real estate investment Bangladesh, property registration FAQ",
     author: "Anondo Cityscapers",
-    url: "https://anondocityscapers.com/faq",
-    image: "https://anondocityscapers.com/slider/slider2.jpg",
+    url: "https://www.anondocityscapers.com/faq",
+    image: "https://www.anondocityscapers.com/slider/slider2.jpg",
   };
 
   return (
