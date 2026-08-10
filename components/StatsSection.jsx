@@ -16,13 +16,13 @@ export default function StatsSection() {
     },
     {
       icon: <FaUserFriends size={25} />,
-      value: "1400+",
+      value: "1000+",
       label: "Active Members",
     },
     {
       icon: <FaHardHat size={25} />,
-      value: "405+",
-      label: "Plots Handovered",
+      value: "200+",
+      label: "Plots Sold",
     },
     {
       icon: <FaChartLine size={25} />,
