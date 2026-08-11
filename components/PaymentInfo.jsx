@@ -114,49 +114,6 @@ export default function PaymentInfo() {
             </div>
           ))}
         </div> */}
-
-        {/* Desktop Table */}
-        {/* <div className="mt-12 hidden overflow-hidden rounded-3xl border border-border_color bg-white shadow-soft lg:block">
-          <table className="w-full text-left text-sm">
-            <thead className="bg-primary text-white">
-              <tr>
-                <th className="px-5 py-4 font-semibold">SL</th>
-                <th className="px-5 py-4 font-semibold">Bank</th>
-                <th className="px-5 py-4 font-semibold">Branch</th>
-                <th className="px-5 py-4 font-semibold">Account Name</th>
-                <th className="px-5 py-4 font-semibold">Account No</th>
-                <th className="px-5 py-4 font-semibold">Swift</th>
-                <th className="px-5 py-4 font-semibold">Routing</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              {cityscapersBanks.map((bank) => (
-                <tr
-                  key={bank.sl}
-                  className="border-b border-border_color last:border-b-0 hover:bg-primary/5"
-                >
-                  <td className="px-5 py-4 font-semibold text-primary">
-                    {bank.sl}
-                  </td>
-                  <td className="px-5 py-4 font-medium text-soft_black">
-                    {bank.bank}
-                  </td>
-                  <td className="px-5 py-4 text-gray-600">{bank.branch}</td>
-                  <td className="px-5 py-4 text-gray-600">
-                    {bank.accountName}
-                  </td>
-                  <td className="px-5 py-4 font-semibold text-soft_black">
-                    {bank.accountNo}
-                  </td>
-                  <td className="px-5 py-4 text-gray-600">{bank.swift}</td>
-                  <td className="px-5 py-4 text-gray-600">{bank.routing}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div> */}
-
         <PaymentInstructions />
       </div>
     </section>
