@@ -31,7 +31,7 @@ body {
     ),
     linear-gradient(180deg, #fbfbf6 0%, #f4f6ef 52%, #ffffff 100%);
   color: var(--ink);
-  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 img {
